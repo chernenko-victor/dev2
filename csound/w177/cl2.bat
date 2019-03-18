@@ -1,0 +1,2 @@
+REM "C:\Program Files\Csound6_x64\bin\csound" C:\src\csound\3107\t_midi3.csd -F C:\src\csound\3107\w170v2-1.mid
+"C:\Program Files\Csound6_x64\bin\csound" C:\src\csound\3107\t_177midi.csd -F C:\src\csound\3107\w177_4_1.mid

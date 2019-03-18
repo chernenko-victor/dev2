@@ -1,0 +1,1 @@
+;prob.inc.csd/*doesn't workWTF?*/#include "c:\audio\csound\include\math\stochastic\distribution2.inc.csd"

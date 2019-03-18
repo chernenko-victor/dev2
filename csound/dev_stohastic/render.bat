@@ -1,0 +1,1 @@
+csound -d -W -otmp.wav C:\Users\win8\Desktop\csound\tmp\csd\dev_stohastic.v22.csd

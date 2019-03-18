@@ -1,0 +1,1 @@
+"C:\Program Files\Csound6_x64\bin\csound" C:\src\csound\csd\dev_stohastic.v11.csd

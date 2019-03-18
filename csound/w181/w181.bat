@@ -1,0 +1,1 @@
+"C:\Program Files\Csound6_x64\bin\csound" C:\src\csound\3107\181_3midi2.csd -F C:\src\csound\3107\w181_3.mid

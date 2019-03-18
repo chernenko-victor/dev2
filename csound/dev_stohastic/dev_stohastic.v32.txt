@@ -1,0 +1,102 @@
+index = 0 | kCurrDelta = 0.019496
+index = 1 | kCurrDelta = 0.020808
+index = 2 | kCurrDelta = 0.048376
+EnvFunctionType {1 = linear, 2 = power, 3 = exponential, 4 = sinus, 5 = saw i.e. modulo, 6 = stochastic}
+
+(Len :: 			kMotifLen[0] = 2.045455)
+EnvFunctionType :: 		kEnvFunctionComposite[0][0] = 3.000000
+double MinX :: 			kEnvFunctionComposite[0][1] = 0.000000
+double MaxX :: 			kEnvFunctionComposite[0][2] = 2.045455
+double MinY :: 			kEnvFunctionComposite[0][3] = 0.705923
+double MaxY :: 			kEnvFunctionComposite[0][4] = 0.686428
+double Period :: 		kEnvFunctionComposite[0][5] = 0.000000 //for sinus, saw i.e. modulo
+int DistrType :: 		kEnvFunctionComposite[0][6] = 0.000000 //for stochastic
+int Depth :: 			kEnvFunctionComposite[0][7] = 0.000000 //for stochastic
+
+(Len :: 			kMotifLen[1] = 1.136364)
+EnvFunctionType :: 		kEnvFunctionComposite[1][0] = 5.000000
+double MinX :: 			kEnvFunctionComposite[1][1] = 2.046455
+double MaxX :: 			kEnvFunctionComposite[1][2] = 3.181818
+double MinY :: 			kEnvFunctionComposite[1][3] = 0.422927
+double MaxY :: 			kEnvFunctionComposite[1][4] = 0.443734
+double Period :: 		kEnvFunctionComposite[1][5] = 1.108764 //for sinus, saw i.e. modulo
+int DistrType :: 		kEnvFunctionComposite[1][6] = 0.000000 //for stochastic
+int Depth :: 			kEnvFunctionComposite[1][7] = 0.000000 //for stochastic
+
+(Len :: 			kMotifLen[2] = 1.818182)
+EnvFunctionType :: 		kEnvFunctionComposite[2][0] = 6.000000
+double MinX :: 			kEnvFunctionComposite[2][1] = 3.182818
+double MaxX :: 			kEnvFunctionComposite[2][2] = 5.000000
+double MinY :: 			kEnvFunctionComposite[2][3] = 0.053786
+double MaxY :: 			kEnvFunctionComposite[2][4] = 0.005410
+double Period :: 		kEnvFunctionComposite[2][5] = 0.000000 //for sinus, saw i.e. modulo
+int DistrType :: 		kEnvFunctionComposite[2][6] = 5.000000 //for stochastic
+int Depth :: 			kEnvFunctionComposite[2][7] = 3.000000 //for stochastic
+
+kSmallestDelta = 0.019496
+
+kMinCurrY = -9.700690 | kMaxCurrY = 25.471889
+kTestPeriod = 1.000000
+kMidiNum = 15.128458
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.705923 | kFrq = 19.590259
+kTestPeriod = 1.000000
+kMidiNum = 15.076502
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.704446 | kFrq = 19.531555
+kTestPeriod = 1.000000
+kMidiNum = 15.017782
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.702777 | kFrq = 19.465420
+kTestPeriod = 1.000000
+kMidiNum = 14.951621
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.700896 | kFrq = 19.391173
+kTestPeriod = 1.000000
+kMidiNum = 14.876642
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.698764 | kFrq = 19.307372
+kTestPeriod = 0.000000
+kMidiNum = 14.792163
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.696362 | kFrq = 19.213387
+kTestPeriod = 0.000000
+kMidiNum = 14.696423
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.693640 | kFrq = 19.107428
+kTestPeriod = 0.000000
+kMidiNum = 14.588553
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.690573 | kFrq = 18.988742
+kTestPeriod = 0.000000
+kMidiNum = 14.466305
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.687098 | kFrq = 18.855129
+kTestPeriod = 0.000000
+kMidiNum = 5.799537
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.440691 | kFrq = 11.429216
+kTestPeriod = 0.000000
+kMidiNum = 5.906586
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.443734 | kFrq = 11.500106
+kTestPeriod = 0.000000
+kMidiNum = 5.799316
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.440684 | kFrq = 11.429070
+kTestPeriod = 0.000000
+kMidiNum = 5.540135
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 0.433316 | kFrq = 11.259241
+kTestPeriod = 1.000000
+kMidiNum = 60.239116
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 1.988475 | kFrq = 265.264180
+kTestPeriod = 1.000000
+kMidiNum = 60.628921
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 1.999558 | kFrq = 271.304625
+kTestPeriod = 1.000000
+kMidiNum = 72.212178
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 2.328884 | kFrq = 529.703497
+kTestPeriod = 1.000000
+kMidiNum = 76.258433
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 2.443924 | kFrq = 669.170079
+kTestPeriod = 1.000000
+kMidiNum = 64.075747
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 2.097556 | kFrq = 331.072934
+kTestPeriod = 1.000000
+kMidiNum = 84.199317
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 2.669694 | kFrq = 1058.620264
+kTestPeriod = 2.000000
+kMidiNum = 50.387070
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 1.708369 | kFrq = 150.152245
+kTestPeriod = 1.000000
+kMidiNum = 50.387070
+Event i :: Instr name = 3.000000 | kPeriod = 0.250000 | kDur = 0.200000  | kAmp = 0.300000  | kRawVal = 1.708369 | kFrq = 150.152245
+kTestPeriod = 1.000000

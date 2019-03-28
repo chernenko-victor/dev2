@@ -8,9 +8,9 @@ ksmps = 32
 nchnls = 2
 0dbfs = 1
 
-#include "C:\Users\win8\Desktop\csound\tmp\csd\include\math\stochastic\distribution3.inc.csd"
-#include "C:\Users\win8\Desktop\csound\tmp\csd\include\math\stochastic\util.inc.csd"
-#include "C:\Users\win8\Desktop\csound\tmp\csd\include\utils\table.v1.csd"
+#include "..\include\math\stochastic\distribution3.inc.csd"
+#include "..\include\math\stochastic\util.inc.csd"
+#include "..\include\utils\table.v1.csd"
 
 
 #define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
@@ -202,10 +202,10 @@ instr	play_audio_from_disk
 endin
 
 ;instr	5 ;substractive_wov
-#include "C:\Users\win8\Desktop\csound\tmp\csd\include\sound\synthesis\substractive.csd"
+#include "..\include\sound\synthesis\substractive.csd"
 
 ;instr	6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
-#include "C:\Users\win8\Desktop\csound\tmp\csd\include\sound\synthesis\wgbow.csd"
+#include "..\include\sound\synthesis\wgbow.csd"
 				 
 /*
 	===============================================

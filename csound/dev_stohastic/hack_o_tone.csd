@@ -1,4 +1,4 @@
-1<CsoundSynthesizer>
+<CsoundSynthesizer>
 <CsOptions>
 -Q2 --midioutfile=dev_stoh_v29.mid
 </CsOptions>

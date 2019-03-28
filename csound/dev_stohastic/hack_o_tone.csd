@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--Q2 --midioutfile=dev_stoh_v29.mid
+-Q2 --midioutfile=hack_o_tone.mid
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -13,7 +13,7 @@ nchnls = 2
 #include "..\include\utils\table.v1.csd"
 
 
-#define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
+#define DUMP_FILE_NAME #"dump__hack_o_tone.txt"#
 
 /*
 	=======================================================

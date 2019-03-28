@@ -1,0 +1,1547 @@
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.000000 | kiMax = 3.000000 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.000000 :: kiMin = 0.000000 :: kiMax = 3.000000 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.013841 | kiMax = 3.013841 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.027682 | kiMax = 3.027682 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.013851 :: kiMin = 0.027702 :: kiMax = 3.027702 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.034612 | kiMax = 3.034612 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1154.451821 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.048433 | kiMax = 3.048433 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.027692 :: kiMin = 0.055384 :: kiMax = 3.055384 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.076095 | kiMax = 3.076095 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.041533 :: kiMin = 0.083065 :: kiMax = 3.083065 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.089936 | kiMax = 3.089936 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.103777 | kiMax = 3.103777 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.055374 :: kiMin = 0.110747 :: kiMax = 3.110747 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.131478 | kiMax = 3.131478 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.069214 :: kiMin = 0.138429 :: kiMax = 3.138429 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.145319 | kiMax = 3.145319 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1154.451821 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.159160 | kiMax = 3.159160 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.083055 :: kiMin = 0.166111 :: kiMax = 3.166111 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.186842 | kiMax = 3.186842 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.096896 :: kiMin = 0.193792 :: kiMax = 3.193792 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.200683 | kiMax = 3.200683 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1539.299881 
+kTimer = 0.110747 :: kiMin = 0.221494 :: kiMax = 3.221494 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.228365 | kiMax = 3.228365 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1385.342186 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.242205 | kiMax = 3.242205 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.124588 :: kiMin = 0.249176 :: kiMax = 3.249176 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.256046 | kiMax = 3.256046 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.269907 | kiMax = 3.269907 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.138429 :: kiMin = 0.276858 :: kiMax = 3.276858 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.283748 | kiMax = 3.283748 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.297589 | kiMax = 3.297589 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.152270 :: kiMin = 0.304540 :: kiMax = 3.304540 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.325251 | kiMax = 3.325251 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.166111 :: kiMin = 0.332221 :: kiMax = 3.332221 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.352933 | kiMax = 3.352933 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.179952 :: kiMin = 0.359903 :: kiMax = 3.359903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.366773 | kiMax = 3.366773 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.193792 :: kiMin = 0.387585 :: kiMax = 3.387585 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.394455 | kiMax = 3.394455 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.207633 :: kiMin = 0.415267 :: kiMax = 3.415267 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.422137 | kiMax = 3.422137 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.221484 :: kiMin = 0.442969 :: kiMax = 3.442969 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.449839 | kiMax = 3.449839 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 923.561457 
+kTimer = 0.235325 :: kiMin = 0.470650 :: kiMax = 3.470650 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.477521 | kiMax = 3.477521 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.249166 :: kiMin = 0.498332 :: kiMax = 3.498332 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.505202 | kiMax = 3.505202 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.512133 | kiMax = 3.512133 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.263007 :: kiMin = 0.526014 :: kiMax = 3.526014 
+kTimer = 0.276848 :: kiMin = 0.553696 :: kiMax = 3.553696 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.567416 | kiMax = 3.567416 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.290689 :: kiMin = 0.581377 :: kiMax = 3.581377 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.595098 | kiMax = 3.595098 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.608939 | kiMax = 3.608939 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.304530 :: kiMin = 0.609059 :: kiMax = 3.609059 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.636620 | kiMax = 3.636620 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.318371 :: kiMin = 0.636741 :: kiMax = 3.636741 
+kTimer = 0.332221 :: kiMin = 0.664443 :: kiMax = 3.664443 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.692004 | kiMax = 3.692004 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.346062 :: kiMin = 0.692125 :: kiMax = 3.692125 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.719686 | kiMax = 3.719686 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.359903 :: kiMin = 0.719806 :: kiMax = 3.719806 
+kTimer = 0.373744 :: kiMin = 0.747488 :: kiMax = 3.747488 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.775049 | kiMax = 3.775049 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.387585 :: kiMin = 0.775170 :: kiMax = 3.775170 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.781980 | kiMax = 3.781980 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+
+gkSpat[1][0][0][0] = 1.000000
+
+gkSpat[1][0][1][0] = 2.000000
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.000000 | kiMax = 3.000000 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 365.491248 
+kTimer = 0.000000 :: kiMin = 0.000000 :: kiMax = 3.000000 
+kTimer = 0.401426 :: kiMin = 0.802852 :: kiMax = 3.802852 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.007801 | kiMax = 3.007801 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 365.491248 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.809642 | kiMax = 3.809642 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.015626 | kiMax = 3.015626 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+kTimer = 0.015637 :: kiMin = 0.031274 :: kiMax = 3.031274 
+kTimer = 0.415267 :: kiMin = 0.830534 :: kiMax = 3.830534 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.837323 | kiMax = 3.837323 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.046809 | kiMax = 3.046809 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.062434 | kiMax = 3.062434 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 487.309481 
+kTimer = 0.031263 :: kiMin = 0.062525 :: kiMax = 3.062525 
+kTimer = 0.429108 :: kiMin = 0.858215 :: kiMax = 3.858215 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.865005 | kiMax = 3.865005 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.078060 | kiMax = 3.078060 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.878846 | kiMax = 3.878846 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.093686 | kiMax = 3.093686 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 365.491248 
+kTimer = 0.046888 :: kiMin = 0.093776 :: kiMax = 3.093776 
+kTimer = 0.442959 :: kiMin = 0.885917 :: kiMax = 3.885917 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.109311 | kiMax = 3.109311 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.117135 | kiMax = 3.117135 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.906528 | kiMax = 3.906528 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.062514 :: kiMin = 0.125028 :: kiMax = 3.125028 
+kTimer = 0.456799 :: kiMin = 0.913599 :: kiMax = 3.913599 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.148364 | kiMax = 3.148364 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.934210 | kiMax = 3.934210 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1539.299881 
+kTimer = 0.078139 :: kiMin = 0.156279 :: kiMax = 3.156279 
+kTimer = 0.470640 :: kiMin = 0.941281 :: kiMax = 3.941281 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.163989 | kiMax = 3.163989 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 548.236872 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.961891 | kiMax = 3.961891 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.093765 :: kiMin = 0.187530 :: kiMax = 3.187530 
+kTimer = 0.484481 :: kiMin = 0.968962 :: kiMax = 3.968962 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.195241 | kiMax = 3.195241 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.989573 | kiMax = 3.989573 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.109391 :: kiMin = 0.218781 :: kiMax = 3.218781 
+kTimer = 0.498322 :: kiMin = 0.996644 :: kiMax = 3.996644 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.226492 | kiMax = 3.226492 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 548.236872 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.242118 | kiMax = 3.242118 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 365.491248 
+kTimer = 0.125028 :: kiMin = 0.250055 :: kiMax = 3.250055 
+kTimer = 0.512163 :: kiMin = 1.024326 :: kiMax = 4.024326 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.257743 | kiMax = 3.257743 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 365.491248 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.265567 | kiMax = 3.265567 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.044957 | kiMax = 4.044957 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1026.169135 
+kTimer = 0.140653 :: kiMin = 0.281306 :: kiMax = 3.281306 
+kTimer = 0.526004 :: kiMin = 1.052008 :: kiMax = 4.052008 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.058798 | kiMax = 4.058798 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.296796 | kiMax = 3.296796 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.304620 | kiMax = 3.304620 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+kTimer = 0.156279 :: kiMin = 0.312557 :: kiMax = 3.312557 
+kTimer = 0.539845 :: kiMin = 1.079690 :: kiMax = 4.079690 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.320223 | kiMax = 3.320223 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.086479 | kiMax = 4.086479 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1026.169135 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.335848 | kiMax = 3.335848 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.100320 | kiMax = 4.100320 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.171904 :: kiMin = 0.343809 :: kiMax = 3.343809 
+kTimer = 0.553696 :: kiMin = 1.107391 :: kiMax = 4.107391 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.351474 | kiMax = 3.351474 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.128022 | kiMax = 4.128022 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.187530 :: kiMin = 0.375060 :: kiMax = 3.375060 
+kTimer = 0.567537 :: kiMin = 1.135073 :: kiMax = 4.135073 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.382725 | kiMax = 3.382725 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 365.491248 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.155704 | kiMax = 4.155704 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.203156 :: kiMin = 0.406311 :: kiMax = 3.406311 
+kTimer = 0.581377 :: kiMin = 1.162755 :: kiMax = 4.162755 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.413977 | kiMax = 3.413977 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.183386 | kiMax = 4.183386 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.218781 :: kiMin = 0.437562 :: kiMax = 3.437562 
+kTimer = 0.595218 :: kiMin = 1.190437 :: kiMax = 4.190437 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.445228 | kiMax = 3.445228 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 365.491248 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.460876 | kiMax = 3.460876 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+kTimer = 0.234407 :: kiMin = 0.468814 :: kiMax = 3.468814 
+kTimer = 0.609059 :: kiMin = 1.218118 :: kiMax = 4.218118 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.476502 | kiMax = 3.476502 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.492127 | kiMax = 3.492127 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.238729 | kiMax = 4.238729 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.250044 :: kiMin = 0.500087 :: kiMax = 3.500087 
+kTimer = 0.622900 :: kiMin = 1.245800 :: kiMax = 4.245800 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.507753 | kiMax = 3.507753 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.523378 | kiMax = 3.523378 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.266431 | kiMax = 4.266431 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.265669 :: kiMin = 0.531339 :: kiMax = 3.531339 
+kTimer = 0.636741 :: kiMin = 1.273482 :: kiMax = 4.273482 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.554607 | kiMax = 3.554607 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.294113 | kiMax = 4.294113 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.281295 :: kiMin = 0.562590 :: kiMax = 3.562590 
+kTimer = 0.650582 :: kiMin = 1.301164 :: kiMax = 4.301164 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.570233 | kiMax = 3.570233 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.585858 | kiMax = 3.585858 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.321795 | kiMax = 4.321795 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.296921 :: kiMin = 0.593841 :: kiMax = 3.593841 
+kTimer = 0.664433 :: kiMin = 1.328866 :: kiMax = 4.328866 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.601506 | kiMax = 3.601506 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.349476 | kiMax = 4.349476 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.312546 :: kiMin = 0.625092 :: kiMax = 3.625092 
+kTimer = 0.678274 :: kiMin = 1.356547 :: kiMax = 4.356547 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.632735 | kiMax = 3.632735 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.363317 | kiMax = 4.363317 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.328172 :: kiMin = 0.656344 :: kiMax = 3.656344 
+kTimer = 0.692115 :: kiMin = 1.384229 :: kiMax = 4.384229 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.663986 | kiMax = 3.663986 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.390999 | kiMax = 4.390999 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.343797 :: kiMin = 0.687595 :: kiMax = 3.687595 
+kTimer = 0.705955 :: kiMin = 1.411911 :: kiMax = 4.411911 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.695237 | kiMax = 3.695237 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 406.097325 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.418681 | kiMax = 4.418681 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.359423 :: kiMin = 0.718846 :: kiMax = 3.718846 
+kTimer = 0.719796 :: kiMin = 1.439593 :: kiMax = 4.439593 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.446363 | kiMax = 4.446363 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.375060 :: kiMin = 0.750120 :: kiMax = 3.750120 
+kTimer = 0.733637 :: kiMin = 1.467275 :: kiMax = 4.467275 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.757740 | kiMax = 3.757740 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.474064 | kiMax = 4.474064 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.773365 | kiMax = 3.773365 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.390686 :: kiMin = 0.781371 :: kiMax = 3.781371 
+kTimer = 0.747478 :: kiMin = 1.494956 :: kiMax = 4.494956 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.000000 | kiMax = 3.000000 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.000000 :: kiMin = 0.000000 :: kiMax = 3.000000 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.804617 | kiMax = 3.804617 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.406311 :: kiMin = 0.812622 :: kiMax = 3.812622 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.023725 | kiMax = 3.023725 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.761319 :: kiMin = 1.522638 :: kiMax = 4.522638 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.529408 | kiMax = 4.529408 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.023742 :: kiMin = 0.047485 :: kiMax = 3.047485 
+kTimer = 0.421937 :: kiMin = 0.843873 :: kiMax = 3.843873 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.071141 | kiMax = 3.071141 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.775170 :: kiMin = 1.550340 :: kiMax = 4.550340 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.083021 | kiMax = 3.083021 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.047467 :: kiMin = 0.094935 :: kiMax = 3.094935 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.867119 | kiMax = 3.867119 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.106711 | kiMax = 3.106711 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+kTimer = 0.437562 :: kiMin = 0.875125 :: kiMax = 3.875125 
+kTimer = 0.789011 :: kiMin = 1.578022 :: kiMax = 4.578022 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.584771 | kiMax = 4.584771 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.071193 :: kiMin = 0.142385 :: kiMax = 3.142385 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.898393 | kiMax = 3.898393 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.154162 | kiMax = 3.154162 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.453188 :: kiMin = 0.906376 :: kiMax = 3.906376 
+kTimer = 0.802852 :: kiMin = 1.605703 :: kiMax = 4.605703 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.177887 | kiMax = 3.177887 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1183.969980 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.612453 | kiMax = 4.612453 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1154.451821 
+kTimer = 0.094918 :: kiMin = 0.189835 :: kiMax = 3.189835 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.201612 | kiMax = 3.201612 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.468814 :: kiMin = 0.937627 :: kiMax = 3.937627 
+kTimer = 0.816693 :: kiMin = 1.633385 :: kiMax = 4.633385 
+kTimer = 0.118643 :: kiMin = 0.237286 :: kiMax = 3.237286 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.960873 | kiMax = 3.960873 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.249097 | kiMax = 3.249097 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.484439 :: kiMin = 0.968878 :: kiMax = 3.968878 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.260976 | kiMax = 3.260976 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.830534 :: kiMin = 1.661067 :: kiMax = 4.661067 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.976498 | kiMax = 3.976498 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.667837 | kiMax = 4.667837 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.284667 | kiMax = 3.284667 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.142368 :: kiMin = 0.284736 :: kiMax = 3.284736 
+kTimer = 0.500076 :: kiMin = 1.000152 :: kiMax = 4.000152 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.308392 | kiMax = 3.308392 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.844374 :: kiMin = 1.688749 :: kiMax = 4.688749 
+kTimer = 0.166093 :: kiMin = 0.332186 :: kiMax = 3.332186 
+kTimer = 0.515702 :: kiMin = 1.031403 :: kiMax = 4.031403 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.355843 | kiMax = 3.355843 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.858215 :: kiMin = 1.716431 :: kiMax = 4.716431 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.039001 | kiMax = 4.039001 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.723200 | kiMax = 4.723200 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1385.342186 
+kTimer = 0.189835 :: kiMin = 0.379671 :: kiMax = 3.379671 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.054649 | kiMax = 4.054649 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 548.236872 
+kTimer = 0.531327 :: kiMin = 1.062655 :: kiMax = 4.062655 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.403293 | kiMax = 3.403293 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 947.175984 
+kTimer = 0.872056 :: kiMin = 1.744112 :: kiMax = 4.744112 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.070275 | kiMax = 4.070275 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 548.236872 
+kTimer = 0.213561 :: kiMin = 0.427121 :: kiMax = 3.427121 
+kTimer = 0.546953 :: kiMin = 1.093906 :: kiMax = 4.093906 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.450743 | kiMax = 3.450743 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.885907 :: kiMin = 1.771814 :: kiMax = 4.771814 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.101503 | kiMax = 4.101503 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.778564 | kiMax = 4.778564 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1154.451821 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.474468 | kiMax = 3.474468 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.237286 :: kiMin = 0.474571 :: kiMax = 3.474571 
+kTimer = 0.562579 :: kiMin = 1.125157 :: kiMax = 4.125157 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.498228 | kiMax = 3.498228 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.899748 :: kiMin = 1.799496 :: kiMax = 4.799496 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.132754 | kiMax = 4.132754 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.521953 | kiMax = 3.521953 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+kTimer = 0.261011 :: kiMin = 0.522022 :: kiMax = 3.522022 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.148380 | kiMax = 4.148380 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+kTimer = 0.578204 :: kiMin = 1.156408 :: kiMax = 4.156408 
+kTimer = 0.913589 :: kiMin = 1.827178 :: kiMax = 4.827178 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.833927 | kiMax = 4.833927 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.569369 | kiMax = 3.569369 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.284736 :: kiMin = 0.569472 :: kiMax = 3.569472 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.179631 | kiMax = 4.179631 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.593830 :: kiMin = 1.187660 :: kiMax = 4.187660 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.593094 | kiMax = 3.593094 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1578.658212 
+kTimer = 0.927430 :: kiMin = 1.854860 :: kiMax = 4.854860 
+kTimer = 0.308461 :: kiMin = 0.616922 :: kiMax = 3.616922 
+kTimer = 0.609455 :: kiMin = 1.218911 :: kiMax = 4.218911 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.640544 | kiMax = 3.640544 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.941271 :: kiMin = 1.882541 :: kiMax = 4.882541 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.889311 | kiMax = 4.889311 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.332186 :: kiMin = 0.664373 :: kiMax = 3.664373 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.242134 | kiMax = 4.242134 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.625092 :: kiMin = 1.250185 :: kiMax = 4.250185 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.687994 | kiMax = 3.687994 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.955112 :: kiMin = 1.910223 :: kiMax = 4.910223 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.916993 | kiMax = 4.916993 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+kTimer = 0.355911 :: kiMin = 0.711823 :: kiMax = 3.711823 
+kTimer = 0.640718 :: kiMin = 1.281436 :: kiMax = 4.281436 
+kTimer = 0.968952 :: kiMin = 1.937905 :: kiMax = 4.937905 
+kTimer = 0.379654 :: kiMin = 0.759307 :: kiMax = 3.759307 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.304636 | kiMax = 4.304636 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.656344 :: kiMin = 1.312687 :: kiMax = 4.312687 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.782895 | kiMax = 3.782895 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.982793 :: kiMin = 1.965587 :: kiMax = 4.965587 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.320284 | kiMax = 4.320284 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.972356 | kiMax = 4.972356 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1231.384491 
+
+gkSpat[3][0][0][0] = 1.000000
+
+gkSpat[3][0][1][0] = 3.000000
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.000000 | kiMax = 3.000000 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.000000 :: kiMin = 0.000000 :: kiMax = 3.000000 
+kTimer = 0.403379 :: kiMin = 0.806758 :: kiMax = 3.806758 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.008013 | kiMax = 3.008013 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 361.691285 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.016050 | kiMax = 3.016050 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.671969 :: kiMin = 1.343938 :: kiMax = 4.343938 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.830345 | kiMax = 3.830345 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.996644 :: kiMin = 1.993288 :: kiMax = 4.993288 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.351513 | kiMax = 4.351513 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 548.236872 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.032076 | kiMax = 3.032076 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.016061 :: kiMin = 0.032123 :: kiMax = 3.032123 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.854105 | kiMax = 3.854105 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+kTimer = 0.427104 :: kiMin = 0.854208 :: kiMax = 3.854208 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.040113 | kiMax = 3.040113 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.687595 :: kiMin = 1.375189 :: kiMax = 4.375189 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.056139 | kiMax = 3.056139 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.064175 | kiMax = 3.064175 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.032111 :: kiMin = 0.064222 :: kiMax = 3.064222 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.901521 | kiMax = 3.901521 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1052.407235 
+kTimer = 0.450829 :: kiMin = 0.901658 :: kiMax = 3.901658 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.080202 | kiMax = 3.080202 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.703220 :: kiMin = 1.406441 :: kiMax = 4.406441 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.925246 | kiMax = 3.925246 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1578.658212 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.413993 | kiMax = 4.413993 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.096252 | kiMax = 3.096252 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.048161 :: kiMin = 0.096321 :: kiMax = 3.096321 
+kTimer = 0.474554 :: kiMin = 0.949109 :: kiMax = 3.949109 
+kTimer = 0.718846 :: kiMin = 1.437692 :: kiMax = 4.437692 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.445244 | kiMax = 4.445244 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.128351 | kiMax = 3.128351 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 361.691285 
+kTimer = 0.064210 :: kiMin = 0.128421 :: kiMax = 3.128421 
+kTimer = 0.498279 :: kiMin = 0.996559 :: kiMax = 3.996559 
+kTimer = 0.734472 :: kiMin = 1.468943 :: kiMax = 4.468943 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.020112 | kiMax = 4.020112 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1262.869739 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.160450 | kiMax = 3.160450 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.080260 :: kiMin = 0.160520 :: kiMax = 3.160520 
+kTimer = 0.522005 :: kiMin = 1.044009 :: kiMax = 4.044009 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.176500 | kiMax = 3.176500 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.750109 :: kiMin = 1.500217 :: kiMax = 4.500217 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.067596 | kiMax = 4.067596 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1052.407235 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.507769 | kiMax = 4.507769 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.192550 | kiMax = 3.192550 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.096310 :: kiMin = 0.192620 :: kiMax = 3.192620 
+kTimer = 0.545730 :: kiMin = 1.091459 :: kiMax = 4.091459 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.208599 | kiMax = 3.208599 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.765734 :: kiMin = 1.531468 :: kiMax = 4.531468 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.115047 | kiMax = 4.115047 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1183.969980 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.216636 | kiMax = 3.216636 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.112360 :: kiMin = 0.224719 :: kiMax = 3.224719 
+kTimer = 0.569472 :: kiMin = 1.138944 :: kiMax = 4.138944 
+kTimer = 0.781360 :: kiMin = 1.562719 :: kiMax = 4.562719 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.248689 | kiMax = 3.248689 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.570271 | kiMax = 4.570271 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+kTimer = 0.128421 :: kiMin = 0.256842 :: kiMax = 3.256842 
+kTimer = 0.593197 :: kiMin = 1.186394 :: kiMax = 4.186394 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.264762 | kiMax = 3.264762 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.796985 :: kiMin = 1.593971 :: kiMax = 4.593971 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.209913 | kiMax = 4.209913 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.280811 | kiMax = 3.280811 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.601523 | kiMax = 4.601523 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.144471 :: kiMin = 0.288941 :: kiMax = 3.288941 
+kTimer = 0.616922 :: kiMin = 1.233845 :: kiMax = 4.233845 
+kTimer = 0.812611 :: kiMin = 1.625222 :: kiMax = 4.625222 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.257363 | kiMax = 4.257363 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1262.869739 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.312888 | kiMax = 3.312888 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.632774 | kiMax = 4.632774 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 456.864060 
+kTimer = 0.160520 :: kiMin = 0.321040 :: kiMax = 3.321040 
+kTimer = 0.640647 :: kiMin = 1.281295 :: kiMax = 4.281295 
+kTimer = 0.828237 :: kiMin = 1.656473 :: kiMax = 4.656473 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.304848 | kiMax = 4.304848 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.344987 | kiMax = 3.344987 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.664048 | kiMax = 4.664048 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 487.309481 
+kTimer = 0.176570 :: kiMin = 0.353140 :: kiMax = 3.353140 
+kTimer = 0.664373 :: kiMin = 1.328745 :: kiMax = 4.328745 
+kTimer = 0.843862 :: kiMin = 1.687724 :: kiMax = 4.687724 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.352298 | kiMax = 4.352298 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1183.969980 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.377086 | kiMax = 3.377086 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.192620 :: kiMin = 0.385239 :: kiMax = 3.385239 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.376023 | kiMax = 4.376023 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.688098 :: kiMin = 1.376195 :: kiMax = 4.376195 
+kTimer = 0.859488 :: kiMin = 1.718975 :: kiMax = 4.718975 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.399748 | kiMax = 4.399748 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1262.869739 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.409186 | kiMax = 3.409186 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 267.916791 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.726527 | kiMax = 4.726527 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 456.864060 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.417222 | kiMax = 3.417222 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.208669 :: kiMin = 0.417339 :: kiMax = 3.417339 
+kTimer = 0.711823 :: kiMin = 1.423646 :: kiMax = 4.423646 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.433249 | kiMax = 3.433249 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.875125 :: kiMin = 1.750249 :: kiMax = 4.750249 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.447199 | kiMax = 4.447199 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1420.763976 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.449322 | kiMax = 3.449322 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.224719 :: kiMin = 0.449438 :: kiMax = 3.449438 
+kTimer = 0.735548 :: kiMin = 1.471096 :: kiMax = 4.471096 
+kTimer = 0.890750 :: kiMin = 1.781501 :: kiMax = 4.781501 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.494649 | kiMax = 4.494649 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 1420.763976 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.789030 | kiMax = 4.789030 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.481398 | kiMax = 3.481398 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.240769 :: kiMin = 0.481537 :: kiMax = 3.481537 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.518374 | kiMax = 4.518374 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.759290 :: kiMin = 1.518580 :: kiMax = 4.518580 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.497447 | kiMax = 3.497447 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.906376 :: kiMin = 1.812752 :: kiMax = 4.812752 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.820281 | kiMax = 4.820281 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.513497 | kiMax = 3.513497 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 401.887243 
+kTimer = 0.256830 :: kiMin = 0.513660 :: kiMax = 3.513660 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.565824 | kiMax = 4.565824 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.783015 :: kiMin = 1.566031 :: kiMax = 4.566031 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.529547 | kiMax = 3.529547 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.922002 :: kiMin = 1.844003 :: kiMax = 4.844003 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.545596 | kiMax = 3.545596 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 241.127523 
+kTimer = 0.272880 :: kiMin = 0.545760 :: kiMax = 3.545760 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.613309 | kiMax = 4.613309 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1183.969980 
+kTimer = 0.806741 :: kiMin = 1.613481 :: kiMax = 4.613481 
+kTimer = 0.937627 :: kiMin = 1.875254 :: kiMax = 4.875254 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.882806 | kiMax = 4.882806 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.577696 | kiMax = 3.577696 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.288929 :: kiMin = 0.577859 :: kiMax = 3.577859 
+kTimer = 0.830466 :: kiMin = 1.660931 :: kiMax = 4.660931 
+kTimer = 0.953253 :: kiMin = 1.906505 :: kiMax = 4.906505 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.914057 | kiMax = 4.914057 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.609795 | kiMax = 3.609795 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.304979 :: kiMin = 0.609958 :: kiMax = 3.609958 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.708175 | kiMax = 4.708175 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.854191 :: kiMin = 1.708382 :: kiMax = 4.708382 
+kTimer = 0.968878 :: kiMin = 1.937757 :: kiMax = 4.937757 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.641918 | kiMax = 3.641918 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.321029 :: kiMin = 0.642058 :: kiMax = 3.642058 
+kTimer = 0.877916 :: kiMin = 1.755832 :: kiMax = 4.755832 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.657968 | kiMax = 3.657968 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.984504 :: kiMin = 1.969008 :: kiMax = 4.969008 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.976560 | kiMax = 4.976560 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 5.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 487.309481 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.674017 | kiMax = 3.674017 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.337079 :: kiMin = 0.674157 :: kiMax = 3.674157 
+kTimer = 0.901641 :: kiMin = 1.803282 :: kiMax = 4.803282 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.690067 | kiMax = 3.690067 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.706117 | kiMax = 3.706117 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.353128 :: kiMin = 0.706256 :: kiMax = 3.706256 
+kTimer = 0.925366 :: kiMin = 1.850732 :: kiMax = 4.850732 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.738216 | kiMax = 3.738216 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 321.495327 
+kTimer = 0.369178 :: kiMin = 0.738356 :: kiMax = 3.738356 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.897976 | kiMax = 4.897976 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 1183.969980 
+kTimer = 0.949109 :: kiMin = 1.898217 :: kiMax = 4.898217 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.770315 | kiMax = 3.770315 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 361.691285 
+kTimer = 0.385239 :: kiMin = 0.770479 :: kiMax = 3.770479 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.945426 | kiMax = 4.945426 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 1262.869739 
+kTimer = 0.972834 :: kiMin = 1.945667 :: kiMax = 4.945667 
+
+gkSpat[4][1][0][0] = 1.000000
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.000000 | kiMax = 3.000000 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.000000 :: kiMin = 0.000000 :: kiMax = 3.000000 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.802415 | kiMax = 3.802415 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.401289 :: kiMin = 0.802578 :: kiMax = 3.802578 
+kTimer = 0.996559 :: kiMin = 1.993118 :: kiMax = 4.993118 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.818488 | kiMax = 3.818488 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.030612 | kiMax = 3.030612 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.015317 :: kiMin = 0.030634 :: kiMax = 3.030634 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.834538 | kiMax = 3.834538 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 361.691285 
+kTimer = 0.417339 :: kiMin = 0.834677 :: kiMax = 3.834677 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.045917 | kiMax = 3.045917 | kDepth = 2.000000 | kiIndx = 0.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 0.000000 | kTblLen = 8.000000 | kIndxFolded = 0.000000 
+:: kPeriod = 0.250000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.200000  | kAmp = 0.300000  | kFrq = 331.990733 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.053581 | kiMax = 3.053581 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.030623 :: kiMin = 0.061245 :: kiMax = 3.061245 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.866614 | kiMax = 3.866614 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.433388 :: kiMin = 0.866777 :: kiMax = 3.866777 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.068865 | kiMax = 3.068865 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.045929 :: kiMin = 0.091857 :: kiMax = 3.091857 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.898713 | kiMax = 3.898713 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.449438 :: kiMin = 0.898876 :: kiMax = 3.898876 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.099477 | kiMax = 3.099477 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.061234 :: kiMin = 0.122469 :: kiMax = 3.122469 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.930812 | kiMax = 3.930812 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 267.916791 
+kTimer = 0.465488 :: kiMin = 0.930975 :: kiMax = 3.930975 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.130088 | kiMax = 3.130088 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 331.990733 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.946862 | kiMax = 3.946862 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 321.495327 
+kTimer = 0.076540 :: kiMin = 0.153080 :: kiMax = 3.153080 
+kTimer = 0.481537 :: kiMin = 0.963075 :: kiMax = 3.963075 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.160700 | kiMax = 3.160700 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.978962 | kiMax = 3.978962 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.176028 | kiMax = 3.176028 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.091846 :: kiMin = 0.183692 :: kiMax = 3.183692 
+kTimer = 0.497587 :: kiMin = 0.995174 :: kiMax = 3.995174 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.191334 | kiMax = 3.191334 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 414.988416 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.206639 | kiMax = 3.206639 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.107152 :: kiMin = 0.214303 :: kiMax = 3.214303 
+kTimer = 0.513648 :: kiMin = 1.027297 :: kiMax = 4.027297 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.043160 | kiMax = 4.043160 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.237229 | kiMax = 3.237229 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.122469 :: kiMin = 0.244937 :: kiMax = 3.244937 
+kTimer = 0.529698 :: kiMin = 1.059396 :: kiMax = 4.059396 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.075283 | kiMax = 4.075283 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 267.916791 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.267840 | kiMax = 3.267840 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.137774 :: kiMin = 0.275549 :: kiMax = 3.275549 
+kTimer = 0.545748 :: kiMin = 1.091496 :: kiMax = 4.091496 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.283146 | kiMax = 3.283146 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.107382 | kiMax = 4.107382 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 267.916791 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.298452 | kiMax = 3.298452 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.153080 :: kiMin = 0.306160 :: kiMax = 3.306160 
+kTimer = 0.561798 :: kiMin = 1.123595 :: kiMax = 4.123595 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.329064 | kiMax = 3.329064 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.168386 :: kiMin = 0.336772 :: kiMax = 3.336772 
+kTimer = 0.577847 :: kiMin = 1.155694 :: kiMax = 4.155694 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.344392 | kiMax = 3.344392 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.171558 | kiMax = 4.171558 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.359697 | kiMax = 3.359697 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.183692 :: kiMin = 0.367384 :: kiMax = 3.367384 
+kTimer = 0.593897 :: kiMin = 1.187794 :: kiMax = 4.187794 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.375003 | kiMax = 3.375003 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 442.643244 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.203657 | kiMax = 4.203657 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.390309 | kiMax = 3.390309 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.198998 :: kiMin = 0.397995 :: kiMax = 3.397995 
+kTimer = 0.609947 :: kiMin = 1.219893 :: kiMax = 4.219893 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.235780 | kiMax = 4.235780 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.420898 | kiMax = 3.420898 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.214303 :: kiMin = 0.428607 :: kiMax = 3.428607 
+kTimer = 0.625996 :: kiMin = 1.251993 :: kiMax = 4.251993 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.267879 | kiMax = 4.267879 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.451510 | kiMax = 3.451510 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 331.990733 
+kTimer = 0.229609 :: kiMin = 0.459218 :: kiMax = 3.459218 
+kTimer = 0.642058 :: kiMin = 1.284115 :: kiMax = 4.284115 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.466816 | kiMax = 3.466816 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 497.986099 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.299979 | kiMax = 4.299979 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 301.409404 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.482122 | kiMax = 3.482122 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.244926 :: kiMin = 0.489852 :: kiMax = 3.489852 
+kTimer = 0.658107 :: kiMin = 1.316215 :: kiMax = 4.316215 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.497450 | kiMax = 3.497450 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.332078 | kiMax = 4.332078 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 361.691285 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.512755 | kiMax = 3.512755 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.260232 :: kiMin = 0.520464 :: kiMax = 3.520464 
+kTimer = 0.674157 :: kiMin = 1.348314 :: kiMax = 4.348314 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.543345 | kiMax = 3.543345 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.275538 :: kiMin = 0.551075 :: kiMax = 3.551075 
+kTimer = 0.690207 :: kiMin = 1.380414 :: kiMax = 4.380414 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.558651 | kiMax = 3.558651 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.396277 | kiMax = 4.396277 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.290844 :: kiMin = 0.581687 :: kiMax = 3.581687 
+kTimer = 0.706256 :: kiMin = 1.412513 :: kiMax = 4.412513 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.589262 | kiMax = 3.589262 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 414.988416 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.604568 | kiMax = 3.604568 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.306149 :: kiMin = 0.612299 :: kiMax = 3.612299 
+kTimer = 0.722306 :: kiMin = 1.444612 :: kiMax = 4.444612 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.460476 | kiMax = 4.460476 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.635180 | kiMax = 3.635180 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.321455 :: kiMin = 0.642910 :: kiMax = 3.642910 
+kTimer = 0.738356 :: kiMin = 1.476712 :: kiMax = 4.476712 
+kTimer = 0.336761 :: kiMin = 0.673522 :: kiMax = 3.673522 
+kTimer = 0.754406 :: kiMin = 1.508811 :: kiMax = 4.508811 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.524674 | kiMax = 4.524674 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.696403 | kiMax = 3.696403 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.352067 :: kiMin = 0.704134 :: kiMax = 3.704134 
+kTimer = 0.770467 :: kiMin = 1.540934 :: kiMax = 4.540934 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.727037 | kiMax = 3.727037 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.367384 :: kiMin = 0.734767 :: kiMax = 3.734767 
+kTimer = 0.786517 :: kiMin = 1.573033 :: kiMax = 4.573033 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.742342 | kiMax = 3.742342 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.382689 :: kiMin = 0.765379 :: kiMax = 3.765379 
+kTimer = 0.802566 :: kiMin = 1.605133 :: kiMax = 4.605133 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.772954 | kiMax = 3.772954 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.788260 | kiMax = 3.788260 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.397995 :: kiMin = 0.795991 :: kiMax = 3.795991 
+kTimer = 0.818616 :: kiMin = 1.637232 :: kiMax = 4.637232 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.653072 | kiMax = 4.653072 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 301.409404 
+kTimer = 0.413301 :: kiMin = 0.826602 :: kiMax = 3.826602 
+kTimer = 0.834666 :: kiMin = 1.669331 :: kiMax = 4.669331 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.849483 | kiMax = 3.849483 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.428607 :: kiMin = 0.857214 :: kiMax = 3.857214 
+kTimer = 0.850715 :: kiMin = 1.701431 :: kiMax = 4.701431 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.864789 | kiMax = 3.864789 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.443913 :: kiMin = 0.887825 :: kiMax = 3.887825 
+kTimer = 0.866765 :: kiMin = 1.733530 :: kiMax = 4.733530 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.895400 | kiMax = 3.895400 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.459218 :: kiMin = 0.918437 :: kiMax = 3.918437 
+kTimer = 0.882815 :: kiMin = 1.765629 :: kiMax = 4.765629 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.926012 | kiMax = 3.926012 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.781493 | kiMax = 4.781493 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 321.495327 
+kTimer = 0.474524 :: kiMin = 0.949049 :: kiMax = 3.949049 
+kTimer = 0.898876 :: kiMin = 1.797752 :: kiMax = 4.797752 
+kTimer = 0.489841 :: kiMin = 0.979682 :: kiMax = 3.979682 
+kTimer = 0.914926 :: kiMin = 1.829852 :: kiMax = 4.829852 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 0.987258 | kiMax = 3.987258 | kDepth = 2.000000 | kiIndx = 1.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 1.000000 | kTblLen = 8.000000 | kIndxFolded = 1.000000 
+:: kPeriod = 0.500000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.400000  | kAmp = 0.300000  | kFrq = 414.988416 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.845692 | kiMax = 4.845692 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.002563 | kiMax = 4.002563 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.505147 :: kiMin = 1.010294 :: kiMax = 4.010294 
+kTimer = 0.930975 :: kiMin = 1.861951 :: kiMax = 4.861951 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.033175 | kiMax = 4.033175 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.520453 :: kiMin = 1.040906 :: kiMax = 4.040906 
+kTimer = 0.947025 :: kiMin = 1.894050 :: kiMax = 4.894050 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.063787 | kiMax = 4.063787 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.535759 :: kiMin = 1.071517 :: kiMax = 4.071517 
+kTimer = 0.963075 :: kiMin = 1.926150 :: kiMax = 4.926150 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.094420 | kiMax = 4.094420 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 368.874903 
+kTimer = 0.551064 :: kiMin = 1.102129 :: kiMax = 4.102129 
+kTimer = 0.979125 :: kiMin = 1.958249 :: kiMax = 4.958249 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.974112 | kiMax = 4.974112 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 6.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 321.495327 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.125032 | kiMax = 4.125032 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.566370 :: kiMin = 1.132740 :: kiMax = 4.132740 
+kTimer = 0.995174 :: kiMin = 1.990349 :: kiMax = 4.990349 
+kTimer = 0.581676 :: kiMin = 1.163352 :: kiMax = 4.163352 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.186233 | kiMax = 4.186233 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.596982 :: kiMin = 1.193964 :: kiMax = 4.193964 
+kTimer = 0.612299 :: kiMin = 1.224597 :: kiMax = 4.224597 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.247456 | kiMax = 4.247456 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.627604 :: kiMin = 1.255209 :: kiMax = 4.255209 
+kTimer = 0.642910 :: kiMin = 1.285821 :: kiMax = 4.285821 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.308702 | kiMax = 4.308702 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 497.986099 
+kTimer = 0.658216 :: kiMin = 1.316432 :: kiMax = 4.316432 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.339313 | kiMax = 4.339313 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.673522 :: kiMin = 1.347044 :: kiMax = 4.347044 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.369925 | kiMax = 4.369925 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.688828 :: kiMin = 1.377655 :: kiMax = 4.377655 
+kTimer = 0.704134 :: kiMin = 1.408267 :: kiMax = 4.408267 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.431148 | kiMax = 4.431148 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.719439 :: kiMin = 1.438879 :: kiMax = 4.438879 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.461782 | kiMax = 4.461782 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.734756 :: kiMin = 1.469512 :: kiMax = 4.469512 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.492393 | kiMax = 4.492393 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.750062 :: kiMin = 1.500124 :: kiMax = 4.500124 
+kTimer = 0.765368 :: kiMin = 1.530736 :: kiMax = 4.530736 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.553594 | kiMax = 4.553594 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.780674 :: kiMin = 1.561347 :: kiMax = 4.561347 
+kTimer = 0.795979 :: kiMin = 1.591959 :: kiMax = 4.591959 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.614818 | kiMax = 4.614818 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.811285 :: kiMin = 1.622570 :: kiMax = 4.622570 
+kTimer = 0.826591 :: kiMin = 1.653182 :: kiMax = 4.653182 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.676063 | kiMax = 4.676063 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.841897 :: kiMin = 1.683794 :: kiMax = 4.683794 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.706675 | kiMax = 4.706675 | kDepth = 2.000000 | kiIndx = 3.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 3.000000 | kTblLen = 8.000000 | kIndxFolded = 3.000000 
+:: kPeriod = 2.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 1.600000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.857214 :: kiMin = 1.714427 :: kiMax = 4.714427 
+kTimer = 0.872520 :: kiMin = 1.745039 :: kiMax = 4.745039 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.767898 | kiMax = 4.767898 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.887825 :: kiMin = 1.775651 :: kiMax = 4.775651 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.798509 | kiMax = 4.798509 | kDepth = 2.000000 | kiIndx = 2.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 2.000000 | kTblLen = 8.000000 | kIndxFolded = 2.000000 
+:: kPeriod = 1.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 0.800000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.903131 :: kiMin = 1.806262 :: kiMax = 4.806262 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.829143 | kiMax = 4.829143 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 414.988416 
+kTimer = 0.918437 :: kiMin = 1.836874 :: kiMax = 4.836874 
+kTimer = 0.933743 :: kiMin = 1.867485 :: kiMax = 4.867485 
+kTimer = 0.949049 :: kiMin = 1.898097 :: kiMax = 4.898097 
+kTimer = 0.964354 :: kiMin = 1.928709 :: kiMax = 4.928709 
+IntRndDistrK :: kiDistrType = 7.000000 | kiMin = 1.951523 | kiMax = 4.951523 | kDepth = 2.000000 | kiIndx = 4.000000 
+TableFolding :: kFoldingType = 2.000000 | kiIndx = 4.000000 | kTblLen = 8.000000 | kIndxFolded = 4.000000 
+:: kPeriod = 4.000000 
+Event i :: Instr name = 4.000000 | Start = 0.000000 | kDur = 3.200000  | kAmp = 0.300000  | kFrq = 442.643244 
+kTimer = 0.979671 :: kiMin = 1.959343 :: kiMax = 4.959343 
+kTimer = 0.994977 :: kiMin = 1.989954 :: kiMax = 4.989954 

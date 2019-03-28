@@ -8,10 +8,12 @@ ksmps = 32
 nchnls = 8
 0dbfs = 1
 
+giSine    ftgen     0, 0, 2^10, 10, 1
+
 instr simple_sin
-	iAmp = p5
-	iFrq = p4
-	kenv      linen     1, p3/4, p3, p3/4
+	iAmp = p4
+	iFrq = p5
+	kenv      linen     1, p3/4, p4, p3/4
 	aOsc1     poscil    iAmp, iFrq, giSine
 	;outs      aOsc1*kenv, aOsc1*kenv
 	asig1	= aOsc1*kenv

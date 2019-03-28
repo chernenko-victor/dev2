@@ -14,6 +14,12 @@ nchnls = 2
 
 
 #define DUMP_FILE_NAME #"dump__hack_o_tone.txt"#
+#define SPAT_SUM_LIMIT #2#
+#define SPAT_MULT_LIMIT #2#
+#define SPAT_X_MIN #0.01#
+#define SPAT_Y_MIN #0.01#
+#define SPAT_Y_MAX #1.#
+#define ROOM_DIM_SM #1000#
 
 /*
 	=======================================================
@@ -22,6 +28,19 @@ nchnls = 2
 	
 	initialize global vars there
 */
+
+gkSpat[][][] init  100, 4, 4, 9
+gkCurrentPart init 0
+
+gkSpeakerPos[][] init 8, 2
+gkSpeakerPos array 	300, 800,
+					600, 800,
+					200, 600,
+					750, 600,
+					200, 300,
+					750, 300,
+					200, 200,
+					750, 200
 
 gkModi[][] init  9, 8
 gkModi array	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
@@ -772,6 +791,7 @@ instr part
 	*/
 	if kFlag == 1 then
 			kFlag = 0
+			
 			/*
 				==================================================================
 				==================		define inst num 			==============
@@ -794,6 +814,69 @@ instr part
 				==================================================================
 			*/
 			kFrqMult	random 	.4, 3.
+			
+			
+			/*
+				==================================================================
+				==================		define spatial	function	==============
+				==================================================================
+			*/
+			/*			
+			sum_num = rnd(1, $SPAT_SUM_LIMIT)
+			for(i = 1, sum_num)
+			{
+				i,mult_num = rnd(1, $SPAT_MULT_LIMIT)
+			}
+			
+			kEnvFunctionType = kEnvFunctionOne[0] ;{1 = linear, 2 = power, 3 = exponential, 4 = sinus, 5 = saw i.e. modulo, 6 = stochastic}
+			kXmin = kEnvFunctionOne[1] = 0.01
+			kXmax = kEnvFunctionOne[2] = p3
+			kYmin = kEnvFunctionOne[3] = 0.01
+			kYmax = kEnvFunctionOne[4] = 1.
+			kPeriod = kEnvFunctionOne[5] = rnd(p3/3, 3 * p3)
+			kDistrType = kEnvFunctionOne[6] = rnd(1, 8)
+			kDepth = kEnvFunctionOne[7] = rnd(1, 11)
+			kParamNumber = kEnvFunctionOneArray[i][j][8] = rnd(1, 4)
+			
+				i=1				i,j=1
+				S			(	П			(kEnvFunctionOne i,j(x|y|t)	)	)
+				sum_num			i,mult_num
+			*/
+			
+			kiSpatDistrType = 1
+			kSpatDepth = 1
+			kSumNum = IntRndDistrK(kiSpatDistrType, 0, ($SPAT_SUM_LIMIT+1), kSpatDepth)
+			kCntSum = 0;
+			kCntMult = 0;
+			until kCntSum >= kSumNum do
+    			kMultNum = IntRndDistrK(kiSpatDistrType, 0, ($SPAT_MULT_LIMIT+1), kSpatDepth)
+				until kCntMult >= kMultNum do
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][0] = IntRndDistrK(kiSpatDistrType, 1, 7, kSpatDepth) 			;kEnvFunctionType
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][1] = $SPAT_X_MIN												;kXmin
+					
+					kParamNumber	= 	IntRndDistrK(kiSpatDistrType, 1, 4, kSpatDepth)
+					
+					if kParamNumber == 3 then
+						gkSpat[gkCurrentPart][kCntSum][kCntMult][2] = p3													;kXmax
+					else 
+						gkSpat[gkCurrentPart][kCntSum][kCntMult][2] = $ROOM_DIM_SM											
+					endif
+					
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][3] = $SPAT_Y_MIN												;kYmin
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][4] = $SPAT_Y_MAX												;kYmax
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][5] = IntRndDistrK(kiSpatDistrType, p3/3, 3*p3, kSpatDepth)		;kPeriod	
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][6] = IntRndDistrK(kiSpatDistrType, 1, 8, kSpatDepth)			;kDistrType
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][7] = IntRndDistrK(kiSpatDistrType, 1, 11, kSpatDepth)			;kDepth
+					gkSpat[gkCurrentPart][kCntSum][kCntMult][8] = kParamNumber
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][0]
+					kCntMult    	+=         1
+				enduntil
+				gkSpat[gkCurrentPart][kCntSum][kCntMult][0] = 0
+				kCntSum    	+=         1
+				;fprintks 	$DUMP_FILE_NAME, "accord :: kIndCycle1 = %f \\n", kIndCycle1
+			enduntil
+			gkSpat[gkCurrentPart][kCntSum][0][0] = 0
+			gkCurrentPart	+=		1
 			
 			/*
 				=======================================
@@ -982,10 +1065,10 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-;i 		"rythm_disp" 		0 		100
+i 		"rythm_disp" 		0 		100
 
 ;type	"theme" instr 		start	len		midi channel	part type
-i 		"theme"		 		0 		5		1				2
+;i 		"theme"		 		0 		5		1				2
 ;i 		"theme"		 		10 		20		2				2
 
 </CsScore>

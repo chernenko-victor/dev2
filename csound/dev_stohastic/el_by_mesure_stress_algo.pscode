@@ -1,0 +1,32 @@
+CurrTickNumber = 1;
+CurrTickStress = 0;
+TickDuration = 0.5;
+
+until(CurrTickNumber==100)
+{
+    TickRemainder = CurrTickNumber % 2;
+    BarRemainder = CurrTickNumber % 8;
+    if((TickRemainder == 1) && (BarRemainder == 1))
+    {
+        CurrTickStress = 3;
+    } 
+    else if((TickRemainder == 1) && (BarRemainder == 5))
+    {
+        CurrTickStress = 2;
+    }
+    else if(TickRemainder == 1)
+    {
+        CurrTickStress = 1;
+    }
+    else
+    {
+        CurrTickStress = 0;
+    }
+    
+    CurrentElementIndex = GetColByRow(TblMarkovStressToEl1, CurrTickStress);
+    CurrentElement = TblSys1[CurrentElementIndex];
+    CurrentElementDuration = TickDuration * rnd(0.3, 0.9);
+    PlayElement(CurrentElement, CurrentElementDuration);
+    
+    CurrTickNumber++;
+}

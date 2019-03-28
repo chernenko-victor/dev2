@@ -1,12 +1,9 @@
 <CsoundSynthesizer>
 <CsOptions>
 ;-o dac
--o w181_3_2.wav -W 
+-o w181_3.wav -W 
 </CsOptions>
 <CsInstruments>
-/*
-csd for render from midi file
-*/
 sr = 44100
 ksmps = 32
 nchnls = 2
@@ -25,37 +22,48 @@ giFqs     ftgen     0, 0, -11, -2, .56,.563,.92,.923,1.19,1.7,2,2.74,3,\
 giAmps    ftgen     0, 0, -11, -2, 1, 2/3, 1, 1.8, 8/3, 1.46, 4/3, 4/3, 1,\
                     4/3
 ;giSine    ftgen     0, 0, 2^10, 10, 1
+		  
+/*
+instr 3 ; Cl.
+	;iFrq = p4
+	;iModAmp = p5
+	;iModFrq = p6
+	iAmp     =        0.3
+	iModAmp = 11
+	iModFrq = 39
+	
+	iKey         notnum                 ; read in midi note number
+	iVel         ampmidi            1 ; read in key velocity
+	
+	iFrq     =        (440.0*exp(log(2.0)*((iKey)-69.0)/12.0))
+	
+	aMod poscil iModAmp, iModFrq, gisine
+	aCar poscil iVel, iFrq+aMod, gisine
+	outs aCar, aCar
+endin
+*/
 
+instr 3 ; Cl.
+	;iFrq = p4
+endin
 
+/*
 instr 1 ; Fl. master instrument
-	/*
-	iChan       midichn
-	iCps        cpsmidi            ; read pitch in frequency from midi notes
-	iVel        veloc	0, 127 ; read in velocity from midi notes
-	kDur        timeinsts          ; running total of duration of this note
-	kRelease    release            ; sense when note is ending
-	 if kRelease=1 then            ; if note is about to end
-	;           p1  p2  p3    p4     p5    p6
-	event "i",  2,  0, kDur, iChan, iCps, iVel ; send full note data to instr 2
-	 endif
-	*/
-
 	ibasfreq  cpsmidi	;base frequency
-	iampmid   ampmidi   10 ;receive midi-velocity and scale 0-20
+	iampmid   ampmidi   20 ;receive midi-velocity and scale 0-20
 	inparts   =         int(iampmid)+1 ;exclude zero
 	ipart     =         1 ;count variable for loop
 	;loop for inparts over the ipart variable
 	;and trigger inparts instances of the sub-instrument
-	kDur        timeinsts          ; running total of duration of this note
-	kRelease    release            ; sense when note is ending
-	if kRelease=1 then            ; if note is about to end
-		loop:
-		ifreq     =         ibasfreq * ipart
-		iamp      =         1/ipart/inparts
-				  event   "i", 10, 0, kDur, ifreq/4, iamp*4
-				  loop_le   ipart, 1, inparts, loop
-		;event   "i", 10, 0, kDur, 440., .1
-	endif
+	loop:
+	ifreq     =         ibasfreq * ipart
+	iamp      =         1/ipart/inparts
+			  event_i   "i", 10, 0, 1, ifreq, iamp
+			  loop_le   ipart, 1, inparts, loop
+endin
+*/
+instr 1 ; Fl. master instrument
+	;
 endin
 
 instr 10 ;subinstrument for playing one partial
@@ -66,7 +74,7 @@ instr 10 ;subinstrument for playing one partial
 			  outs      apart/3, apart/3
 endin
 
-
+	
 instr 2 ; Ob. master instrument
 	;;scale desired deviations for maximum velocity
 	;frequency (cent)
@@ -84,18 +92,13 @@ instr 2 ; Ob. master instrument
 	idurdev   =         imxdurdv * iampmid
 	;;trigger subinstruments
 	indx      =         0 ;count variable for loop
-	kDur        timeinsts          ; running total of duration of this note
-	kRelease    release            ; sense when note is ending
-	if kRelease=1 then            ; if note is about to end
-		loop:
-		ifqmult   tab_i     indx, giFqs ;get frequency multiplier from table
-		ifreq     =         ibasfreq * ifqmult
-		iampmult  tab_i     indx, giAmps ;get amp multiplier
-		iamp      =         iampmult / 20 ;scale
-				  ;event_i   "i", 10, 0, 3, ifreq, iamp, ifqdev, iampdev, idurdev
-				  event   "i", 10, 0, kDur, ifreq, iamp, ifqdev, iampdev, idurdev
-				  loop_lt   indx, 1, 11, loop
-	endif
+	loop:
+	ifqmult   tab_i     indx, giFqs ;get frequency multiplier from table
+	ifreq     =         ibasfreq * ifqmult
+	iampmult  tab_i     indx, giAmps ;get amp multiplier
+	iamp      =         iampmult / 20 ;scale
+			  event_i   "i", 10, 0, 3, ifreq, iamp, ifqdev, iampdev, idurdev
+			  loop_lt   indx, 1, 11, loop
 endin
 
 instr 20 ;subinstrument for playing one partial
@@ -122,28 +125,7 @@ instr 20 ;subinstrument for playing one partial
 endin
 
 
-instr 3, 4
-endin
-
 /*
-instr 3 ; Cl.
-	;iFrq = p4
-	;iModAmp = p5
-	;iModFrq = p6
-	iAmp     =        0.3
-	iModAmp = 11
-	iModFrq = 39
-	
-	iKey         notnum                 ; read in midi note number
-	iVel         ampmidi            1 ; read in key velocity
-	
-	iFrq     =        (440.0*exp(log(2.0)*((iKey)-69.0)/12.0))
-	
-	aMod poscil iModAmp, iModFrq, gisine
-	aCar poscil iVel, iFrq+aMod, gisine
-	outs aCar, aCar
-endin
-
 instr 4 ; Fag.
 	iKey         notnum                 ; read in midi note number
 	iVel         ampmidi            1 ; read in key velocity
@@ -180,6 +162,11 @@ instr 4 ; Fag.
 			   outs       alyd1, alyd2 ; Output generated sound
 endin
 */
+
+instr 4 ; Fag.
+	;
+endin
+
 </CsInstruments>
 <CsScore>
 

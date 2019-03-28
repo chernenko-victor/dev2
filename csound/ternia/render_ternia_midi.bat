@@ -1,0 +1,1 @@
+csound -F C:\Users\win8\Desktop\csound\tmp\audio\ternia\ternia.mid -d -W -o C:\Users\win8\Desktop\csound\tmp\audio\ternia\ternia.wav C:\Users\win8\Desktop\csound\tmp\csd\ternia_midi.csd

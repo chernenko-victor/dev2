@@ -240,9 +240,9 @@ opcode GetOctVolume, k[], kkk[][][][]k[][]
 	until ((kSpat[kCurrentPart][kCntSum][0][0] == 0)||(kCntSum>$SPAT_SUM_LIMIT)) do
 		;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][0][0] = %f \n", kCurrentPart, kCntSum, kSpat[kCurrentPart][kCntSum][0][0]
 		until ((kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0)||(kCntMult>$SPAT_MULT_LIMIT))  do
-			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][0] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][8]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][8] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][8]
 			
-			until kCnt == 9  do
+			until kCnt == 9 do
 				;kEnvFunctionComposite[kCnt] = kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
 				;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][%d] = %f \n", kCurrentPart, kCntSum, kCntMult, kCnt, kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
 				fprintks 	$DUMP_FILE_NAME_UTIL, "kCnt = %d \n", kCnt

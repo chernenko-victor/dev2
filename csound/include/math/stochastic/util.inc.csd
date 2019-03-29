@@ -176,3 +176,113 @@ opcode GetFrq, k, kk[]
 	
 	xout kFrq
 endop
+
+opcode SetOctVolumeValue, k[], kk[]k[]k[][]k
+	kMode, kVolume, kEnvFunctionComposite, kSpeakerPos, kTime xin
+	;kMode = {0 - set, 1 - mult, 2 - add)
+	
+	kRes[] init 8
+	
+	/*
+	kCnt = 0
+	until kCnt > 7 do
+		kRes[kCnt] = .0	
+		kCnt += 1
+	enduntil
+	*/
+	
+	/*
+	;kParamNumber
+	if kEnvFunctionComposite[8] == 3 then
+		;GetFrq(kk[]) ;t
+	elseif kEnvFunctionComposite[8] == 2
+		;GetFrq(kk[]) ;y
+	else 
+		;GetFrq(kk[]) ;x
+	endif
+	*/
+	xout kRes
+endop
+
+opcode SetOctVolumeArray, k[], kk[]
+	kMode, kVolume[] xin
+	kRes[] init 8
+	kCnt = 0
+	
+	until kCnt > 7 do
+		kRes[kCnt] = 0.
+		kCnt += 1
+	enduntil	
+	
+	xout kRes
+endop
+
+opcode GetOctVolume, k[], kkk[][][][]k[][]
+	kCurrentPart, kTime, kSpat[][][][], kSpeakerPos[][] xin
+	kVolume[] init 8
+	kMultCurr[] init 8
+	kEnvFunctionComposite[] init 9
+	
+	
+	kCnt = 0
+	kMode = 0
+	until kCnt > 7 do
+		kVolume[kCnt] = .0	
+		kMultCurr[kCnt] = .0
+		kCnt += 1
+	enduntil
+	kCnt = 0	
+	
+	;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][0][0][0] = %f \n", kCurrentPart, kSpat[kCurrentPart][0][0][0]
+	
+	kCntSum = 0
+	kCntMult = 0
+	until ((kSpat[kCurrentPart][kCntSum][0][0] == 0)||(kCntSum>$SPAT_SUM_LIMIT)) do
+		;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][0][0] = %f \n", kCurrentPart, kCntSum, kSpat[kCurrentPart][kCntSum][0][0]
+		until ((kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0)||(kCntMult>$SPAT_MULT_LIMIT))  do
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][0] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][8]
+			
+			until kCnt == 9  do
+				;kEnvFunctionComposite[kCnt] = kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
+				;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][%d] = %f \n", kCurrentPart, kCntSum, kCntMult, kCnt, kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
+				fprintks 	$DUMP_FILE_NAME_UTIL, "kCnt = %d \n", kCnt
+				kCnt += 1
+			enduntil
+			
+			/*
+			;kMultCurr = SetOctVolumeValue(kMode, kVolume, kEnvFunctionComposite, kSpeakerPos, kTime) ;kMode = {0 - set, 1 - mult, 2 - add)
+			kMultCurr = SetOctVolumeArray(kMode, kVolume)
+			*/
+			kCntMult    	+=         1
+			if kMode == 0 then 
+				kMode = 1
+			endif
+		enduntil
+		;kVolume 	+=		kMultCurr
+		kCntSum    	+=      1
+		kCntMult    =       0
+		;fprintks 	$DUMP_FILE_NAME, "accord :: kIndCycle1 = %f \n", kIndCycle1
+	enduntil
+	xout kVolume
+endop
+
+/*
+gkSpat[kCurrentPart][kCntSum][kCntMult][0] = IntRndDistrK(kiSpatDistrType, 1, 7, kSpatDepth) 			;kEnvFunctionType
+gkSpat[kCurrentPart][kCntSum][kCntMult][1] = $SPAT_X_MIN												;kXmin
+
+kParamNumber	= 	IntRndDistrK(kiSpatDistrType, 1, 4, kSpatDepth)
+
+if kParamNumber == 3 then
+	gkSpat[kCurrentPart][kCntSum][kCntMult][2] = p3													;kXmax
+else 
+	gkSpat[kCurrentPart][kCntSum][kCntMult][2] = $ROOM_DIM_SM											
+endif
+
+gkSpat[kCurrentPart][kCntSum][kCntMult][3] = $SPAT_Y_MIN												;kYmin
+gkSpat[kCurrentPart][kCntSum][kCntMult][4] = $SPAT_Y_MAX												;kYmax
+gkSpat[kCurrentPart][kCntSum][kCntMult][5] = IntRndDistrK(kiSpatDistrType, p3/3, 3*p3, kSpatDepth)		;kPeriod	
+gkSpat[kCurrentPart][kCntSum][kCntMult][6] = IntRndDistrK(kiSpatDistrType, 1, 8, kSpatDepth)			;kDistrType
+gkSpat[kCurrentPart][kCntSum][kCntMult][7] = IntRndDistrK(kiSpatDistrType, 1, 11, kSpatDepth)			;kDepth
+gkSpat[kCurrentPart][kCntSum][kCntMult][8] = kParamNumber
+fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][0] = %f\n", kCurrentPart, kCntSum, kCntMult, gkSpat[kCurrentPart][kCntSum][kCntMult][0]
+*/

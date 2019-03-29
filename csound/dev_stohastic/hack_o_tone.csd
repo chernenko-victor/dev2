@@ -8,11 +8,6 @@ ksmps = 32
 nchnls = 2
 0dbfs = 1
 
-#include "..\include\math\stochastic\distribution3.inc.csd"
-#include "..\include\math\stochastic\util.inc.csd"
-#include "..\include\utils\table.v1.csd"
-
-
 #define DUMP_FILE_NAME #"dump__hack_o_tone.txt"#
 #define SPAT_SUM_LIMIT #2#
 #define SPAT_MULT_LIMIT #2#
@@ -20,6 +15,10 @@ nchnls = 2
 #define SPAT_Y_MIN #0.01#
 #define SPAT_Y_MAX #1.#
 #define ROOM_DIM_SM #1000#
+
+#include "..\include\math\stochastic\distribution3.inc.csd"
+#include "..\include\math\stochastic\util.inc.csd"
+#include "..\include\utils\table.v1.csd"
 
 /*
 	=======================================================
@@ -848,11 +847,13 @@ instr part
 			kSumNum = IntRndDistrK(kiSpatDistrType, 0, ($SPAT_SUM_LIMIT+1), kSpatDepth)
 			kCntSum = 0;
 			kCntMult = 0;
-			until kCntSum >= kSumNum do
+			until kCntSum > kSumNum do
     			kMultNum = IntRndDistrK(kiSpatDistrType, 0, ($SPAT_MULT_LIMIT+1), kSpatDepth)
-				until kCntMult >= kMultNum do
+				until kCntMult > kMultNum do
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][0] = IntRndDistrK(kiSpatDistrType, 1, 7, kSpatDepth) 			;kEnvFunctionType
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][0]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][1] = $SPAT_X_MIN												;kXmin
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][1] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][1]
 					
 					kParamNumber	= 	IntRndDistrK(kiSpatDistrType, 1, 4, kSpatDepth)
 					
@@ -861,23 +862,37 @@ instr part
 					else 
 						gkSpat[gkCurrentPart][kCntSum][kCntMult][2] = $ROOM_DIM_SM											
 					endif
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][2] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][2]
 					
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][3] = $SPAT_Y_MIN												;kYmin
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][3] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][3]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][4] = $SPAT_Y_MAX												;kYmax
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][4] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][4]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][5] = IntRndDistrK(kiSpatDistrType, p3/3, 3*p3, kSpatDepth)		;kPeriod	
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][5] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][5]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][6] = IntRndDistrK(kiSpatDistrType, 1, 8, kSpatDepth)			;kDistrType
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][6] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][6]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][7] = IntRndDistrK(kiSpatDistrType, 1, 11, kSpatDepth)			;kDepth
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][7] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][7]
 					gkSpat[gkCurrentPart][kCntSum][kCntMult][8] = kParamNumber
-					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][0]
+					fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][8] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][8]
 					kCntMult    	+=         1
 				enduntil
 				gkSpat[gkCurrentPart][kCntSum][kCntMult][0] = 0
-				kCntSum    	+=         1
-				;fprintks 	$DUMP_FILE_NAME, "accord :: kIndCycle1 = %f \\n", kIndCycle1
+				fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][%d][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][kCntMult][0]
+				kCntSum    	+=        1
+				kCntMult    =         0
+				;fprintks 	$DUMP_FILE_NAME, "accord :: kIndCycle1 = %f \n", kIndCycle1
 			enduntil
 			gkSpat[gkCurrentPart][kCntSum][0][0] = 0
+			fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][0][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][0][0]
 			gkCurrentPart	+=		1
 			
+			
+			kOctVolume[] init 8
+			
+			kOctVolume = GetOctVolume(gkCurrentPart-1, 1., gkSpat, gkSpeakerPos)
+			fprintks 	$DUMP_FILE_NAME, "kOctVolume[0] = %f \n", kOctVolume[0]
 			/*
 				=======================================
 				=========	next note start		=======

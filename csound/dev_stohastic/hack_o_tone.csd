@@ -116,148 +116,17 @@ gkLineRythm array		0.8,	0.2,	0.,		0.,		0.,		0.,		0.,		0.,
 */
 
 
-;instr 1 
-instr harmonic_additive_synthesis
-	;receive general pitch and volume from the score
-	;ibasefrq  =         cpspch(p4) ;convert pitch values to frequency
-	ibasefrq  =         p4
-	
-	;ibaseamp  =         ampdbfs(p5) ;convert dB to amplitude
-	iAmp       random     0.1, .9
-	ibaseamp  =         iAmp
+;instr 1 harmonic_additive_synthesis_oct
+#include "..\include\sound\synthesis\harmonic_additive_synthesis_oct.csd"
 
-	iPan	=	p6
-	
-	;create 8 harmonic partials
-	aOsc1     poscil    ibaseamp, ibasefrq, giSine
-	aOsc2     poscil    ibaseamp/2, ibasefrq*2, giSine
-	aOsc3     poscil    ibaseamp/3, ibasefrq*3, giSine
-	aOsc4     poscil    ibaseamp/4, ibasefrq*4, giSine
-	aOsc5     poscil    ibaseamp/5, ibasefrq*5, giSine
-	aOsc6     poscil    ibaseamp/6, ibasefrq*6, giSine
-	aOsc7     poscil    ibaseamp/7, ibasefrq*7, giSine
-	aOsc8     poscil    ibaseamp/8, ibasefrq*8, giSine
-	;apply simple envelope
-	kenv      linen     1, p3/4, p3, p3/4
-	;kenv expseg .01, p3/3, .5, p3/3, .3, p3/3, .01
-	;add partials and write to output
-	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-    ;outs      aOut*kenv*iPan, aOut*kenv*(1-iPan)
-	;outs      aOut, aOut
-	kalpha line 0, p3, 360
-	kbeta = 0
-        
-	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
-	; decode B format for 8 channel circle loudspeaker setup
-	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+;instr 2 ;inharmonic additive synthesis_oct
+#include "..\include\sound\synthesis\inharmonic_additive_synthesis_oct.csd"
 
-	; write audio out
-	outo a1, a2, a3, a4, a5, a6, a7, a8
-endin
+;instr 3 ; impulse_oct
+#include "..\include\sound\synthesis\impulse_oct.csd"
 
-;instr 2 ;inharmonic additive synthesis
-instr inharmonic_additive_synthesis
-	;receive general pitch and volume from the score
-	;ibasefrq  =         cpspch(p4) ;convert pitch values to frequency
-	ibasefrq  =         p4
-	
-	;ibaseamp  =         ampdbfs(p5) ;convert dB to amplitude
-	iAmp       random     0.1, .9
-	ibaseamp  =         iAmp
-
-	iPan	=	p6
-	
-	;create 8 inharmonic partials
-	aOsc1     poscil    ibaseamp, ibasefrq, giSine
-	aOsc2     poscil    ibaseamp/2, ibasefrq*1.02, giSine
-	aOsc3     poscil    ibaseamp/3, ibasefrq*1.1, giSine
-	aOsc4     poscil    ibaseamp/4, ibasefrq*1.23, giSine
-	aOsc5     poscil    ibaseamp/5, ibasefrq*1.26, giSine
-	aOsc6     poscil    ibaseamp/6, ibasefrq*1.31, giSine
-	aOsc7     poscil    ibaseamp/7, ibasefrq*1.39, giSine
-	aOsc8     poscil    ibaseamp/8, ibasefrq*1.41, giSine
-	kenv      linen     1, p3/4, p3, p3/4
-	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-	;outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
-	kalpha line 0, p3, 360
-	kbeta = 0
-        
-	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
-	; decode B format for 8 channel circle loudspeaker setup
-	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
-
-	; write audio out
-	outo a1, a2, a3, a4, a5, a6, a7, a8
-endin
-
-;instr 3 ; 
-instr play_note
-	;iNote      =          p4
-	;iFreq      =          giBasFreq * giNotes[iNote]
-	iFreq      =          p4
-	;random choice for mode filter quality and panning
-	iQ         random     10, 200
-	iPan       random     0.1, .9
-	;generate tone and put out
-	aImp       mpulse     1, p3
-	aOut       mode       aImp, iFreq, iQ
-	aL, aR     pan2       aOut, iPan
-			   ;outs       aL, aR
-	kalpha line 0, p3, 360
-	kbeta = 0
-        
-	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
-	; decode B format for 8 channel circle loudspeaker setup
-	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
-
-	; write audio out
-	outo a1, a2, a3, a4, a5, a6, a7, a8
-endin
-
-;instr	4 ; play audio from disk
-instr	play_audio_from_disk
-	kSpeed  init     1           ; playback speed
-	iSkip   init     0           ; inskip into file (in seconds)
-	iLoop   init     0           ; looping switch (0=off 1=on)
-	
-	iPan	=	p6
-
-	kTrigLog		metro	1
-
-	;iSpeedBegin		=		(1/p4)*25
-	iSpeedBegin		=		1
-	iRndBegin	 	random 	0.5, 1.5 
-	iRndEnd	 		random 	0.5, 1.5
-	;kSpeed	expseg iSpeedBegin, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin*iRnd2-1, p3/3, iSpeedBegin
-	;kSpeed expseg iSpeedBegin, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin
-	kSpeed expseg iSpeedBegin*iRndBegin, p3/3, iSpeedBegin*iRndEnd, p3/3, iSpeedBegin*iRndEnd, p3/3, iSpeedBegin*iRndBegin
-	printk 			1, kSpeed
-	
-	;iRnd1	 		random 	0.5, 4.5 //from 1 to 5
-	iRnd1	 		random 	0.5, 10.5 //from 1 to 11
-	iFileNum		=		ceil(iRnd1);
-	
-	if kTrigLog == 1 then
-		;fprintks 	$DUMP_FILE_NAME, "iSpeedBegin = %f :: iRnd2 = %f :: kSpeed = %f :: iFileNum = %f \\n", iSpeedBegin, iRnd2, kSpeed, iFileNum
-	endif
-
-	; read audio from disk using diskin2 opcode
-	a1, a2      diskin2  iFileNum, kSpeed, iSkip, iLoop
-	;outs       a1*iPan, a2*(1-iPan)
-	kalpha line 0, p3, 360
-	kbeta = 0
-        
-	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 a1, kalpha, kbeta
-	; decode B format for 8 channel circle loudspeaker setup
-	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
-
-	; write audio out
-	outo a1, a2, a3, a4, a5, a6, a7, a8
-endin
+;instr	4 ; play audio from disk oct
+#include "..\include\sound\sampler\play_audio_from_disk_oct.csd"
 
 ;instr	5 ;substractive_wov
 #include "..\include\sound\synthesis\substractive_oct.csd"
@@ -840,11 +709,12 @@ instr part
 			;iInstrNum		=		ceil(iRnd1);			
 			;kInstrNum		IntRndDistrK 	1, 5, 6, 1
 			
-			;kInstrNum	=	6
-			
+			/*
 			kUnifDistrA[]    array      4.66, .66, .68
 			;									iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kLine[]	
 			kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
+			*/
+			kInstrNum	=	2
 			
 			
 			/*
@@ -882,6 +752,7 @@ instr part
 				sum_num			i,mult_num
 			*/
 			
+			/*
 			;fprintks 	$DUMP_FILE_NAME, "\ngkCurrentPart = %f\n", gkCurrentPart
 			
 			kiSpatDistrType = 1
@@ -948,6 +819,8 @@ instr part
 			
 			;kOctVolume = GetOctVolume(gkCurrentPart-1, 1., gkSpat, gkSpeakerPos)
 			;fprintks 	$DUMP_FILE_NAME, "kOctVolume[0] = %f \n", kOctVolume[0]
+			*/
+			
 			/*
 				=======================================
 				=========	next note start		=======

@@ -5,7 +5,7 @@
 <CsInstruments>
 sr = 44100
 ksmps = 32
-nchnls = 2
+nchnls = 8
 0dbfs = 1
 
 #define DUMP_FILE_NAME #"dump__hack_o_tone.txt"#
@@ -28,7 +28,7 @@ nchnls = 2
 	initialize global vars there
 */
 
-gkSpat[][][] init  100, 4, 4, 9
+gkSpat[][][][] init  100, 5, 5, 9
 gkCurrentPart init 0
 
 gkSpeakerPos[][] init 8, 2
@@ -142,8 +142,18 @@ instr harmonic_additive_synthesis
 	;kenv expseg .01, p3/3, .5, p3/3, .3, p3/3, .01
 	;add partials and write to output
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-    	outs      aOut*kenv*iPan, aOut*kenv*(1-iPan)
+    ;outs      aOut*kenv*iPan, aOut*kenv*(1-iPan)
 	;outs      aOut, aOut
+	kalpha line 0, p3, 360
+	kbeta = 0
+        
+	; generate B format
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
+	; decode B format for 8 channel circle loudspeaker setup
+	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+
+	; write audio out
+	outo a1, a2, a3, a4, a5, a6, a7, a8
 endin
 
 ;instr 2 ;inharmonic additive synthesis
@@ -169,7 +179,17 @@ instr inharmonic_additive_synthesis
 	aOsc8     poscil    ibaseamp/8, ibasefrq*1.41, giSine
 	kenv      linen     1, p3/4, p3, p3/4
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-	outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
+	;outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
+	kalpha line 0, p3, 360
+	kbeta = 0
+        
+	; generate B format
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
+	; decode B format for 8 channel circle loudspeaker setup
+	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+
+	; write audio out
+	outo a1, a2, a3, a4, a5, a6, a7, a8
 endin
 
 ;instr 3 ; 
@@ -184,7 +204,17 @@ instr play_note
 	aImp       mpulse     1, p3
 	aOut       mode       aImp, iFreq, iQ
 	aL, aR     pan2       aOut, iPan
-			   outs       aL, aR
+			   ;outs       aL, aR
+	kalpha line 0, p3, 360
+	kbeta = 0
+        
+	; generate B format
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut, kalpha, kbeta
+	; decode B format for 8 channel circle loudspeaker setup
+	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+
+	; write audio out
+	outo a1, a2, a3, a4, a5, a6, a7, a8
 endin
 
 ;instr	4 ; play audio from disk
@@ -216,14 +246,24 @@ instr	play_audio_from_disk
 
 	; read audio from disk using diskin2 opcode
 	a1, a2      diskin2  iFileNum, kSpeed, iSkip, iLoop
-	outs       a1*iPan, a2*(1-iPan)
+	;outs       a1*iPan, a2*(1-iPan)
+	kalpha line 0, p3, 360
+	kbeta = 0
+        
+	; generate B format
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 a1, kalpha, kbeta
+	; decode B format for 8 channel circle loudspeaker setup
+	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+
+	; write audio out
+	outo a1, a2, a3, a4, a5, a6, a7, a8
 endin
 
 ;instr	5 ;substractive_wov
-#include "..\include\sound\synthesis\substractive.csd"
+#include "..\include\sound\synthesis\substractive_oct.csd"
 
 ;instr	6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
-#include "..\include\sound\synthesis\wgbow.csd"
+#include "..\include\sound\synthesis\wgbow_oct.csd"
 				 
 /*
 	===============================================
@@ -782,7 +822,7 @@ instr part
 
 	kFlag		init 	1
 	
-	
+    
 	/*
 		==================================================================
 		==================		once at start 	 			==============
@@ -842,6 +882,8 @@ instr part
 				sum_num			i,mult_num
 			*/
 			
+			;fprintks 	$DUMP_FILE_NAME, "\ngkCurrentPart = %f\n", gkCurrentPart
+			
 			kiSpatDistrType = 1
 			kSpatDepth = 1
 			kSumNum = IntRndDistrK(kiSpatDistrType, 0, ($SPAT_SUM_LIMIT+1), kSpatDepth)
@@ -888,11 +930,24 @@ instr part
 			fprintks 	$DUMP_FILE_NAME, "\ngkSpat[%d][%d][0][0] = %f\n", gkCurrentPart, kCntSum, kCntMult, gkSpat[gkCurrentPart][kCntSum][0][0]
 			gkCurrentPart	+=		1
 			
+			;fprintks 	$DUMP_FILE_NAME, "\ngkCurrentPart = %f\n", gkCurrentPart
+			fprintks 	$DUMP_FILE_NAME, "\n============ from main ================\n"
+			;fprintks 	$DUMP_FILE_NAME, "gkSpat[0][0][0][0] = %f\n", (gkCurrentPart-1), 0, 0, 0, gkSpat[0][0][0][0]
+			kCntSum = 0;
+			kCntMult = 0;
+			until (gkSpat[(gkCurrentPart-1)][kCntSum][0][0] == 0) do
+				until ((gkSpat[(gkCurrentPart-1)][kCntSum][kCntMult][0] == 0)||(kCntMult>($SPAT_MULT_LIMIT+1))) do
+					fprintks 	$DUMP_FILE_NAME, "gkSpat[%d][%d][%d][%d] = %f\n", (gkCurrentPart-1), kCntSum, kCntMult, 0, gkSpat[(gkCurrentPart-1)][kCntSum][kCntMult][0]
+					kCntMult += 1
+				enduntil
+				kCntSum    	+=        1
+				kCntMult = 0
+			enduntil
 			
-			kOctVolume[] init 8
+			;kOctVolume[] init 8
 			
-			kOctVolume = GetOctVolume(gkCurrentPart-1, 1., gkSpat, gkSpeakerPos)
-			fprintks 	$DUMP_FILE_NAME, "kOctVolume[0] = %f \n", kOctVolume[0]
+			;kOctVolume = GetOctVolume(gkCurrentPart-1, 1., gkSpat, gkSpeakerPos)
+			;fprintks 	$DUMP_FILE_NAME, "kOctVolume[0] = %f \n", kOctVolume[0]
 			/*
 				=======================================
 				=========	next note start		=======
@@ -1040,7 +1095,17 @@ instr simple_sin
 	iFrq = p4
 	kenv      linen     1, p3/4, p3, p3/4
 	aOsc1     poscil    iAmp, iFrq, giSine
-			  outs      aOsc1*kenv, aOsc1*kenv
+			;outs      aOsc1*kenv, aOsc1*kenv
+			kalpha line 0, p3, 360
+			kbeta = 0
+				
+			; generate B format
+			aw, ax, ay, az, ar, as, at, au, av bformenc1 aOsc1*kenv, kalpha, kbeta
+			; decode B format for 8 channel circle loudspeaker setup
+			a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
+
+			; write audio out
+			outo a1, a2, a3, a4, a5, a6, a7, a8
 endin
 
 

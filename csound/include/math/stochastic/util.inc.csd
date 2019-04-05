@@ -240,18 +240,30 @@ opcode GetOctVolume, k[], kkk[][][][]k[][]
 	until ((kSpat[kCurrentPart][kCntSum][0][0] == 0)||(kCntSum>$SPAT_SUM_LIMIT)) do
 		;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][0][0] = %f \n", kCurrentPart, kCntSum, kSpat[kCurrentPart][kCntSum][0][0]
 		until ((kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0)||(kCntMult>$SPAT_MULT_LIMIT))  do
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kCurrentPart = %d | kCntSum = %d | kCntMult = %d\n", kCurrentPart, kCntSum, kCntMult
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][0] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][0]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][1] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][1]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][2] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][2]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][3] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][3]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][4] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][4]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][5] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][5]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][6] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][6]
+			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][7] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][7]
 			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][8] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][8]
+			
+			/*
 			
 			until kCnt == 9 do
 				;kEnvFunctionComposite[kCnt] = kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
 				;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][%d] = %f \n", kCurrentPart, kCntSum, kCntMult, kCnt, kSpat[kCurrentPart][kCntSum][kCntMult][kCnt]
-				fprintks 	$DUMP_FILE_NAME_UTIL, "kCnt = %d \n", kCnt
+				fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][%d] = %f \n", kCurrentPart, kCntSum, kCntMult, kCnt, 1.
+				;fprintks 	$DUMP_FILE_NAME_UTIL, "kCnt = %d \n", kCnt
 				kCnt += 1
 			enduntil
 			
-			/*
+			
 			;kMultCurr = SetOctVolumeValue(kMode, kVolume, kEnvFunctionComposite, kSpeakerPos, kTime) ;kMode = {0 - set, 1 - mult, 2 - add)
-			kMultCurr = SetOctVolumeArray(kMode, kVolume)
+			;kMultCurr = SetOctVolumeArray(kMode, kVolume)
 			*/
 			kCntMult    	+=         1
 			if kMode == 0 then 

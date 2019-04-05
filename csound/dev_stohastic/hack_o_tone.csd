@@ -691,6 +691,10 @@ instr part
 
 	kFlag		init 	1
 	
+	kFrqIndx	init -1
+	kFrqIndxStep	init 0
+	kFrqIndxDirect	init 0
+	
     
 	/*
 		==================================================================
@@ -847,11 +851,11 @@ instr part
 		*/
 
 		kiIndx		IntRndDistrK 	kiDistrType, kiMin, kiMax, kDepth
-		fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+		;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
 		
 		kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
 		;kIndxFolded	TableFolding kFoldingType, kiIndx, 6
-		fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
+		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 		
 		kPeriod 	= gkMinPeriod * gkModi[1][kIndxFolded]		
 		fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
@@ -873,15 +877,35 @@ instr part
 		*/
 		;kFrq		=		kFrq * kFrqMult
 		
-		
-		kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
-		;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
-		
-		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
-		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
-		
-		kFrq	 	= 440 * kFrqMult * gkModi[3][kFrqIndxFolded]		
-		;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
+		if (kFrqIndx==-1) then
+			kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
+			;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+			
+			kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
+			;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
+			
+			kFrq	 	= 440 * kFrqMult * gkModi[3][kFrqIndxFolded]		
+			;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
+		else
+			kFrqIndxStep	IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
+			kFrqIndxDirect	IntRndDistrK 	1, 0, 2, kFrqDepth
+			if (kFrqIndxDirect==1) then
+					kFrqIndxStep *= -1
+			endif
+			
+			kFrqIndx += kFrqIndxStep
+			if kFrqIndx<0 then
+				kFrqMult *= .5
+			elseif kFrqIndx>kTblLen-1 then
+				kFrqMult *= 2
+			endif				
+			if ((kFrqIndx<0)||(kFrqIndx>kTblLen-1)) then
+				kFrqIndx = kFrqIndx%kTblLen
+			endif
+			kFrqIndx = abs(kFrqIndx)
+			kFrq	 	= 440 * kFrqMult * gkModi[3][kFrqIndx]
+		endif
+		fprintks 	$DUMP_FILE_NAME, "kFrqIndx = %f | kFrq = %f | kFrqIndxStep =%f | kFrqIndxDirect =%f | \n", kFrqIndx, kFrq, kFrqIndxStep, kFrqIndxDirect
 		
 		
 		/*
@@ -958,7 +982,7 @@ instr part
 	kTrigLog		metro	1
 
 	if kTrigLog == 1 then
-		fprintks 	$DUMP_FILE_NAME, "kTimer = %f :: kiMin = %f :: kiMax = %f \\n", kTimer, kiMin, kiMax
+		;fprintks 	$DUMP_FILE_NAME, "kTimer = %f :: kiMin = %f :: kiMax = %f \\n", kTimer, kiMin, kiMax
 	endif
 		
 endin
@@ -1004,7 +1028,7 @@ instr test_env_instr
 		
 	
 	if kTrigLog == 1 then
-		fprintks 	$DUMP_FILE_NAME, "kTimer = %f :: kfEnvMin = %f :: kiMin = %f :: kiMax = %f \\n", kTimer, kfEnvMin, kiMin, kiMax
+		;fprintks 	$DUMP_FILE_NAME, "kTimer = %f :: kfEnvMin = %f :: kiMin = %f :: kiMax = %f \\n", kTimer, kfEnvMin, kiMin, kiMax
 	endif
 	
 endin

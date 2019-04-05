@@ -66,7 +66,7 @@ instr inharmonic_additive_synthesis_oct
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
 	;outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
 	
-	fprintks 	$DUMP_FILE_NAME, "iFromAzim = %f | iToAzim = %f\\n", iFromAzim, iToAzim
+	;fprintks 	$DUMP_FILE_NAME, "iFromAzim = %f | iToAzim = %f\\n", iFromAzim, iToAzim
 	kalpha line iFromAzim, p3, iToAzim
 	kbeta = 0
         

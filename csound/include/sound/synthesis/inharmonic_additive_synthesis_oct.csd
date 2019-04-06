@@ -17,7 +17,35 @@ instr inharmonic_additive_synthesis_oct
 	
 	kFromAzim	=	IntRndDistrK(kAzimtDistrType, kAzimMin, kAzimMax, kAzimDepth)
 	kToAzim	=	IntRndDistrK(kAzimtDistrType, kFromAzim+kAzimMinDelta, kAzimMax, kAzimDepth)
+		
+	iFromAzim = i(kFromAzim)
+	iToAzim = i(kToAzim)
+
+	krangeMin init .01
+	krangeMax init .3
+	kcpsmin init 3
+	kcpsmax init 4
 	
+	kaPartialFrq[] init 8
+	kaPartialFrq fillarray 	1, 1.02, 3.1, 3.7, 4.26, 6.31, 7.39, 7.41
+	
+	aOut = 0
+		
+	kCnt = 0
+	until kCnt == lenarray(kaPartialFrq) do
+		fprintks 	$DUMP_FILE_NAME, "kCnt = %f\n", kCnt
+		kFrqMod = get_different_distrib_value(0, 1, .5, 2, 1)	
+		kPartialAmp  = rspline(krangeMin, krangeMax, kcpsmin, kcpsmax)
+		kFrqOsc   = poscil(kPartialAmp, kFrqMod, giSine)
+		aOsc     =  poscil(ibaseamp/(kCnt+1)+kPartialAmp, ibasefrq+kFrqOsc, giSine) ;*kaPartialFrq[kCnt]
+		aOut += aOsc
+		kCnt += 1
+	enduntil
+	aOut /= 8
+	
+	kEnvAmp      linen     1, p3/4, p3, p3/4
+	
+	/*
 	iFrqMod1	=	get_different_distrib_value(0, 1, .5, 2, 1)
 	iFrqMod2	=	get_different_distrib_value(0, 1, .5, 2, 1)
 	iFrqMod3	=	get_different_distrib_value(0, 1, .5, 2, 1)
@@ -27,13 +55,6 @@ instr inharmonic_additive_synthesis_oct
 	iFrqMod7	=	get_different_distrib_value(0, 1, .5, 2, 1)
 	iFrqMod8	=	get_different_distrib_value(0, 1, .5, 2, 1)
 	
-	iFromAzim = i(kFromAzim)
-	iToAzim = i(kToAzim)
-		
-	krangeMin init .01
-	krangeMax init .3
-	kcpsmin init 3
-	kcpsmax init 4
 
 	kPartialAmp1  rspline krangeMin, krangeMax, kcpsmin, kcpsmax	
 	kPartialAmp2  rspline krangeMin, krangeMax, kcpsmin, kcpsmax	
@@ -62,16 +83,17 @@ instr inharmonic_additive_synthesis_oct
 	aOsc6     poscil    ibaseamp/6+kPartialAmp6, ibasefrq*6.31+kFrqOsc6, giSine
 	aOsc7     poscil    ibaseamp/7+kPartialAmp7, ibasefrq*7.39+kFrqOsc7, giSine
 	aOsc8     poscil    ibaseamp/8+kPartialAmp8, ibasefrq*7.41+kFrqOsc8, giSine
-	kenv      linen     1, p3/4, p3, p3/4
+	
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
+	*/
 	;outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
 	
-	;fprintks 	$DUMP_FILE_NAME, "iFromAzim = %f | iToAzim = %f\\n", iFromAzim, iToAzim
+	fprintks 	$DUMP_FILE_NAME, "iFromAzim = %f | iToAzim = %f\\n", iFromAzim, iToAzim
 	kalpha line iFromAzim, p3, iToAzim
 	kbeta = 0
         
 	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut*kenv, kalpha, kbeta
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 aOut*kEnvAmp, kalpha, kbeta
 	; decode B format for 8 channel circle loudspeaker setup
 	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
 

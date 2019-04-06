@@ -115,41 +115,64 @@ instr substractive_wov
 ;i 1 24 .  200 220 1   0   0.2 0  3   1    0
 ;i 1 32 .  400 800 0   1   0.2 0  4   0    1
 
-  ;iFundementalBeginValue = p4
-  iFundementalBeginValue 	random     110, 880
+  iFundementalBeginValue = p4
+  ;iFundementalBeginValue 	random     110, 880
 
   ;iFundementalEndValue = p5
-  iDev 		random     .1, 1.5
-  iFundementalEndValue 	= iFundementalBeginValue*iDev
+  ;iDev 		random     .1, 1.5
+  ;iFundementalEndValue 	= iFundementalBeginValue*iDev
+  iFundementalEndValue 	= abs(iFundementalBeginValue + get_different_distrib_value(0, 1, -200., 200., 1))
 
   ;iVowelBeginValue = p6
-  iVowelBeginValue 	random 0., 1. 
+  ;iVowelBeginValue 	random 0., 1. 
+  iVowelBeginValue 	= get_different_distrib_value(0, 1, 0., 1., 1)
   
   ;iVowelEndValue = p7
-  iVowelEndValue  	random 0., 1. 
+  ;iVowelEndValue  	random 0., 1. 
+  iVowelEndValue  	= get_different_distrib_value(0, 1, 0., 1., 1)
 
   ;iBandwidthFactorBegin = p8
-  iBandwidthFactorBegin random 0., 2. 
+  ;iBandwidthFactorBegin random 0., 2. 
+  iBandwidthFactorBegin = get_different_distrib_value(0, 1, 0., 2., 1)
 
   ;iBandwidthFactorEnd = p9
-  iBandwidthFactorEnd 	random 0., 2. 
+  ;iBandwidthFactorEnd 	random 0., 2. 
+  iBandwidthFactorEnd = get_different_distrib_value(0, 1, 0., 2., 1)
 
   ;iVoice = p10
+  kVoice = IntRndDistrK(1, 0, 5, 1)
+  iVoice = i(kVoice)
 
   ;iInputSourceBegin = p11
-  iRnd1			random 	0.5, 1.5 //from 1 to 2
-  iInputSourceBegin 	=		ceil(iRnd1)-1
+  ;iRnd1			random 	0.5, 1.5 //from 1 to 2
+  ;iInputSourceBegin 	=		ceil(iRnd1)-1
+  kInputSourceBegin 	=		IntRndDistrK(1, 0, 2, 1)
+  iInputSourceBegin 	=		i(kInputSourceBegin)
 
   ;iInputSourceEnd = p12
-  iRnd2			random 	0.5, 1.5 //from 1 to 2
-  iInputSourceEnd 	=		ceil(iRnd2)-1
+  ;iRnd2			random 	0.5, 1.5 //from 1 to 2
+  ;iInputSourceEnd 	=		ceil(iRnd2)-1
+  kInputSourceEnd 	=		 	IntRndDistrK(1, 0, 2, 1)
+  iInputSourceEnd 	=		 	i(kInputSourceEnd)
 
   iPan			random 	.1, .9
+  
+  kAzimtDistrType init 1
+  kAzimMin	init 0
+  kAzimMax	init 360
+  kAzimDepth	init 1
+  kAzimMinDelta init 45
+	
+  kFromAzim	=	IntRndDistrK(kAzimtDistrType, kAzimMin, kAzimMax, kAzimDepth)
+  kToAzim	=	IntRndDistrK(kAzimtDistrType, kFromAzim+kAzimMinDelta, kAzimMax, kAzimDepth)
+	
+  iFromAzim = i(kFromAzim)
+  iToAzim = i(kToAzim)
 
   kFund    expon     iFundementalBeginValue,p3,iFundementalEndValue               ; fundamental
   kVow     line      iVowelBeginValue,p3,iVowelEndValue               ; vowel select
   kBW      line      iBandwidthFactorBegin,p3,iBandwidthFactorEnd               ; bandwidth factor
-  iVoice   =         p10                    ; voice select
+  ;iVoice   =         p10                    ; voice select
   kSrc     line      iInputSourceBegin,p3,iInputSourceEnd             ; source mix
 
   aNoise   pinkish   3                      ; pink noise
@@ -183,13 +206,14 @@ instr substractive_wov
 
   ; formants are mixed and multiplied both by intensity values derived from tables and by the on-screen gain controls for each formant
   aMix     sum       aForm1*ampdbfs(kDB1),aForm2*ampdbfs(kDB2),aForm3*ampdbfs(kDB3),aForm4*ampdbfs(kDB4),aForm5*ampdbfs(kDB5)
-  kEnv     linseg    0,3,1,p3-6,1,3,0     ; an amplitude envelope
+  ;kEnv     linseg    0,3,1,p3-6,1,3,0     ; an amplitude envelope
+  kEnvAmp      linen     1, p3/4, p3, p3/4
            ;outs      aMix*kEnv*iPan, aMix*kEnv*(1-iPan) ; send audio to outputs
-	kalpha line 0, p3, 360
+	kalpha line iFromAzim, p3, iToAzim
 	kbeta = 0
 		
 	; generate B format
-	aw, ax, ay, az, ar, as, at, au, av bformenc1 aMix*kEnv, kalpha, kbeta
+	aw, ax, ay, az, ar, as, at, au, av bformenc1 aMix*kEnvAmp, kalpha, kbeta
 	; decode B format for 8 channel circle loudspeaker setup
 	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
 

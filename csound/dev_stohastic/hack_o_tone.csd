@@ -320,7 +320,12 @@ instr part
 		
 		;pause ;linear random with precedence of lower values with depth
 		;IntRndDistrK 	kiDistrType, kiMin, kiMax, kDepth
-		kIsPause = IntRndDistrK(5, 0, 3, 2)
+		kDepthPause = 2
+		if kTimer<= 0.3 then
+			kDepthPause = 1
+		endif
+		
+		kIsPause = IntRndDistrK(5, 0, 3, kDepthPause)
 		fprintks 	$DUMP_FILE_NAME, "kIsPause = %f\n", kIsPause
 		
 		if kIsPause!=2 then

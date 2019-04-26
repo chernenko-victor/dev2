@@ -209,7 +209,8 @@ opcode SetOctVolumeArray, k[], kk[]
 	kRes[] init 8
 	kCnt = 0
 	
-	until kCnt > 7 do
+	;until kCnt > 7 do
+	until kCnt == lenarray(kRes) do 
 		kRes[kCnt] = 0.
 		kCnt += 1
 	enduntil	
@@ -226,7 +227,8 @@ opcode GetOctVolume, k[], kkk[][][][]k[][]
 	
 	kCnt = 0
 	kMode = 0
-	until kCnt > 7 do
+	;until kCnt > 7 do
+	until kCnt == lenarray(kVolume) do 
 		kVolume[kCnt] = .0	
 		kMultCurr[kCnt] = .0
 		kCnt += 1
@@ -237,9 +239,11 @@ opcode GetOctVolume, k[], kkk[][][][]k[][]
 	
 	kCntSum = 0
 	kCntMult = 0
-	until ((kSpat[kCurrentPart][kCntSum][0][0] == 0)||(kCntSum>$SPAT_SUM_LIMIT)) do
+	;until ((kSpat[kCurrentPart][kCntSum][0][0] == 0)||(kCntSum>$SPAT_SUM_LIMIT)) do
+	until kSpat[kCurrentPart][kCntSum][0][0] == 0 do
 		;fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][0][0] = %f \n", kCurrentPart, kCntSum, kSpat[kCurrentPart][kCntSum][0][0]
-		until ((kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0)||(kCntMult>$SPAT_MULT_LIMIT))  do
+		;until ((kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0)||(kCntMult>$SPAT_MULT_LIMIT))  do
+		until kSpat[kCurrentPart][kCntSum][kCntMult][0] == 0  do
 			fprintks 	$DUMP_FILE_NAME_UTIL, "kCurrentPart = %d | kCntSum = %d | kCntMult = %d\n", kCurrentPart, kCntSum, kCntMult
 			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][0] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][0]
 			fprintks 	$DUMP_FILE_NAME_UTIL, "kSpat[%d][%d][%d][1] = %f \n", kCurrentPart, kCntSum, kCntMult, kSpat[kCurrentPart][kCntSum][kCntMult][1]

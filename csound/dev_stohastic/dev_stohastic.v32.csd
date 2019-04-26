@@ -24,15 +24,15 @@ nchnls = 2
 */
 
 gkModi[][] init  9, 8
-gkModi array	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
-				/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
-				/* fibon */				1, 2, 3, 5, 8, 13, 21, 34,
-				/* ionian */ 			1, 1.1111, 1.25, 1.3333, 1.5, 1.6667, 1.875, 2,
-				/* Phrygian */ 			1, 1.0667, 1.2, 1.3333, 1.5, 1.6, 1.8, 2,
-				/* Dorian */			1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
-				/* Anhemitone */		1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
-				/* tone-half */			1, 1.0667, 1.2, 1.25, 1.4063, 1.5, 1.6667, 1.8, 
-				/* tone-half-half */	1, 1.1111, 1.2, 1.25, 1.4063, 1.5, 1.6, 1.8
+gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
+					/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
+					/* fibon */				1, 2, 3, 5, 8, 13, 21, 34,
+					/* ionian */ 			1, 1.1111, 1.25, 1.3333, 1.5, 1.6667, 1.875, 2,
+					/* Phrygian */ 			1, 1.0667, 1.2, 1.3333, 1.5, 1.6, 1.8, 2,
+					/* Dorian */			1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
+					/* Anhemitone */		1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
+					/* tone-half */			1, 1.0667, 1.2, 1.25, 1.4063, 1.5, 1.6667, 1.8, 
+					/* tone-half-half */	1, 1.1111, 1.2, 1.25, 1.4063, 1.5, 1.6, 1.8
 				 
 
 gkPeriod	init 	1
@@ -66,6 +66,7 @@ gkThemeStart[][]    		init 	8, 64
 gkThemeDur[][]    			init 	8, 64
 gkThemeAmp[][]    			init 	8, 64
 
+/*
 kThemeIndex		init	0
 
 until kThemeIndex > 7 do
@@ -77,12 +78,21 @@ until kThemeIndex > 7 do
 	gkThemeAmp[kThemeIndex][0]    	=	-1
 	kThemeIndex    	+=         1
 enduntil
+*/
+
+gkThemeModus[0][0]    	= 	-1
+gkThemeIndexInModus[0][0] = 	-1
+gkThemePitch[0][0]    =	-1
+gkThemeStart[0][0]    =	-1
+gkThemeDur[0][0]    	=	-1
+gkThemeAmp[0][0]    	=	-1
+
 
 gkCurrentThemeIndex	init	0
 ;END prepare theme arrays	
 
 gkLineRythm[][] init  8, 8
-gkLineRythm array		0.8,	0.2,	0.,		0.,		0.,		0.,		0.,		0.,
+gkLineRythm fillarray	0.8,	0.2,	0.,		0.,		0.,		0.,		0.,		0.,
 						0.1,	0.8,	0.1,	0.,		0.,		0.,		0.,		0.,
 						0.,		0.1,	0.8,	0.1,	0.,		0.,		0.,		0.,
 						0.,		0.,		0.1,	0.8,	0.1,	0.,		0.,		0.,
@@ -271,9 +281,12 @@ instr theme
 	iMidiChannel	=	p4
 	iPartType		=	p5	;{1 = theme, 2 = line, 3 = pedal, 4 = factura}
 	
-	kMinTotalY				init 1
-	kMaxTotalY				init 127
+	;kMinTotalY				init 1
+	kMinTotalY				init 16
+	;kMaxTotalY				init 127
+	kMaxTotalY				init 108
 	kMinYDeltaScaled		init 1
+	kMinYFrameScaled		init 3
 	
 	/*
 		==================================================================
@@ -298,8 +311,8 @@ instr theme
 		kEnvFunctionComposite[kMotifIndex][0] <- TEnvFunctionType EFType ;[int], EnvFunctionType {1 = linear, 2 = power, 3 = exponential, 4 = sinus, 5 = saw i.e. modulo, 6 = stochastic};
 		kEnvFunctionComposite[kMotifIndex][1] <- double MinX ;motif begin, [float], sec
 		kEnvFunctionComposite[kMotifIndex][2] <- double MaxX ;motif end, [float], sec
-		kEnvFunctionComposite[kMotifIndex][3] <- double MinY ;minimum value, [float], normalized 0..1
-		kEnvFunctionComposite[kMotifIndex][4] <- double MaxY ;maximum value, [float], normalized 0..1
+		kEnvFunctionComposite[kMotifIndex][3] <- double MinY ;minimum value, [int], kMinTotalY...kMaxTotalY 
+		kEnvFunctionComposite[kMotifIndex][4] <- double MaxY ;maximum value, [int], kMinTotalY...kMaxTotalY
 		kEnvFunctionComposite[kMotifIndex][5] <- double Period; //for periodical functions (sinus, saw i.e. modulo), [float], sec
 		kEnvFunctionComposite[kMotifIndex][6] <- int DistrType; //for stochastic, [int], type of rnd distribution see in #PATH_TO_LIB\include\math\stochastic\distribution3.inc.csd
 		kEnvFunctionComposite[kMotifIndex][7] <- int Depth;	//for stochastic, [int]
@@ -316,9 +329,48 @@ instr theme
 		kSmallestDelta		=	1.
 		until kMotifIndex >= kMotifNum do
 			kEnvFunctionComposite[kMotifIndex][0]  	IntRndDistrK 	1, 1, 7, 1
+			;kEnvFunctionComposite[kMotifIndex][0]  	=		4
 			kEnvFunctionComposite[kMotifIndex][1]	=		kCurrMinX
 			kEnvFunctionComposite[kMotifIndex][2]	=		kCurrMaxX
 			
+			kDirection = IntRndDistrK(1, 0, 2, 1)
+			if iPartType == 4 then
+				/*
+					===============================
+					=========	factura		=======
+					===============================
+				*/
+				kEnvFunctionComposite[kMotifIndex][3] = IntRndDistrK(1, kMinTotalY+kMinYDeltaScaled, kMaxTotalY-kMinYDeltaScaled+1, 1)
+				if kDirection>0 then ;up
+					kEnvFunctionComposite[kMotifIndex][4] = IntRndDistrK(1, kEnvFunctionComposite[kMotifIndex][3], kMaxTotalY-kMinYDeltaScaled+1, 1)
+				else ;down
+					kEnvFunctionComposite[kMotifIndex][4] =	IntRndDistrK(1, kMinTotalY+kMinYDeltaScaled, kEnvFunctionComposite[kMotifIndex][3]+1, 1)
+				endif
+			else 
+				/*
+					===============================
+					=========	theme 		=======
+					===============================
+				*/
+				/*
+					===============================
+					=========	line 		=======
+					===============================
+				*/
+				/*
+					===============================
+					=========	pedal 		=======
+					===============================
+				*/
+				kEnvFunctionComposite[kMotifIndex][3] = IntRndDistrK(1, kMinTotalY+kMinYFrameScaled, kMaxTotalY-kMinYFrameScaled+1, 1)
+				if kDirection>0 then ;up
+					kEnvFunctionComposite[kMotifIndex][4] = IntRndDistrK(1, kEnvFunctionComposite[kMotifIndex][3], kMaxTotalY-kMinYFrameScaled+1, 1)
+				else ;down
+					kEnvFunctionComposite[kMotifIndex][4] =	IntRndDistrK(1, kMinTotalY+kMinYFrameScaled, kEnvFunctionComposite[kMotifIndex][3]+1, 1)
+				endif
+			endif
+			
+			/*
 			kEnvFunctionComposite[kMotifIndex][3]	=		get_different_distrib_value_k(0, 1, .001+kMinYDeltaNonScaled, 1.-kMinYDeltaNonScaled, 1)
 			kDirection 								IntRndDistrK 	1, 0, 2, 1
 			if kDirection>0 then ;up
@@ -326,6 +378,7 @@ instr theme
 			else ;down
 				kEnvFunctionComposite[kMotifIndex][4]	=		get_different_distrib_value_k(0, 1, .001, kEnvFunctionComposite[kMotifIndex][3]-kMinYDeltaNonScaled, 1)
 			endif
+			*/
 			
 			;BEGIN define smallest delta
 			kCurrDelta = abs(kEnvFunctionComposite[kMotifIndex][3]-kEnvFunctionComposite[kMotifIndex][4])
@@ -351,6 +404,7 @@ instr theme
 		
 		kEnvFunctionComposite[kMotifIndex][0] = -1;
 		
+		; ====================================== 2
 		kIndex    =        0
 		fprintks 	$DUMP_FILE_NAME, "EnvFunctionType {1 = linear, 2 = power, 3 = exponential, 4 = sinus, 5 = saw i.e. modulo, 6 = stochastic}\n\n"
 		until kEnvFunctionComposite[kIndex][0] == -1 do
@@ -377,7 +431,9 @@ instr theme
 		;									iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kLine[]	
 		kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
 		*/		
-		kInstrNum	=	3
+		;kInstrNum	=	3
+		kInstrNum	=	IntRndDistrK(1, 1, 7, 1)
+		
 		
 		
 		/*
@@ -449,7 +505,7 @@ instr theme
 				===============================
 			*/
 			kPeriod 	= gkMinPeriod * gkModi[1][0]
-			kTestPeriod Markov2orderK 0, 1, 0., 1., 1, 0, gkLineRythm
+			kTestPeriod = Markov2orderK(0, 1, 0., 1., 1, 0, gkLineRythm)
 			fprintks 	$DUMP_FILE_NAME, "kTestPeriod = %f\\n", kTestPeriod
 		elseif iPartType == 3 then
 			/*1
@@ -492,11 +548,25 @@ instr theme
 		
 		kTmpEnvFunctionComposite[] init 8
 		
+		/*
 		kTmpEnvFunctionCompositeIndex =	0
-		until kTmpEnvFunctionCompositeIndex > 7 do
+		;until kTmpEnvFunctionCompositeIndex > 7 do
+		until kTmpEnvFunctionCompositeIndex == lenarray(kTmpEnvFunctionComposite) do
+			fprintks 	$DUMP_FILE_NAME, "kTmpEnvFunctionCompositeIndex = %d kEnvFunctionComposite[kCurrMotifIndex][kTmpEnvFunctionCompositeIndex] = %f\\n", kTmpEnvFunctionCompositeIndex, kEnvFunctionComposite[kCurrMotifIndex][kTmpEnvFunctionCompositeIndex]
 			kTmpEnvFunctionComposite[kTmpEnvFunctionCompositeIndex] = kEnvFunctionComposite[kCurrMotifIndex][kTmpEnvFunctionCompositeIndex]
 			kTmpEnvFunctionCompositeIndex    	+=         1
 		enduntil
+		*/
+		
+		kTmpEnvFunctionComposite[0] = kEnvFunctionComposite[kCurrMotifIndex][0]
+		kTmpEnvFunctionComposite[1] = kEnvFunctionComposite[kCurrMotifIndex][1]
+		kTmpEnvFunctionComposite[2] = kEnvFunctionComposite[kCurrMotifIndex][2]
+		kTmpEnvFunctionComposite[3] = kEnvFunctionComposite[kCurrMotifIndex][3]
+		kTmpEnvFunctionComposite[4] = kEnvFunctionComposite[kCurrMotifIndex][4]
+		kTmpEnvFunctionComposite[5] = kEnvFunctionComposite[kCurrMotifIndex][5]
+		kTmpEnvFunctionComposite[6] = kEnvFunctionComposite[kCurrMotifIndex][6]
+		kTmpEnvFunctionComposite[7] = kEnvFunctionComposite[kCurrMotifIndex][7]
+		
 
 		;BEGIN get next free theme index
 		/*
@@ -514,6 +584,8 @@ instr theme
 		enduntil
 		*/
 		;END get next free theme index
+		
+		; ====================================== /2
 	endif
 	
 	
@@ -524,17 +596,42 @@ instr theme
 	*/
 	
 	kTimer			line 	0., p3, p3	;current time
-		
+	
+	/*
 	;BEGIN set Current motif
 	if kEnvFunctionComposite[kCurrMotifIndex][2] < kTimer then
 		kCurrMotifIndex += 1
 		kTmpEnvFunctionCompositeIndex =	0
-		until kTmpEnvFunctionCompositeIndex > 7 do
+		;until kTmpEnvFunctionCompositeIndex > 7 do
+		until kTmpEnvFunctionCompositeIndex == lenarray(kTmpEnvFunctionComposite) do 
 			kTmpEnvFunctionComposite[kTmpEnvFunctionCompositeIndex] = kEnvFunctionComposite[kCurrMotifIndex][kTmpEnvFunctionCompositeIndex]
 			kTmpEnvFunctionCompositeIndex    	+=         1
 		enduntil
 	endif
 	;END set Current motif
+	*/
+	
+	;BEGIN set Current motif
+	if kEnvFunctionComposite[kCurrMotifIndex][2] < kTimer then
+		kCurrMotifIndex += 1		 
+		kTmpEnvFunctionComposite[0] = kEnvFunctionComposite[kCurrMotifIndex][0]
+		kTmpEnvFunctionComposite[1] = kEnvFunctionComposite[kCurrMotifIndex][1]
+		kTmpEnvFunctionComposite[2] = kEnvFunctionComposite[kCurrMotifIndex][2]
+		kTmpEnvFunctionComposite[3] = kEnvFunctionComposite[kCurrMotifIndex][3]
+		kTmpEnvFunctionComposite[4] = kEnvFunctionComposite[kCurrMotifIndex][4]
+		kTmpEnvFunctionComposite[5] = kEnvFunctionComposite[kCurrMotifIndex][5]
+		kTmpEnvFunctionComposite[6] = kEnvFunctionComposite[kCurrMotifIndex][6]
+		kTmpEnvFunctionComposite[7] = kEnvFunctionComposite[kCurrMotifIndex][7]
+		
+	endif
+	;END set Current motif
+	
+	/*
+	if kEnvFunctionComposite[kCurrMotifIndex][2] < kTimer then
+		fprintks 	$DUMP_FILE_NAME, "change env :: kEnvFunctionComposite[%d][2] = %f kTimer = %f \n", kCurrMotifIndex, kEnvFunctionComposite[0][2], kTimer
+		kCurrMotifIndex += 1
+	endif
+	*/
 	
 	kTrig			metro	1/kPeriod	;metro for event generating
 	if kTrig == 1 then
@@ -565,10 +662,23 @@ instr theme
 		;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
 		*/
 	
+		;printk 1, kTmpEnvFunctionComposite[3]
+		
+		fprintks 	$DUMP_FILE_NAME, "EnvFunctionType :: \t\tkkTmpEnvFunctionComposite[0] = %f\n", kTmpEnvFunctionComposite[0]
+		fprintks 	$DUMP_FILE_NAME, "double MinX :: \t\t\tkTmpEnvFunctionComposite[1] = %f\n", kTmpEnvFunctionComposite[1]
+		fprintks 	$DUMP_FILE_NAME, "double MaxX :: \t\t\tkTmpEnvFunctionComposite[2] = %f\n", kTmpEnvFunctionComposite[2]
+		fprintks 	$DUMP_FILE_NAME, "double MinY :: \t\t\tkTmpEnvFunctionComposite[3] = %f\n", kTmpEnvFunctionComposite[3]
+		fprintks 	$DUMP_FILE_NAME, "double MaxY :: \t\t\tkTmpEnvFunctionComposite[4] = %f\n", kTmpEnvFunctionComposite[4]
+		fprintks 	$DUMP_FILE_NAME, "double Period :: \t\tkTmpEnvFunctionComposite[5] = %f //for sinus, saw i.e. modulo\n", kTmpEnvFunctionComposite[5]
+		fprintks 	$DUMP_FILE_NAME, "int DistrType :: \t\tkTmpEnvFunctionComposite[6] = %f //for stochastic\n", kTmpEnvFunctionComposite[6]
+		fprintks 	$DUMP_FILE_NAME, "int Depth :: \t\t\tkTmpEnvFunctionComposite[7] = %f //for stochastic\n\n", kTmpEnvFunctionComposite[7]
+		
 		kRawVal = GetFrq(kTimer, kTmpEnvFunctionComposite)
 		;kFrq = GetExp(kRawVal, 0.01, 1., kMinFrq, kMaxFrq)
 		;kMidiNum = GetLine(kRawVal, 0., 1., kMinTotalY, kMaxTotalY);
-		kMidiNum = GetLine(kRawVal, 0., 1., kMinCurrY, kMaxCurrY);
+		;kMidiNum = GetLine(kRawVal, 0., 1., kMinCurrY, kMaxCurrY);
+		fprintks 	$DUMP_FILE_NAME, "kRawVal = %f\n",kRawVal
+		kMidiNum = kRawVal
 		kFrq = pow(2, (kMidiNum-69)/12)*440.
 				
 		/*
@@ -577,8 +687,8 @@ instr theme
 			=======================================
 		*/
 		kPan = get_different_distrib_value_k(0, 7, 0., 1., 1)
-		event  	"i", "simple_sin", kStart, kDur, kFrq, kAmp, kPan
-		;event  		"i", kInstrNum, kStart, kDur, kFrq, kAmp, iPan
+		;event  	"i", "simple_sin", kStart, kDur, kFrq, kAmp, kPan
+		event  		"i", kInstrNum, kStart, kDur, kFrq, kAmp, iPan
 				
 		
 		/*
@@ -985,8 +1095,8 @@ endin
 ;i 		"rythm_disp" 		0 		100
 
 ;type	"theme" instr 		start	len		midi channel	part type
-i 		"theme"		 		0 		5		1				2
-;i 		"theme"		 		10 		20		2				2
+i 		"theme"		 		0 		5		1				1
+i 		"theme"		 		10 		20		2				2
 
 </CsScore>
 </CsoundSynthesizer>

@@ -92,14 +92,14 @@ gkCurrentThemeIndex	init	0
 ;END prepare theme arrays	
 
 gkLineRythm[][] init  8, 8
-gkLineRythm fillarray	0.8,	0.2,	0.,		0.,		0.,		0.,		0.,		0.,
-						0.1,	0.8,	0.1,	0.,		0.,		0.,		0.,		0.,
-						0.,		0.1,	0.8,	0.1,	0.,		0.,		0.,		0.,
-						0.,		0.,		0.1,	0.8,	0.1,	0.,		0.,		0.,
-						0.,		0.,		0.,		0.1,	0.8,	0.1,	0.,		0.,
-						0.,		0.,		0.,		0.,		0.1,	0.8,	0.1,	0.,
-						0.,		0.,		0.,		0.,		0.,		0.1,	0.8,	0.1,
-						0.,		0.,		0.,		0.,		0.,		0.,		0.2,	0.8	
+gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
+						0.05,	0.9,	0.5,	0.,		0.,		0.,		0.,		0.,
+						0.,		0.05,	0.9,	0.05,	0.,		0.,		0.,		0.,
+						0.,		0.,		0.05,	0.9,	0.05,	0.,		0.,		0.,
+						0.,		0.,		0.,		0.05,	0.9,	0.05,	0.,		0.,
+						0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,	0.,
+						0.,		0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,
+						0.,		0.,		0.,		0.,		0.,		0.,		0.1,	0.9	
 	
 /*
 		=====================================================================
@@ -109,112 +109,21 @@ gkLineRythm fillarray	0.8,	0.2,	0.,		0.,		0.,		0.,		0.,		0.,
 
 
 ;instr 1 
-instr harmonic_additive_synthesis
-	;receive general pitch and volume from the score
-	;ibasefrq  =         cpspch(p4) ;convert pitch values to frequency
-	ibasefrq  =         p4
-	
-	;ibaseamp  =         ampdbfs(p5) ;convert dB to amplitude
-	iAmp       random     0.1, .9
-	ibaseamp  =         iAmp
+#include "..\include\sound\synthesis\harmonic_additive_synthesis_2ch.csd"
 
-	iPan	=	p6
-	
-	;create 8 harmonic partials
-	aOsc1     poscil    ibaseamp, ibasefrq, giSine
-	aOsc2     poscil    ibaseamp/2, ibasefrq*2, giSine
-	aOsc3     poscil    ibaseamp/3, ibasefrq*3, giSine
-	aOsc4     poscil    ibaseamp/4, ibasefrq*4, giSine
-	aOsc5     poscil    ibaseamp/5, ibasefrq*5, giSine
-	aOsc6     poscil    ibaseamp/6, ibasefrq*6, giSine
-	aOsc7     poscil    ibaseamp/7, ibasefrq*7, giSine
-	aOsc8     poscil    ibaseamp/8, ibasefrq*8, giSine
-	;apply simple envelope
-	kenv      linen     1, p3/4, p3, p3/4
-	;kenv expseg .01, p3/3, .5, p3/3, .3, p3/3, .01
-	;add partials and write to output
-	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-    	outs      aOut*kenv*iPan, aOut*kenv*(1-iPan)
-	;outs      aOut, aOut
-endin
+;instr 2 
+#include "..\include\sound\synthesis\inharmonic_additive_synthesis_2ch.csd"
 
-;instr 2 ;inharmonic additive synthesis
-instr inharmonic_additive_synthesis
-	;receive general pitch and volume from the score
-	;ibasefrq  =         cpspch(p4) ;convert pitch values to frequency
-	ibasefrq  =         p4
-	
-	;ibaseamp  =         ampdbfs(p5) ;convert dB to amplitude
-	iAmp       random     0.1, .9
-	ibaseamp  =         iAmp
+;instr 3 
+#include "..\include\sound\synthesis\impulse_2ch.csd"
 
-	iPan	=	p6
-	
-	;create 8 inharmonic partials
-	aOsc1     poscil    ibaseamp, ibasefrq, giSine
-	aOsc2     poscil    ibaseamp/2, ibasefrq*1.02, giSine
-	aOsc3     poscil    ibaseamp/3, ibasefrq*1.1, giSine
-	aOsc4     poscil    ibaseamp/4, ibasefrq*1.23, giSine
-	aOsc5     poscil    ibaseamp/5, ibasefrq*1.26, giSine
-	aOsc6     poscil    ibaseamp/6, ibasefrq*1.31, giSine
-	aOsc7     poscil    ibaseamp/7, ibasefrq*1.39, giSine
-	aOsc8     poscil    ibaseamp/8, ibasefrq*1.41, giSine
-	kenv      linen     1, p3/4, p3, p3/4
-	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-	outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
-endin
+;instr 4
+#include "..\include\sound\sampler\play_audio_from_disk_2ch.csd"
 
-;instr 3 ; 
-instr play_note
-	;iNote      =          p4
-	;iFreq      =          giBasFreq * giNotes[iNote]
-	iFreq      =          p4
-	;random choice for mode filter quality and panning
-	iQ         random     10, 200
-	iPan       random     0.1, .9
-	;generate tone and put out
-	aImp       mpulse     1, p3
-	aOut       mode       aImp, iFreq, iQ
-	aL, aR     pan2       aOut, iPan
-			   outs       aL, aR
-endin
-
-;instr	4 ; play audio from disk
-instr	play_audio_from_disk
-	kSpeed  init     1           ; playback speed
-	iSkip   init     0           ; inskip into file (in seconds)
-	iLoop   init     0           ; looping switch (0=off 1=on)
-	
-	iPan	=	p6
-
-	kTrigLog		metro	1
-
-	;iSpeedBegin		=		(1/p4)*25
-	iSpeedBegin		=		1
-	iRndBegin	 	random 	0.5, 1.5 
-	iRndEnd	 		random 	0.5, 1.5
-	;kSpeed	expseg iSpeedBegin, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin*iRnd2-1, p3/3, iSpeedBegin
-	;kSpeed expseg iSpeedBegin, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin*iRnd2, p3/3, iSpeedBegin
-	kSpeed expseg iSpeedBegin*iRndBegin, p3/3, iSpeedBegin*iRndEnd, p3/3, iSpeedBegin*iRndEnd, p3/3, iSpeedBegin*iRndBegin
-	printk 			1, kSpeed
-	
-	;iRnd1	 		random 	0.5, 4.5 //from 1 to 5
-	iRnd1	 		random 	0.5, 10.5 //from 1 to 11
-	iFileNum		=		ceil(iRnd1);
-	
-	if kTrigLog == 1 then
-		;fprintks 	$DUMP_FILE_NAME, "iSpeedBegin = %f :: iRnd2 = %f :: kSpeed = %f :: iFileNum = %f \\n", iSpeedBegin, iRnd2, kSpeed, iFileNum
-	endif
-
-	; read audio from disk using diskin2 opcode
-	a1, a2      diskin2  iFileNum, kSpeed, iSkip, iLoop
-	outs       a1*iPan, a2*(1-iPan)
-endin
-
-;instr	5 ;substractive_wov
+;instr 5 ;substractive_wov
 #include "..\include\sound\synthesis\substractive.csd"
 
-;instr	6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
+;instr 6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
 #include "..\include\sound\synthesis\wgbow.csd"
 				 
 /*
@@ -281,10 +190,16 @@ instr theme
 	iMidiChannel	=	p4
 	iPartType		=	p5	;{1 = theme, 2 = line, 3 = pedal, 4 = factura}
 	
+	
+	
 	;kMinTotalY				init 1
-	kMinTotalY				init 16
+	;kMinTotalY				init 16
+	kMinTotalY		=		p6
+	
 	;kMaxTotalY				init 127
-	kMaxTotalY				init 108
+	;kMaxTotalY				init 108
+	kMaxTotalY		=		p7
+	
 	kMinYDeltaScaled		init 1
 	kMinYFrameScaled		init 3
 	
@@ -328,8 +243,16 @@ instr theme
 		kMotifIndex	   	=	0
 		kSmallestDelta		=	1.
 		until kMotifIndex >= kMotifNum do
-			kEnvFunctionComposite[kMotifIndex][0]  	IntRndDistrK 	1, 1, 7, 1
-			;kEnvFunctionComposite[kMotifIndex][0]  	=		4
+			if iPartType == 2 then
+				/*
+					===============================
+					=========	line 		=======
+					===============================
+				*/
+				kEnvFunctionComposite[kMotifIndex][0]  	IntRndDistrK 	1, 1, 6, 1
+			else
+				kEnvFunctionComposite[kMotifIndex][0]  	IntRndDistrK 	1, 1, 7, 1
+			endif
 			kEnvFunctionComposite[kMotifIndex][1]	=		kCurrMinX
 			kEnvFunctionComposite[kMotifIndex][2]	=		kCurrMaxX
 			
@@ -342,9 +265,11 @@ instr theme
 				*/
 				kEnvFunctionComposite[kMotifIndex][3] = IntRndDistrK(1, kMinTotalY+kMinYDeltaScaled, kMaxTotalY-kMinYDeltaScaled+1, 1)
 				if kDirection>0 then ;up
-					kEnvFunctionComposite[kMotifIndex][4] = IntRndDistrK(1, kEnvFunctionComposite[kMotifIndex][3], kMaxTotalY-kMinYDeltaScaled+1, 1)
+					kFActuraY = min(kMaxTotalY-kMinYDeltaScaled+1, kEnvFunctionComposite[kMotifIndex][3]+3)
+					kEnvFunctionComposite[kMotifIndex][4] = IntRndDistrK(1, kEnvFunctionComposite[kMotifIndex][3], kFActuraY, 1)
 				else ;down
-					kEnvFunctionComposite[kMotifIndex][4] =	IntRndDistrK(1, kMinTotalY+kMinYDeltaScaled, kEnvFunctionComposite[kMotifIndex][3]+1, 1)
+					kFActuraY = max(kMaxTotalY-kMinYDeltaScaled+1, kEnvFunctionComposite[kMotifIndex][3]-3)
+					kEnvFunctionComposite[kMotifIndex][4] =	IntRndDistrK(1, kFActuraY, kEnvFunctionComposite[kMotifIndex][3], 1)
 				endif
 			else 
 				/*
@@ -387,14 +312,22 @@ instr theme
 				kSmallestDelta = kCurrDelta
 			endif
 			;END define smallest delta
-						
+			
+
+			;period if sin or saw func type
 			if ((kEnvFunctionComposite[kMotifIndex][0] == 4) || (kEnvFunctionComposite[kMotifIndex][0] == 5))  then
 				kEnvFunctionComposite[kMotifIndex][5] = get_different_distrib_value_k(0, 1, (kCurrMaxX-kCurrMinX)/3, kCurrMaxX-kCurrMinX, 1)
+			else
+				kEnvFunctionComposite[kMotifIndex][5] = 0;
 			endif
 			
+			;distribution type and depth if stochastic func type
 			if kEnvFunctionComposite[kMotifIndex][0] == 6 then
 				kEnvFunctionComposite[kMotifIndex][6] 	IntRndDistrK 	1, 1, 7, 1
 				kEnvFunctionComposite[kMotifIndex][7] 	IntRndDistrK 	1, 1, 5, 1
+			else
+				kEnvFunctionComposite[kMotifIndex][6] = 0
+				kEnvFunctionComposite[kMotifIndex][7] = 0
 			endif
 			
 			kMotifIndex    	+=         1
@@ -431,7 +364,7 @@ instr theme
 		;									iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kLine[]	
 		kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
 		*/		
-		;kInstrNum	=	3
+		;kInstrNum	=	4
 		kInstrNum	=	IntRndDistrK(1, 1, 7, 1)
 		
 		
@@ -504,9 +437,11 @@ instr theme
 				=========	line 		=======
 				===============================
 			*/
-			kPeriod 	= gkMinPeriod * gkModi[1][0]
-			kTestPeriod = Markov2orderK(0, 1, 0., 1., 1, 0, gkLineRythm)
-			fprintks 	$DUMP_FILE_NAME, "kTestPeriod = %f\\n", kTestPeriod
+			;opcode Markov2orderK, k, ikkkkkk[][]
+			;iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kPrevEl, kMarkovTable[][] xin
+			kStartIndxFolded = Markov2orderK(0, 1, 0., 1., 1, 0, gkLineRythm)
+			fprintks 	$DUMP_FILE_NAME, "Markov::kStartIndxFolded = %f\\n", kStartIndxFolded
+			kPeriod 	= gkMinPeriod * gkModi[1][kStartIndxFolded]
 		elseif iPartType == 3 then
 			/*1
 				===============================
@@ -783,12 +718,12 @@ instr theme
 				===============================
 				=========	line 		=======
 				===============================
-			*/
-			kPeriod 	= gkMinPeriod * gkModi[1][0]
+			*/			
 			;opcode Markov2orderK, k, ikkkkkk[][]
 			;iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kPrevEl, kMarkovTable[][] xin
-			kTestPeriod Markov2orderK 0, 1, 0., 1., 1, kTestPeriod, gkLineRythm
-			fprintks 	$DUMP_FILE_NAME, "kTestPeriod = %f\\n", kTestPeriod
+			kStartIndxFolded Markov2orderK 0, 1, 0., 1., 1, kStartIndxFolded, gkLineRythm
+			fprintks 	$DUMP_FILE_NAME, "Markov::kStartIndxFolded = %f\\n", kStartIndxFolded
+			kPeriod 	= gkMinPeriod * gkModi[1][kStartIndxFolded]
 		elseif iPartType == 3 then
 			/*
 				===============================
@@ -1094,9 +1029,10 @@ endin
 ;i 		"test_env_instr" 	0 		30
 ;i 		"rythm_disp" 		0 		100
 
-;type	"theme" instr 		start	len		midi channel	part type
-i 		"theme"		 		0 		5		1				1
-i 		"theme"		 		10 		20		2				2
+;		1					2		3		4				5			6			7		
+;type	"theme" instr 		start	len		midi channel	part type	minMidi		maxMidi
+i 		"theme"		 		0 		20		1				2			40			84
+;i 		"theme"		 		15 		20		2				2			52			72
 
 </CsScore>
 </CsoundSynthesizer>

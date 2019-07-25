@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--Q2 --midioutfile=dev_stoh_v29.mid
+;-Q2 --midioutfile=dev_stoh_v29.mid
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -8,12 +8,44 @@ ksmps = 32
 nchnls = 2
 0dbfs = 1
 
+#define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
+
+/*
+	=======================================================
+	================	init instr 	=======================
+	=======================================================
+	
+	initialize global vars there
+*/
+
+gkModi[][] init  9, 8
+gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
+					/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
+					/* fibon */				1, 2, 3, 5, 8, 13, 21, 34,
+					/* ionian */ 			1, 1.1111, 1.25, 1.3333, 1.5, 1.6667, 1.875, 2,
+					/* Phrygian */ 			1, 1.0667, 1.2, 1.3333, 1.5, 1.6, 1.8, 2,
+					/* Dorian */			1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
+					/* Anhemitone */		1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
+					/* tone-half */			1, 1.0667, 1.2, 1.25, 1.4063, 1.5, 1.6667, 1.8, 
+					/* tone-half-half */	1, 1.1111, 1.2, 1.25, 1.4063, 1.5, 1.6, 1.8
+				 
+
+gkPeriod	init 	1
+gkMinPeriod	init 	.25
+;gkMinPeriod	init 	.15
+
+seed       0
+
+giSine    ftgen     0, 0, 2^10, 10, 1
+
+
 #include "..\include\math\stochastic\distribution3.inc.csd"
 #include "..\include\math\stochastic\util.inc.csd"
 #include "..\include\utils\table.v1.csd"
 
 
 #define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
+
 
 /*
 	=======================================================
@@ -972,6 +1004,7 @@ instr simple_sin
 endin
 
 
+/*
 instr test_env_instr
 	kTrigLog		metro	1
 	
@@ -998,7 +1031,7 @@ instr test_env_instr
 	endif
 	
 endin
-
+*/
 
 </CsInstruments>
 <CsScore>
@@ -1008,12 +1041,13 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-;i 		"rythm_disp" 		0 		100
+i 		"rythm_disp" 		0 		100
+;i 		"simple_sin" 		0 		100		440.			.5
 
 ;		1					2		3		4				5			6			7		
 ;type	"theme" instr 		start	len		midi channel	part type	minMidi		maxMidi
-i 		"theme"		 		0 		20		1				1			40			84
-i 		"theme"		 		25 		10		2				1			52			72
+;i 		"theme"		 		0 		20		1				1			40			84
+;i 		"theme"		 		25 		10		2				1			52			72
 
 </CsScore>
 </CsoundSynthesizer>

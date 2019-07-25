@@ -177,32 +177,31 @@ opcode GetFrq, k, kk[]
 	xout kFrq
 endop
 
+/*
 opcode SetOctVolumeValue, k[], kk[]k[]k[][]k
 	kMode, kVolume, kEnvFunctionComposite, kSpeakerPos, kTime xin
 	;kMode = {0 - set, 1 - mult, 2 - add)
 	
 	kRes[] init 8
 	
-	/*
-	kCnt = 0
-	until kCnt > 7 do
-		kRes[kCnt] = .0	
-		kCnt += 1
-	enduntil
-	*/
+	;kCnt = 0
+	;until kCnt > 7 do
+	;	kRes[kCnt] = .0	
+	;	kCnt += 1
+	;enduntil
 	
-	/*
-	;kParamNumber
-	if kEnvFunctionComposite[8] == 3 then
-		;GetFrq(kk[]) ;t
-	elseif kEnvFunctionComposite[8] == 2
-		;GetFrq(kk[]) ;y
-	else 
-		;GetFrq(kk[]) ;x
-	endif
-	*/
-	xout kRes
+	;;kParamNumber
+	;if kEnvFunctionComposite[8] == 3 then
+	;	;GetFrq(kk[]) ;t
+	;elseif kEnvFunctionComposite[8] == 2
+	;	;GetFrq(kk[]) ;y
+	;else 
+	;	;GetFrq(kk[]) ;x
+	;endif
+	
+	;xout kRes
 endop
+*/
 
 opcode SetOctVolumeArray, k[], kk[]
 	kMode, kVolume[] xin

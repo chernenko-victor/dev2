@@ -134,6 +134,9 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 
 ;instr 9 ;instr shepard_tone
 #include "..\include\sound\synthesis\shepard_tone.inc.csd"
+
+;instr 10 ;instr filtered_noise
+#include "..\include\sound\synthesis\filtered_noise.inc.csd"
 				 
 /*
 	===============================================
@@ -163,7 +166,7 @@ instr rythm_disp
 		kCenter		random 	1, 6
 		kPan		random 	.1, .9
 					;		type	instr	start	dur			p4			p5		p6	p7	p8 (instr num extern > 0)
-					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	9
+					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	10
 	endif
 	
 endin

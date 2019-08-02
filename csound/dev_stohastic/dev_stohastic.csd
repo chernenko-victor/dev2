@@ -18,27 +18,6 @@ nchnls = 2
 	initialize global vars there
 */
 
-gkModi[][] init  9, 8
-gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
-					/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
-					/* fibon */				1, 2, 3, 5, 8, 13, 21, 34,
-					/* ionian */ 			1, 1.1111, 1.25, 1.3333, 1.5, 1.6667, 1.875, 2,
-					/* Phrygian */ 			1, 1.0667, 1.2, 1.3333, 1.5, 1.6, 1.8, 2,
-					/* Dorian */			1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
-					/* Anhemitone */		1, 1.1111, 1.25, 1.4063, 1.6, 1.8, 2, 2.1111,
-					/* tone-half */			1, 1.0667, 1.2, 1.25, 1.4063, 1.5, 1.6667, 1.8, 
-					/* tone-half-half */	1, 1.1111, 1.2, 1.25, 1.4063, 1.5, 1.6, 1.8
-				 
-
-gkPeriod	init 	1
-gkMinPeriod	init 	.25
-;gkMinPeriod	init 	.15
-
-seed       0
-
-giSine    ftgen     0, 0, 2^10, 10, 1
-
-
 #include "..\include\math\stochastic\distribution3.inc.csd"
 #include "..\include\math\stochastic\util.inc.csd"
 #include "..\include\utils\table.v1.csd"
@@ -46,15 +25,6 @@ giSine    ftgen     0, 0, 2^10, 10, 1
 
 #define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
 
-
-/*
-	=======================================================
-	================	init instr 	=======================
-	=======================================================
-	
-	initialize global vars there
-*/
-
 gkModi[][] init  9, 8
 gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
 					/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
@@ -68,7 +38,8 @@ gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
 				 
 
 gkPeriod	init 	1
-gkMinPeriod	init 	.25
+gkMinPeriod	init 	2.5
+;gkMinPeriod	init 	.25
 ;gkMinPeriod	init 	.15
 
 seed       0
@@ -157,6 +128,12 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 
 ;instr 6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
 #include "..\include\sound\synthesis\wgbow.csd"
+
+;instr 8 ;instr white_noise_my
+#include "..\include\sound\synthesis\white_noise.inc.csd"
+
+;instr 9 ;instr shepard_tone
+#include "..\include\sound\synthesis\shepard_tone.inc.csd"
 				 
 /*
 	===============================================
@@ -170,6 +147,7 @@ instr rythm_disp
 	kDur			init 	15
 	kTrig			metro	1/kDur
 	kEnvStart		linseg 15, 2*p3/3, 5, p3/3, 15
+	kEnvStartSlow	linseg 150, 2*p3/3, 50, p3/3, 150
 	
 	/*
 	if kFlag == 1 then
@@ -180,10 +158,12 @@ instr rythm_disp
 	
 	if kTrig == 1 then
 		;kDur 		random 	15, 30
-		kDur 		random 	kEnvStart, 30
+		;kDur 		random 	kEnvStart, 30
+		kDur 		random 	kEnvStartSlow, 300
 		kCenter		random 	1, 6
 		kPan		random 	.1, .9
-		event  "i", "part", 0, kDur*2.5, kCenter, kPan
+					;		type	instr	start	dur			p4			p5		p6	p7	p8 (instr num extern > 0)
+					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	9
 	endif
 	
 endin
@@ -822,6 +802,8 @@ instr part
 
 	kFlag		init 	1
 	
+	iInstrNumExtern	=	p8
+	
 	
 	/*
 		==================================================================
@@ -839,11 +821,18 @@ instr part
 			;iInstrNum		=		ceil(iRnd1);			
 			;kInstrNum		IntRndDistrK 	1, 5, 6, 1
 			
-			;kInstrNum	=	6
-			
-			kUnifDistrA[]    array      4.66, .66, .68
+						
+			;kUnifDistrA[]    array      4.66, .66, .68
 			;									iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kLine[]	
-			kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
+			;kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
+			
+			
+			kInstrNum	=	9
+			
+			if iInstrNumExtern > 0 then
+				kInstrNum	=	iInstrNumExtern
+			endif
+			
 			
 			
 			/*

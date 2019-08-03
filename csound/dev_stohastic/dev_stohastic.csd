@@ -38,8 +38,8 @@ gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
 				 
 
 gkPeriod	init 	1
-gkMinPeriod	init 	2.5
-;gkMinPeriod	init 	.25
+;gkMinPeriod	init 	2.5
+gkMinPeriod	init 	.25
 ;gkMinPeriod	init 	.15
 
 seed       0
@@ -161,12 +161,12 @@ instr rythm_disp
 	
 	if kTrig == 1 then
 		;kDur 		random 	15, 30
-		;kDur 		random 	kEnvStart, 30
-		kDur 		random 	kEnvStartSlow, 300
+		kDur 		random 	kEnvStart, 30
+		;kDur 		random 	kEnvStartSlow, 300
 		kCenter		random 	1, 6
 		kPan		random 	.1, .9
 					;		type	instr	start	dur			p4			p5		p6	p7	p8 (instr num extern > 0)
-					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	10
+					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	8
 	endif
 	
 endin

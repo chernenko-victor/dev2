@@ -1,7 +1,7 @@
 instr filtered_noise
 	;ksep	= p4				;vary seperation of center frequency of filters in octaves
 	ksep	random 	1, 5				;vary seperation of center frequency of filters in octav
-	kenv	linseg	0, p3*.5, 1, p3*.5, 0	;envelope
+	kenv	linseg	0, p3*.5, p5, p3*.5, 0	;envelope
 	asig	rand	0.7
 	iBeginFrq random 	200, 2500
 	iEndFrq random 	400, 3500

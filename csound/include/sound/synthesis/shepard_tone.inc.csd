@@ -8,7 +8,8 @@ instr shepard_tone
 	ibasefrq  =         p4
 	
 	;ibaseamp  =         ampdbfs(p5) ;convert dB to amplitude
-	iAmp       random     0.1, .9
+	;iAmp       random     0.1, .9
+	iAmp       =		p5
 	ibaseamp  =         iAmp
 
 	iPan	=	p6

@@ -5,13 +5,45 @@
 ;kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
 opcode TableFolding, k, kkk
   kFoldingType, kiIndx, kTblLen xin
-  kIndxFolded = kiIndx
-  if kiIndx<0 then
-	kIndxFolded = kTblLen-1 
-  elseif kiIndx>kTblLen-1 then
-	kIndxFolded = 0
+  
+  if kFoldingType==2 then
+	  kIndxFolded = kiIndx
+	  if kiIndx<0 then
+		kIndxFolded = kTblLen-1 
+	  elseif kiIndx>kTblLen-1 then
+		kIndxFolded = 0
+	  endif
+  elseif kFoldingType==1 then /* TO DO */
+	  kIndxFolded = kiIndx
+	  if kiIndx<0 then
+		kIndxFolded = kTblLen-1 
+	  elseif kiIndx>kTblLen-1 then
+		kIndxFolded = 0
+	  endif	
   endif
+  
   xout kIndxFolded
+endop
+
+;kValue = TableExtrapolate(kArray[][], kIndxRow, kIndx, kTblLen)
+opcode TableExtrapolate, k, k[][]kkk
+	kArray[][], kIndxRow, kIndx, kTblLen xin
+	kRes init 1
+	/*
+		arr[kTblLen-1+n] = arr[kTblLen-1] * arr[n%(kTblLen-1)], e.g.
+		[0] => 1, [1] => 2, [2] => 4, [3] => 8, [4] => 16, [5] => 32, [6] => 64, [7] => 128,
+		kTblLen = 8;
+		n = 8; n%(kTblLen-1) = 1; arr[n%(kTblLen-1)] = 2; arr[kTblLen-1] = 128; arr[kTblLen-1+n] = 256
+	*/
+	if kIndx<0 then
+		kRes = kArray[kIndxRow][kTblLen-1]
+	elseif kIndx>kTblLen-1 then
+		kFoldedIndx = kIndx % (kTblLen - 1)
+		kRes = kArray[kIndxRow][kTblLen-1] * kArray[kIndxRow][kFoldedIndx]
+	else 
+		kRes = kArray[kIndxRow][kIndx]
+	endif
+	xout kRes
 endop
 
 opcode len_arr_new, k, k[]

@@ -1118,7 +1118,9 @@ instr part
 			kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
 			;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 			
-			kPeriod 	= gkMinPeriod * gkModi[gkRythmMode][kIndxFolded]		
+			;kPeriod 	= gkMinPeriod * gkModi[gkRythmMode][kIndxFolded]		
+			kPeriod = gkMinPeriod * TableExtrapolate(gkModi, gkRythmMode, kiIndx, kTblLen)
+			
 			;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
 	endif
 	
@@ -1138,7 +1140,8 @@ instr part
 		;kIndxFolded	TableFolding kFoldingType, kiIndx, 6
 		fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 		
-		kPeriod 	= gkMinPeriod * gkModi[gkRythmMode][kIndxFolded]		
+		;kPeriod 	= gkMinPeriod * gkModi[gkRythmMode][kIndxFolded]		
+		kPeriod = gkMinPeriod * TableExtrapolate(gkModi, gkRythmMode, kiIndx, kTblLen)
 		fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
 		;kNew uniform_distr_k kiMin, kiMax
 		;kNew linrnd_low_depth_k kiMin, kiMax, kDepth
@@ -1232,7 +1235,8 @@ instr part
 	;kiMin		line 	0, p3, 2
 	;kiMax		line 	3, p3, 5
 	kiMin	= expseg(4, (2/3)*p3, 1, (1/3)*p3, 3)-1;
-	kiMax	= expseg(6, (2/3)*p3, 3, (1/3)*p3, 8)-1;
+	;kiMax	= expseg(6, (2/3)*p3, 3, (1/3)*p3, 8)-1;
+	kiMax	= expseg(6, (2/3)*p3, 3, (1/3)*p3, 10)-1;
 	
 	/*
 		=======================================
@@ -1301,7 +1305,13 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		3600
+
+;for live performance
+;i 		"rythm_disp" 		0 		3600
+
+;for test
+i 		"rythm_disp" 		0 		100
+
 ;i 		"simple_sin" 		0 		100		440.			.5
 
 ;		1					2		3		4				5			6			7		

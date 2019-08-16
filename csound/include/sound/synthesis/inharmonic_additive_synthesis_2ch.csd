@@ -21,4 +21,8 @@ instr inharmonic_additive_synthesis
 	kenv      linen     1, p3/4, p3, p3/4
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
 	outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
+	
+	iRvbSendAmt  =         0.8               ; reverb send amount (0 - 1)
+	; add some of the audio from this instrument to the global reverb send variable
+	gaSend1    =         gaSend1 + (aOut*kenv * iRvbSendAmt)
 endin

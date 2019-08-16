@@ -107,7 +107,12 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 						0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,	0.,
 						0.,		0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,
 						0.,		0.,		0.,		0.,		0.,		0.,		0.1,	0.9	
-	
+
+
+
+gaSend1	init	0 ; global audio variable initialized to zero
+gaSend2	init	0 ; global audio variable initialized to zero
+						
 /*
 		=====================================================================
 		====================		widget		 		=====================
@@ -392,12 +397,18 @@ FLsetVal_i 0.5, iHdlQ2
 ;instr 8 ;instr white_noise_my
 #include "..\include\sound\synthesis\white_noise.inc.csd"
 
-;instr 9 ;instr shepard_tone
+;instr 9 ;instr filtered_noise
+#include "..\include\sound\synthesis\filtered_noise.inc.csd"
+
+;instr 10 ;instr shepard_tone
 #include "..\include\sound\synthesis\shepard_tone.inc.csd"
 
-;instr 10 ;instr filtered_noise
-#include "..\include\sound\synthesis\filtered_noise.inc.csd"
-				 
+
+;instr 101 ; reverb
+#include "..\include\sound\fx\reverb.inc.csd"
+;instr 102 ; reverb
+#include "..\include\sound\fx\delay.inc.csd"
+
 /*
 	===============================================
 	=========	regular start other insts 	=======
@@ -1068,6 +1079,16 @@ instr part
 	iInstrNumExtern	=	p8
 	
 	
+	/*	limit values for rythm envelope */
+	iMinB = 5
+	iMinM = 3
+	iMinE = 8
+	
+	iMaxB = 9
+	iMaxM = 6
+	iMaxE = 12
+	
+	
 	/*
 		==================================================================
 		==================		once at start 	 			==============
@@ -1082,7 +1103,7 @@ instr part
 			*/
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
-			kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			kInstrNum		IntRndDistrK 	1, 1, 10, 1
 			
 						
 			;kUnifDistrA[]    array      4.66, .66, .68
@@ -1096,6 +1117,7 @@ instr part
 				kInstrNum	=	iInstrNumExtern
 			endif
 			
+			kInstrNum	=	1
 			
 			
 			/*
@@ -1221,6 +1243,12 @@ instr part
 		endif
 		*/
 		
+		;reverb for 1 instr
+		if kInstrNum == 1 then
+			event  		"i", 101, kStart, kDur, kFrq, kAmp, iPan
+			event  		"i", 102, kStart, kDur, kFrq, kAmp, iPan
+		endif
+		
 		fprintks 	$DUMP_FILE_NAME, "Event i :: Instr name = %f | Start = %f | kDur = %f  | kAmp = %f  | kFrq = %f \\n", kInstrNum, kStart, kDur, kAmp, kFrq		
 	endif
 	
@@ -1234,9 +1262,11 @@ instr part
 	
 	;kiMin		line 	0, p3, 2
 	;kiMax		line 	3, p3, 5
-	kiMin	= expseg(4, (2/3)*p3, 1, (1/3)*p3, 3)-1;
+	;kiMin	= expseg(4, (2/3)*p3, 1, (1/3)*p3, 3)-1;
+	kiMin	= expseg(iMinB, (2/3)*p3, iMinM, (1/3)*p3, iMinE)-1;
+	
 	;kiMax	= expseg(6, (2/3)*p3, 3, (1/3)*p3, 8)-1;
-	kiMax	= expseg(6, (2/3)*p3, 3, (1/3)*p3, 10)-1;
+	kiMax	= expseg(iMaxB, (2/3)*p3, iMaxM, (1/3)*p3, iMaxE)-1;
 	
 	/*
 		=======================================

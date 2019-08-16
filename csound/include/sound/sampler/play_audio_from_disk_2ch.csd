@@ -1,3 +1,9 @@
+/*
+	soundin.1-5 orchestral
+	soundin.6-11 spoken
+	
+*/
+
 instr	play_audio_from_disk
 	kSpeed  init     1           ; playback speed
 	iSkip   init     0           ; inskip into file (in seconds)

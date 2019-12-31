@@ -46,9 +46,27 @@ gkRythmMode init 1
 gkPitchMode init 7
 gkInstrNum init 0
 
+gkiDistrTypeNoteStart init 7
+
+giDurSeedType		=		0
+gkDurTypeOfDistrib	init	2
+gkDurMin			init	.1
+gkDurMax			init	3	
+gkDurDistribDepth	init	1
+
 seed       0
 
 giSine    ftgen     0, 0, 2^10, 10, 1
+
+
+gkFrqIndxMarkovTable[][] init  7, 7
+gkFrqIndxMarkovTable array     0.0, 0.0, 0.5, 0.5, 0.0, 0.0, 0.0,
+                      0.2, 0.0, 0.2, 0.2, 0.2, 0.1, 0.1,
+                      0.1, 0.1, 0.5, 0.1, 0.1, 0.1, 0.0,
+                      0.0, 0.1, 0.1, 0.5, 0.1, 0.1, 0.1,
+                      0.2, 0.2, 0.0, 0.0, 0.2, 0.2, 0.2,
+                      0.1, 0.1, 0.0, 0.0, 0.1, 0.1, 0.6,
+                      0.1, 0.1, 0.0, 0.0, 0.1, 0.6, 0.1
 
 /*
 gkModi16[][] init  9, 16
@@ -181,8 +199,8 @@ FLpanel "Dev2", 900, 700, 10, 10
 		iPitchModY = 20
 		; Score event type (-1=ignored)
 		iopcode = -1
-		gkPitchMode, iHdlPitchMode FLcount "Pitch Mode Number", imin, imax, istep1, istep2, itype, iwidth, iheight, iPitchModX, iPitchModY, iopcode
-		
+		gkPitchMode, iHdlPitchMode FLcount "Pitch Mode Number", imin, imax, istep1, istep2, itype, iwidth, iheight, iPitchModX, iPitchModY, iopcode		
+				
 		
 		; Minimum value output by the text box
 		iFreqTxtMin = 200
@@ -350,6 +368,62 @@ FLpanel "Dev2", 900, 700, 10, 10
 		; Type 23
 		gkBtnt7, ihBtnt7 FLbutton "Panic", iBtnon, iBtnoff, 23, 200, 40, iBtnx, iBtny + 335, -1
 		
+		
+		; Minimum value output by counter
+		iDistrTypeNoteStartMin = 1
+		; Maximum value output by counter
+		iDistrTypeNoteStartMax = 7
+		; Distance of the left edge of the counter
+		; from the left edge of the panel
+		iDistrTypeNoteStartX = 400
+		; Distance of the top edge of the counter
+		; from the top edge of the panel
+		iDistrTypeNoteStartY = 150
+		; Score event type (-1=ignored)
+		iopcode = -1
+		gkiDistrTypeNoteStart, iHdlDistrTypeNoteStart FLcount "Distr Type Note Start", iDistrTypeNoteStartMin, iDistrTypeNoteStartMax, istep1, istep2, itype, iwidth, iheight, iDistrTypeNoteStartX, iDistrTypeNoteStartY, iopcode
+		
+		iDispMinPeriodKnobValWidth = 50
+		iDispMinPeriodKnobValHeight = 20
+		iDispMinPeriodKnobValX = 600
+		iDispMinPeriodKnobValY = 150
+		iDispMinPeriodKnobVal FLvalue "Sec", iDispMinPeriodKnobValWidth, iDispMinPeriodKnobValHeight, iDispMinPeriodKnobValX, iDispMinPeriodKnobValY
+		
+		; Minimum value output by the knob
+		iMinPeriodMin = .15
+		; Maximum value output by the knob
+		iMinPeriodMax = 2.5
+		; Logarithmic type knob selected
+		iMinPeriodExp = -1
+		; Knob graphic type (1=3D knob)
+		iMinPeriodType = 1 
+		; Display handle (-1=not used)
+		iMinPeriodDisp = iDispMinPeriodKnobVal
+		; Width of the knob in pixels
+		iMinPeriodWidth = 70
+		; Distance of the left edge of the knob 
+		; from the left edge of the panel
+		iMinPeriodX = 650
+		; Distance of the top edge of the knob 
+		; from the top of the panel
+		iMinPeriodY = 150
+		gkMinPeriod, iHdlMinPeriod FLknob "Minimal Duration", iMinPeriodMin, iMinPeriodMax, iMinPeriodExp, iMinPeriodType, iMinPeriodDisp, iMinPeriodWidth, iMinPeriodX, iMinPeriodY
+		
+		
+		; Minimum value output by counter
+		iDistrTypeNoteDurMin = 1
+		; Maximum value output by counter
+		iDistrTypeNoteDurMax = 7
+		; Distance of the left edge of the counter
+		; from the left edge of the panel
+		iDistrTypeNoteDurX = 730
+		; Distance of the top edge of the counter
+		; from the top edge of the panel
+		iDistrTypeNoteDurY = 150
+		; Score event type (-1=ignored)
+		iopcode = -1
+		gkDurTypeOfDistrib, iHdlDistrTypeNoteDur FLcount "Distr Type Note Duration", iDistrTypeNoteDurMin, iDistrTypeNoteDurMax, istep1, istep2, itype, iwidth, iheight, iDistrTypeNoteDurX, iDistrTypeNoteDurY, iopcode
+		
 ;	FLgroupEnd
 ; End of panel contents
 FLpanelEnd
@@ -362,6 +436,9 @@ FLsetVal_i 300, iHdlFreqTxt
 FLsetVal_i 0, iHdlFreqTxt
 FLsetVal_i 0.5, iHdlQ
 FLsetVal_i 0.5, iHdlQ2
+FLsetVal_i 7, iHdlDistrTypeNoteStart
+FLsetVal_i .25, iHdlMinPeriod
+FLsetVal_i 2, iHdlDistrTypeNoteDur
 
 
 /*
@@ -1067,7 +1144,14 @@ instr part
 	
 	iInstrNumExtern	=	p8
 	
+	iFrqIndxSeedType		=	0
+	kFrqIndxTypeOfDistrib	init 1
+	kFrqIndxMin				init 0
+	kFrqIndxMax				init 1
+	kFrqIndxDistribDepth	init 1
+	kFrqIndxPrevEl			init 1
 	
+		
 	/*
 		==================================================================
 		==================		once at start 	 			==============
@@ -1131,8 +1215,8 @@ instr part
 			=======================================
 		*/
 
-		kiIndx		IntRndDistrK 	kiDistrType, kiMin, kiMax, kDepth
-		fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+		kiIndx		IntRndDistrK 	gkiDistrTypeNoteStart, kiMin, kiMax, kDepth
+		fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: gkiDistrTypeNoteStart = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
 		
 		kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
 		;kIndxFolded	TableFolding kFoldingType, kiIndx, 6
@@ -1148,8 +1232,8 @@ instr part
 			=========		duration 		=======
 			=======================================
 		*/
-
-		kDur = kPeriod * .8
+		kDurPercent get_different_distrib_value_k 	giDurSeedType, gkDurTypeOfDistrib, gkDurMin, gkDurMax, gkDurDistribDepth	
+		kDur = kPeriod * kDurPercent
 		
 		/*
 			=======================================
@@ -1158,16 +1242,24 @@ instr part
 		*/
 		;kFrq		=		kFrq * kFrqMult
 		
-		
+		kFrqIndxMark Markov2orderK iFrqIndxSeedType, kFrqIndxTypeOfDistrib, kFrqIndxMin, kFrqIndxMax, kFrqIndxDistribDepth, kFrqIndxPrevEl, gkFrqIndxMarkovTable
+  
+		/*
 		kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
 		;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
 		
 		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
 		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
+		*/
+		
+		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndxMark, kTblLen
+		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 		
 		;kFrq	 	= 440 * kFrqMult * gkModi[3][kFrqIndxFolded]		
 		kFrq	 	= kFrqMult * gkModi[gkPitchMode][kFrqIndxFolded]		
 		;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
+		
+		kFrqIndxPrevEl = kFrqIndxMark
 		
 		
 		/*

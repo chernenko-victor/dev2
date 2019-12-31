@@ -339,11 +339,20 @@ opcode IntRndDistrK, k, kkkk
   xout kOut
 endop
 
+
+opcode expon_rnd_k, k, k
+	kLambda xin
+	kUniRnd    random     .0001, 1
+	kUniRndScaled = kUniRnd / kLambda
+	kRes = log(kUniRndScaled)
+	xout kRes
+endop 
+
+
 /*
 2DO
 
 1. Random Walk
-
 2. poisson http://www.csounds.com/manual/html/poisson.html betarand, bexprnd, cauchy, exprand, gauss, linrand, pcauchy, trirand, unirand, weibull
 
 3. http://en.wikipedia.org/wiki/List_of_probability_distributions

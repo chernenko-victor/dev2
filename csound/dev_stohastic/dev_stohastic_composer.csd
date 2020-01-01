@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
-;-Q2 --midioutfile=dev_stoh_v29.mid
+-Q2 --midioutfile=dev_stohastic_composer.mid
 </CsOptions>
 <CsInstruments>
 sr = 44100

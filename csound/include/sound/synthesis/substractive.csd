@@ -149,7 +149,16 @@ instr substractive_wov
   kFund    expon     iFundementalBeginValue,p3,iFundementalEndValue               ; fundamental
   kVow     line      iVowelBeginValue,p3,iVowelEndValue               ; vowel select
   kBW      line      iBandwidthFactorBegin,p3,iBandwidthFactorEnd               ; bandwidth factor
-  iVoice   =         p10                    ; voice select
+  
+  ;iVoice   =         p10                    ; voice select
+  iLine[]			fillarray .25, .25, .25, .25
+  iSeedType			=	0
+  iTypeOfDistrib	=	1
+  iMin				=	0
+  iMax				=	1
+  iDistribDepth  	=	1
+  iVoice   get_discr_distr    iSeedType, iTypeOfDistrib, iMin, iMax, iDistribDepth, iLine
+
   kSrc     line      iInputSourceBegin,p3,iInputSourceEnd             ; source mix
 
   aNoise   pinkish   3                      ; pink noise
@@ -183,6 +192,7 @@ instr substractive_wov
 
   ; formants are mixed and multiplied both by intensity values derived from tables and by the on-screen gain controls for each formant
   aMix     sum       aForm1*ampdbfs(kDB1),aForm2*ampdbfs(kDB2),aForm3*ampdbfs(kDB3),aForm4*ampdbfs(kDB4),aForm5*ampdbfs(kDB5)
-  kEnv     linseg    0,3,1,p3-6,1,3,0     ; an amplitude envelope
+  ;kEnv     linseg    0,3,1,p3-6,1,3,0     ; an amplitude envelope
+  kEnv	linseg		.01, p3/5, 1., p3/5, .8, 2*p3/5, .8, p3/5, .001 
            outs      aMix*kEnv*iPan, aMix*kEnv*(1-iPan) ; send audio to outputs
 endin

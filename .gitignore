@@ -2,3 +2,9 @@
 *.wav
 csound/dev_stohastic/skdfjlskjdf.txt
 *.wav
+csound/dev_stohastic/dev_stohastic.v32.txt
+*.mid
+*.reapeaks
+csound/dev_stohastic/dump_distribution3.inc.txt
+csound/dev_stohastic/dump_util.inc.txt
+csound/dev_stohastic/log.txt

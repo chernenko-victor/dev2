@@ -59,6 +59,8 @@ seed       0
 
 giSine    ftgen     0, 0, 2^10, 10, 1
 
+gkTotalLen			init 0
+
 
 gkFrqIndxMarkovTable[][] init  7, 7
 gkFrqIndxMarkovTable array     0.0, 0.0, 0.5, 0.5, 0.0, 0.0, 0.0,
@@ -173,6 +175,7 @@ instr rythm_disp
 					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	gkInstrNum
 	endif
 	
+	gkTotalLen	linseg .0, p3, 1.
 endin
 
 /*

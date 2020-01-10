@@ -45,7 +45,7 @@ gkMinPeriod	init 	.25
 gkRythmMode init 1
 gkPitchMode init 7
 ;gkInstrNum init 0
-gkInstrNum init 5
+gkInstrNum init 9
 
 gkiDistrTypeNoteStart init 7
 
@@ -59,6 +59,8 @@ seed       0
 
 giSine    ftgen     0, 0, 2^10, 10, 1
 
+
+gkTotalLen			init 0
 
 gkFrqIndxMarkovTable[][] init  7, 7
 gkFrqIndxMarkovTable array     0.0, 0.0, 0.5, 0.5, 0.0, 0.0, 0.0,
@@ -93,7 +95,19 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 						0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,	0.,
 						0.,		0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,
 						0.,		0.,		0.,		0.,		0.,		0.,		0.1,	0.9	
-	
+
+;waveforms used for granulation
+giSaw   ftgen 1,0,4096,7,0,4096,1
+giSq    ftgen 2,0,4096,7,0,2046,0,0,1,2046,1
+giTri   ftgen 3,0,4096,7,0,2046,1,2046,0
+giPls   ftgen 4,0,4096,7,1,200,1,0,0,4096-200,0
+giBuzz  ftgen 5,0,4096,11,20,1,1
+
+;window function - used as an amplitude envelope for each grain
+;(hanning window)
+giWFn   ftgen 7,0,16384,20,2,1
+
+
 /*
 		=====================================================================
 		====================		widget		 		=====================
@@ -129,13 +143,19 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 #include "..\include\sound\synthesis\wgbow.csd"
 
 ;instr 8 ;instr white_noise_my
-#include "..\include\sound\synthesis\white_noise.inc.csd"
+;#include "..\include\sound\synthesis\white_noise.inc.csd"
+
+;instr 8 ;feedback_modulation
+#include "..\include\sound\synthesis\feedback_modulation_2ch.csd"
 
 ;instr 9 ;instr shepard_tone
-#include "..\include\sound\synthesis\shepard_tone.inc.csd"
+;#include "..\include\sound\synthesis\shepard_tone.inc.csd"
+
+;instr 9 ;granulator
+#include "..\include\sound\synthesis\grain_2ch.csd"
 
 ;instr 10 ;instr filtered_noise
-#include "..\include\sound\synthesis\filtered_noise.inc.csd"
+;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
 				 
 /*
 	===============================================
@@ -168,6 +188,7 @@ instr rythm_disp
 					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	gkInstrNum
 	endif
 	
+	gkTotalLen	linseg .0, p3, 1.
 endin
 
 /*
@@ -245,7 +266,8 @@ instr part
 			*/
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
-			kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			;kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						
 			;kUnifDistrA[]    array      4.66, .66, .68
@@ -472,7 +494,24 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		3600
+i 		"rythm_disp" 		0 		60
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>
+<bsbPanel>
+ <label>Widgets</label>
+ <objectName/>
+ <x>100</x>
+ <y>100</y>
+ <width>320</width>
+ <height>240</height>
+ <visible>true</visible>
+ <uuid/>
+ <bgcolor mode="nobackground">
+  <r>255</r>
+  <g>255</g>
+  <b>255</b>
+ </bgcolor>
+</bsbPanel>
+<bsbPresets>
+</bsbPresets>

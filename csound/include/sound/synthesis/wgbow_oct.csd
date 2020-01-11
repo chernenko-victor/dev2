@@ -1,7 +1,7 @@
 gaSend init 0
 
  instr wgbow_instr
-	kamp     init        0.6
+	kamp     init        0.3
 	;kamp     =        p4
 	kfreq    init        p4
 	kpres    init        0.2

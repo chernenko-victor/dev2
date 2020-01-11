@@ -51,12 +51,15 @@ instr	play_audio_from_disk
 	;printk 			1, kSpeed
 	
 	;iRnd1	 		random 	0.5, 4.5 //from 1 to 5
-	iRnd1	 		random 	0.5, 10.5 //from 1 to 11
+	iRnd1	 		random 	0.5, 24.5 //from 1 to 25
 	iFileNum		=		ceil(iRnd1);
 	
 	
 
 	; read audio from disk using diskin2 opcode
 	a1, a2      diskin2  iFileNum, kSpeed, iSkip, iLoop
-	outs       a1*iPan, a2*(1-iPan)
+	
+	aAmpEnv expseg .001, .01, 1, 	p3-.01-.1, 1, 	.1, .001
+	
+	outs       a1*iPan*aAmpEnv, a2*(1-iPan)*aAmpEnv
 endin

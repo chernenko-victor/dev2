@@ -1,81 +1,931 @@
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 0.000000 | kXmax = 7.500000 | kYmin = 21.000000 | kYmax = 57.000000 | kPeriod = 6.605184 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 4.000000 | kXmin = 7.501000 | kXmax = 12.500000 | kYmin = 93.000000 | kYmax = 36.000000 | kPeriod = 2.243534 | kDistrType = 0.000000 | kDepth = 0.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = 6.000000 | kXmin = 12.501000 | kXmax = 20.000000 | kYmin = 46.000000 | kYmax = 103.000000 | kPeriod = 0.000000 | kDistrType = 6.000000 | kDepth = 3.000000
-kEnvFunctionType = -1.000000 | kXmin = 0.000000 | kXmax = 0.000000 | kYmin = 0.000000 | kYmax = 0.000000 | kPeriod = 0.000000 | kDistrType = 0.000000 | kDepth = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 8.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 16.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 32.000000 
+kIsPause = 2.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 16.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 16.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 8.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 0.000000 | iToAzim = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 293.000000 | iToAzim = 343.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+iFromAzim = 149.000000 | iToAzim = 254.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 149.000000 | iToAzim = 254.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 52.000000 | iToAzim = 179.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 0.500000 
+kIsPause = 1.000000
+iFromAzim = 30.000000 | iToAzim = 265.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 250.000000 | iToAzim = 318.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 358.000000 | iToAzim = 379.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+iFromAzim = 358.000000 | iToAzim = 379.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 16.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 84.000000 | iToAzim = 204.000000
+iFromAzim = 84.000000 | iToAzim = 204.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 168.000000 | iToAzim = 218.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 299.000000 | iToAzim = 349.000000
+iFromAzim = 299.000000 | iToAzim = 349.000000
+:: kPeriod = 0.500000 
+kIsPause = 1.000000
+iFromAzim = 348.000000 | iToAzim = 392.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 0.000000 | iToAzim = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 235.000000 | iToAzim = 359.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+iFromAzim = 328.000000 | iToAzim = 362.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+iFromAzim = 328.000000 | iToAzim = 362.000000
+iFromAzim = 328.000000 | iToAzim = 362.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 328.000000 | iToAzim = 362.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 65.000000 | iToAzim = 291.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 220.000000 | iToAzim = 345.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+iFromAzim = 265.000000 | iToAzim = 334.000000
+iFromAzim = 220.000000 | iToAzim = 345.000000
+iFromAzim = 265.000000 | iToAzim = 334.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 53.000000 | iToAzim = 285.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 144.000000 | iToAzim = 344.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 247.000000 | iToAzim = 326.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+iFromAzim = 247.000000 | iToAzim = 326.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+iFromAzim = 5.000000 | iToAzim = 317.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 40.000000 | iToAzim = 255.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 6.000000 | iToAzim = 194.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 272.000000 | iToAzim = 332.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 208.000000 | iToAzim = 277.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 304.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+iFromAzim = 304.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 65.000000 | iToAzim = 274.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+iFromAzim = 65.000000 | iToAzim = 274.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 58.000000 | iToAzim = 251.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+iFromAzim = 58.000000 | iToAzim = 251.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 19.000000 | iToAzim = 318.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 295.000000 | iToAzim = 349.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 35.000000 | iToAzim = 349.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 35.000000 | iToAzim = 349.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 253.000000 | iToAzim = 343.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+iFromAzim = 252.000000 | iToAzim = 335.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+:: kPeriod = 0.500000 
+kIsPause = 1.000000
+iFromAzim = 230.000000 | iToAzim = 351.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 1.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+iFromAzim = 158.000000 | iToAzim = 288.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 16.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 32.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 0.500000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 32.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000
+:: kPeriod = 0.500000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 32.000000 
+kIsPause = 2.000000
+:: kPeriod = 8.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 4.000000 
+kIsPause = 2.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 0.000000
+:: kPeriod = 2.000000 
+kIsPause = 2.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 1.000000 
+kIsPause = 1.000000
+:: kPeriod = 2.000000 
+kIsPause = 1.000000
+:: kPeriod = 1.000000 
+kIsPause = 0.000000
+:: kPeriod = 4.000000 
+kIsPause = 0.000000
+:: kPeriod = 16.000000 
+kIsPause = 1.000000
+:: kPeriod = 8.000000 
+kIsPause = 0.000000

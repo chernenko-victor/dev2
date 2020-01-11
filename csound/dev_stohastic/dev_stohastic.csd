@@ -44,8 +44,8 @@ gkMinPeriod	init 	.25
 
 gkRythmMode init 1
 gkPitchMode init 7
-;gkInstrNum init 0
-gkInstrNum init 4
+gkInstrNum init 0
+;gkInstrNum init 10
 
 gkiDistrTypeNoteStart init 7
 
@@ -156,6 +156,9 @@ giWFn   ftgen 7,0,16384,20,2,1
 
 ;instr 10 ;instr filtered_noise
 ;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
+
+;instr 10 ;fft_stretch_pitchsfht_2ch
+#include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
 /*
 	===============================================
@@ -268,8 +271,8 @@ instr part
 			*/
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
-			;kInstrNum		IntRndDistrK 	1, 1, 11, 1
-			kInstrNum		IntRndDistrK 	1, 1, 9, 1
+			kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			;kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						
 			;kUnifDistrA[]    array      4.66, .66, .68
@@ -496,24 +499,7 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		60
+i 		"rythm_disp" 		0 		180
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>
-<bsbPanel>
- <label>Widgets</label>
- <objectName/>
- <x>100</x>
- <y>100</y>
- <width>320</width>
- <height>240</height>
- <visible>true</visible>
- <uuid/>
- <bgcolor mode="nobackground">
-  <r>255</r>
-  <g>255</g>
-  <b>255</b>
- </bgcolor>
-</bsbPanel>
-<bsbPresets>
-</bsbPresets>

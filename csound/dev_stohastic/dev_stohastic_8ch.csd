@@ -139,8 +139,14 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 ;instr 9 ;instr shepard_tone
 ;#include "..\include\sound\synthesis\shepard_tone.inc.csd"
 
+;instr 9 ;granulator
+#include "..\include\sound\synthesis\grain_oct.csd"
+
 ;instr 10 ;instr filtered_noise
 ;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
+
+;instr 10 ;fft_stretch_pitchsfht_2ch
+#include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
 /*
 	===============================================

@@ -45,7 +45,7 @@ gkMinPeriod	init 	.25
 gkRythmMode init 1
 gkPitchMode init 7
 ;gkInstrNum init 0
-gkInstrNum init 9
+gkInstrNum init 4
 
 gkiDistrTypeNoteStart init 7
 
@@ -170,6 +170,8 @@ instr rythm_disp
 	kTrig			metro	1/kDur
 	kEnvStart		linseg 15, 2*p3/3, 5, p3/3, 15
 	kEnvStartSlow	linseg 150, 2*p3/3, 50, p3/3, 150
+	
+	gkMinPeriod		expseg 2.5, p3/2, .25, .5, 2.5, p3/2-.5, .25
 	
 	/*
 	if kFlag == 1 then

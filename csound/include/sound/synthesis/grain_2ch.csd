@@ -15,7 +15,7 @@ instr grain_2ch
   iMaxOvr =       1000
   ;function table for source waveform for content of the grain
   ;a different waveform chosen once every 10 seconds
-  kFn     randomh 1,5.99,0.1
+  kFn     randomh 1,4.99,0.1
   ;print info. to the terminal
           ;printks "CPS:%5.2F%TDur:%5.2F%TDensity:%5.2F%TWaveform:%1.0F%n",1,                     kCPS,kGDur,kDens,kFn
   aSig    grain3  (kCPS+p4)/2, kPhs, kFmd, kPmd, kGDur, kDens, iMaxOvr, kFn, giWFn, \
@@ -30,5 +30,5 @@ instr grain_2ch
 	;aAmpEnv expseg .001, 0.001, 1, 0.3, 0.5, 8.5, .001
 	aAmpEnv expseg .001, iAttTime, 1, iSustTime, 0.5, p3-(iAttTime+iSustTime), .001
 	
-    outs     aSig*0.06*aAmpEnv, aSig*0.06*aAmpEnv
+    outs     aSig*0.04*aAmpEnv, aSig*0.04*aAmpEnv
 endin

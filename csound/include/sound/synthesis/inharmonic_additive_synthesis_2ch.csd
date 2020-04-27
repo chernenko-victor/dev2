@@ -20,7 +20,7 @@ instr inharmonic_additive_synthesis
 	aOsc8     poscil    ibaseamp/8, ibasefrq*1.41, giSine
 	kenv      linen     1, p3/4, p3, p3/4
 	aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
-	outs aOut*kenv*iPan, aOut*kenv*(1-iPan)
+	outs aOut*kenv*iPan/8, aOut*kenv*(1-iPan)/8
 	
 	; iRvbSendAmt  =         0.8               ; reverb send amount (0 - 1)
 	; add some of the audio from this instrument to the global reverb send variable

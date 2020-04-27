@@ -1,5 +1,4 @@
-csound/**/*.txt
-*.wav
+csound/**/*.txt *.wav
 csound/dev_stohastic/skdfjlskjdf.txt
 *.wav
 csound/dev_stohastic/dev_stohastic.v32.txt

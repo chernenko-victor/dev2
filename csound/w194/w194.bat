@@ -1,0 +1,2 @@
+REM csound -F C:\usr\chernenko\audio\w194.mid -d -W -o C:\usr\chernenko\src\csound\dev2\csound\w194\w194.wav C:\usr\chernenko\src\csound\dev2\csound\w194\w194.csd
+csound -F C:\usr\chernenko\audio\w194_1_test.mid -d -W -o C:\usr\chernenko\src\csound\dev2\csound\w194\w194_1_test.wav C:\usr\chernenko\src\csound\dev2\csound\w194\w194.csd

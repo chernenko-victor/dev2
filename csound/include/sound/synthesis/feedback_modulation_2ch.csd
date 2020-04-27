@@ -5,7 +5,7 @@ instr feedback_modulation
 	/* 				**
 	**	Amplitude 	**
 	**				*/
-	iAmp		random     0.1, .9
+	iAmp		random     .1, .9
 	iAttTime	random     0.01, p3/3
 	iSustTime	random     0.01, p3/3
 	;aAmpEnv expseg .001, 0.001, 1, 0.3, 0.5, 8.5, .001
@@ -25,5 +25,5 @@ instr feedback_modulation
 	;aCarrier tablei aPhase+(aCarrier*kFeedbackAmountEnv), 1, 1, 0, 1
 	aCarrier tablei aPhase+(aCarrier*kFeedbackAmountEnv), giSine, 1, 0, 1
 	
-	outs aCarrier*aAmpEnv*iAmp, aCarrier*aAmpEnv*iAmp
+	outs aCarrier*aAmpEnv*iAmp/15, aCarrier*aAmpEnv*iAmp/15
 endin

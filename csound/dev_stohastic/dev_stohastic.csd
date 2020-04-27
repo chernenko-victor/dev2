@@ -25,6 +25,14 @@ nchnls = 2
 
 #define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
 
+
+gkPartID	init 	0
+gkPattern[][][] init  32, 64, 5
+/*
+[PartID][StepNum][kPeriod, kDur, kFrq, kAmp, iPan]
+At Start New Part PartID++
+*/
+
 gkModi[][] init  9, 8
 gkModi fillarray	/* natural */			1, 2, 3, 4, 5, 6, 7, 8,
 					/* geom */				1, 2, 4, 8, 16, 32, 64, 128,
@@ -108,6 +116,8 @@ giBuzz  ftgen 5,0,4096,11,20,1,1
 giWFn   ftgen 7,0,16384,20,2,1
 
 
+gkBtnstop init 1
+
 /*
 		=====================================================================
 		====================		widget		 		=====================
@@ -184,13 +194,14 @@ instr rythm_disp
 	*/
 	
 	if kTrig == 1 then
+		gkPartID	+= 	1
 		;kDur 		random 	15, 30
 		kDur 		random 	kEnvStart, 30
 		;kDur 		random 	kEnvStartSlow, 300
 		kCenter		random 	1, 6
 		kPan		random 	.1, .9
-					;		type	instr	start	dur			p4			p5		p6	p7	p8 (instr num extern > 0)
-					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	gkInstrNum
+					;		type	instr	start	dur			p4			p5		p6	p7	p8 (instr num extern > 0)	p9
+					event  	"i", 	"part",	0, 		kDur*2.5,	kCenter,	kPan,	0,	0,	gkInstrNum,					gkPartID
 	endif
 	
 	gkTotalLen	linseg .0, p3, 1.
@@ -256,6 +267,9 @@ instr part
 	kFrqIndxDistribDepth	init 1
 	kFrqIndxPrevEl			init 1
 	
+	kLocalPartID	=	p9
+	kCurrentStep	init	0
+	
 		
 	/*
 		==================================================================
@@ -271,7 +285,8 @@ instr part
 			*/
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
-			kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			
+			;=====================	kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			;kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						
@@ -280,7 +295,7 @@ instr part
 			;kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
 			
 			
-			;kInstrNum	=	9
+			kInstrNum	=	1
 			
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern
@@ -348,24 +363,24 @@ instr part
 		*/
 		;kFrq		=		kFrq * kFrqMult
 		
-		kFrqIndxMark Markov2orderK iFrqIndxSeedType, kFrqIndxTypeOfDistrib, kFrqIndxMin, kFrqIndxMax, kFrqIndxDistribDepth, kFrqIndxPrevEl, gkFrqIndxMarkovTable
-  
-		/*
-		kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
-		;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+		if gkBtnstop==1 then
+			kFrqIndx Markov2orderK iFrqIndxSeedType, kFrqIndxTypeOfDistrib, kFrqIndxMin, kFrqIndxMax, kFrqIndxDistribDepth, kFrqIndxPrevEl, gkFrqIndxMarkovTable
+		else
+			kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
+			;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+		
+			kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
+			;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
+		endif
 		
 		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
-		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
-		*/
-		
-		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndxMark, kTblLen
 		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 		
 		;kFrq	 	= 440 * kFrqMult * gkModi[3][kFrqIndxFolded]		
 		kFrq	 	= kFrqMult * gkModi[gkPitchMode][kFrqIndxFolded]		
 		;fprintks 	$DUMP_FILE_NAME, ":: kPeriod = %f \\n", kPeriod
 		
-		kFrqIndxPrevEl = kFrqIndxMark
+		kFrqIndxPrevEl = kFrqIndx
 		
 		
 		/*
@@ -376,6 +391,16 @@ instr part
 		;event  	"i", "simple_sin", kStart, kDur, kFrq, kAmp
 		;					p1		p2		p3		p4	p5		p6
 		event  		"i", kInstrNum, kStart, kDur, kFrq, kAmp, iPan
+		
+		
+		if kCurrentStep < 9 then
+			gkPattern[kLocalPartID][kCurrentStep][0] = kPeriod
+			gkPattern[kLocalPartID][kCurrentStep][1] = kDur
+			gkPattern[kLocalPartID][kCurrentStep][2] = kFrq
+			gkPattern[kLocalPartID][kCurrentStep][3] = kAmp
+			gkPattern[kLocalPartID][kCurrentStep][4] = iPan
+			kCurrentStep	+=	1
+		endif
 		
 		
 		/*
@@ -499,7 +524,7 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		180
+i 		"rythm_disp" 		0 		1200
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>

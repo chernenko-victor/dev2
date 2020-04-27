@@ -200,7 +200,7 @@ FLpanel "Dev2", 900, 700, 10, 10
 		gkQ2, iHdlQ2 FLslider "Quality factor2", iQ2min, iQ2max, iQ2exp, iQ2type, iQ2disp, iQ2width, iQ2height, iQ2x, iQ2y
 		
 		
-		iBtnon = 0
+		iBtnon = 1
 		iBtnoff = 0
 		iBtntype = 1
 		iBtnwidth = 50
@@ -210,11 +210,12 @@ FLpanel "Dev2", 900, 700, 10, 10
 		iBtnopcode = 0
 		iBtnstarttim = 0
 		iBtndur = -1  ;Turn instruments on idefinitely
+		iBtntype2 = 2
 
 		; Normal speed forwards
 		gkBtnplay, ihBtnb1 FLbutton "@>", iBtnon, iBtnoff, iBtntype, iBtnwidth, iBtnheight, iBtnx, iBtny, iBtnopcode, 1, iBtnstarttim, iBtndur, 1 
 		; Stationary 
-		gkBtnstop, ihBtnb2 FLbutton "@square", iBtnon,iBtnoff, iBtntype, iBtnwidth, iBtnheight, iBtnx+55, iBtny, iBtnopcode, 2, iBtnstarttim, iBtndur
+		gkBtnstop, ihBtnb2 FLbutton "@square", iBtnon,iBtnoff, iBtntype2, iBtnwidth, iBtnheight, iBtnx+55, iBtny, iBtnopcode, 2, iBtnstarttim, iBtndur
 		; Double speed backwards
 		gkBtnrew, ihBtnb3 FLbutton "@<<", iBtnon, iBtnoff, iBtntype, iBtnwidth, iBtnheight, iBtnx + 110, iBtny, iBtnopcode, 1, iBtnstarttim, iBtndur, -2
 		; Double speed forward

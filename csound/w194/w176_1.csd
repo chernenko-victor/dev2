@@ -71,6 +71,8 @@ instr 1 ; Fl.
 	;aOsc7     poscil    ibaseamp/7, ibasefrq*7, giSine
 	;aOsc8     poscil    ibaseamp/8, ibasefrq*8, giSine
 	
+	kPartialDecayTimeArr[] fillarray 2, 1.5, 1.3, 1.1, 0.9, 0.9, 0.9, 0.7, 0.7, 0.5, 0.5, 0.5, 0.3, 0.3, 0.1, 0.1
+	
 	krangeMin init .1
 	krangeMax init .3
 	kcpsmin init .05
@@ -79,7 +81,10 @@ instr 1 ; Fl.
 	aOut = 0
 	
 	kCnt = 0
-	until kCnt > 8 do
+	until kCnt > 15 do
+		;kEnvDecey - make D and S part of amp env, because of stupid csound design, lets made it by hand, 
+		;calculating value as function of time from note start
+		;see timeinsts opcode
 		kFrqMod = get_different_distrib_value(0, 1, .5, 2, 1)	
 		kPartialAmp  = rspline(krangeMin, krangeMax, kcpsmin, kcpsmax)
 		kFrqOsc   = poscil(kPartialAmp, kFrqMod, giSine)
@@ -90,9 +95,12 @@ instr 1 ; Fl.
 	
 	aOut /= 8
 	
+	aNoise noise ibaseamp/10, 0.5
+	aOut += aNoise
+	
 	;apply simple envelope
-	;kenv expseg .01, p3/3, .5, p3/3, .3, p3/3, .01 ;not form MIDI!
-	kenv linsegr 0, .1, 1 , 10, 1, .1, 0
+	;kenv expseg .01, p3/3, .5, p3/3, .3, p3/3, .01 ;not for MIDI!
+	kenv linsegr 0, .1, 1 , 10, 1, .1, 0 ; make A and R part of amp env
 	
 	;add partials and write to output
 	;aOut = aOsc1 + aOsc2 + aOsc3 + aOsc4 + aOsc5 + aOsc6 + aOsc7 + aOsc8
@@ -151,7 +159,6 @@ endin
 
 ;instr 5 
 #include "..\include\sound\synthesis\harmonic_additive_synthesis_2ch.csd"
-
 
 </CsInstruments>
 <CsScore>

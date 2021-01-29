@@ -1,6 +1,10 @@
 <CsoundSynthesizer>
 <CsOptions>
 ;-Q2 --midioutfile=dev_stoh_v29.mid
+;-odac
+;-o w192-5a.wav
+;-B 16384
+-B 32768
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -205,6 +209,10 @@ instr rythm_disp
 	endif
 	
 	gkTotalLen	linseg .0, p3, 1.
+	
+	aSigL, aSigR 	monitor ; read audio from output bus
+	fout 			"render.wav", 4, aSigL, aSigR ;write audio to file (16bit
+	;mono)
 endin
 
 /*
@@ -286,7 +294,7 @@ instr part
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
 			
-			;=====================	kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			;kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						
@@ -295,7 +303,7 @@ instr part
 			;kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
 			
 			
-			kInstrNum	=	1
+			;kInstrNum	=	1
 			
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern
@@ -528,3 +536,20 @@ i 		"rythm_disp" 		0 		1200
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>
+<bsbPanel>
+ <label>Widgets</label>
+ <objectName/>
+ <x>100</x>
+ <y>100</y>
+ <width>320</width>
+ <height>240</height>
+ <visible>true</visible>
+ <uuid/>
+ <bgcolor mode="nobackground">
+  <r>255</r>
+  <g>255</g>
+  <b>255</b>
+ </bgcolor>
+</bsbPanel>
+<bsbPresets>
+</bsbPresets>

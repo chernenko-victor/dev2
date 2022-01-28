@@ -57,7 +57,7 @@ gkMinPeriod	init 	.25
 gkRythmMode init 1
 gkPitchMode init 7
 gkInstrNum init 0
-;gkInstrNum init 10
+;gkInstrNum init 6
 
 gkiDistrTypeNoteStart init 7
 
@@ -145,7 +145,7 @@ gkBtnstop init 1
 #include "..\include\sound\synthesis\inharmonic_additive_synthesis_2ch.csd"
 
 ;instr 3 
-#include "..\include\sound\synthesis\impulse_2ch.csd"
+;#include "..\include\sound\synthesis\impulse_2ch.csd"
 
 ;instr 4
 #include "..\include\sound\sampler\play_audio_from_disk_2ch.csd"
@@ -171,9 +171,24 @@ gkBtnstop init 1
 ;instr 10 ;instr filtered_noise
 ;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
 
-;instr 10 ;fft_stretch_pitchsfht_2ch
+;instr 11 ;fft_stretch_pitchsfht_2ch
 #include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
+				 
+instr 12  ; simple PM-Synth
+kCarFreq = p4
+;kModFreq = kCarFreq*12/7
+iModFreqB random p4*12/7, p4*12/7+50
+iModFreqE random p4*12/7, p4*12/7+50
+kModFreq line iModFreqB, p3, iModFreqE
+kModFactor = kCarFreq/kModFreq
+kIndex = 12/6.28   ;  12/2pi to convert from radians to norm. table index
+aEnv expseg .001, 0.001, 1, 0.3, 0.5, 8.5, .001
+aModulator poscil kIndex*aEnv, kModFreq, 1
+aPhase phasor kCarFreq
+aCarrier tablei aPhase+aModulator, 1, 1, 0, 1
+outs (aCarrier*aEnv), (aCarrier*aEnv)
+endin
 /*
 	===============================================
 	=========	regular start other insts 	=======
@@ -294,7 +309,8 @@ instr part
 			;iRnd1	 		random 	0.5, 6.5
 			;iInstrNum		=		ceil(iRnd1);			
 			
-			kInstrNum		IntRndDistrK 	1, 1, 11, 1
+			kInstrNum		IntRndDistrK 	1, 1, 10, 1
+			;kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			;kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						

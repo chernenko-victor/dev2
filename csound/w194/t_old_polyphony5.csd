@@ -5,14 +5,15 @@
 <CsInstruments>
 sr = 44100
 ksmps = 32
-nchnls = 2
+nchnls = 1
 0dbfs = 1
 #define DUMP_FILE_NAME #"cffg.txt"#
 #define ALTERNATIVE_RULE_DELIM #1000000#
 #define ARRAY_MAX_DIM #256#
-#include "distribution3.inc.csd"
-#include "table.v1.csd"
-#include "t_formal_grammar3.class.csd"
+#include "C:\usr\chernenko\src\csound\dev2\csound\include\math\stochastic\distribution3.inc.csd"
+#include "C:\usr\chernenko\src\csound\dev2\csound\include\utils\table.v1.csd"
+;#include "t_formal_grammar3.class.csd"
+#include "C:\usr\chernenko\src\csound\dev2\csound\include\ling\formal_grammar4.class.csd"
 
 giSine    ftgen     0, 0, 2^10, 10, 1
 ;vocabulary
@@ -141,10 +142,21 @@ instr 1
 	kFlag		init 	1
 	kAmp		init 	.4
 	kFinal[] init $ARRAY_MAX_DIM
+	kCurrentRule[] init $ARRAY_MAX_DIM
+	kCurrentRuleOne[] init $ARRAY_MAX_DIM
 	
 	if kFlag == 1 then
 		kFlag = 0
+		
+		kIndexRow = 3
+		kCurrentRule = get_1dim_arr_from_2dim_arr(kIndexRow, gkRules, 0, 1, 1)
+	 kRes = dump_1dim_arr_to_file(kCurrentRule, 0)
 
+		kPartIndx = 0
+		kDelim = $ALTERNATIVE_RULE_DELIM
+		kCurrentRuleOne = get_alternate_part(kCurrentRule, kDelim, kPartIndx)
+		kRes = dump_1dim_arr_to_file(kCurrentRuleOne, 0)
+        /*
 		kFinal[0] = 1
 		kFinal[1] = 0
 		kTemporary[] init $ARRAY_MAX_DIM
@@ -159,17 +171,17 @@ instr 1
 		
 		kIndex = 0;
 		kPeriod 	=  gkMinPeriod * gkDuration[-1 * kFinal[kIndex]]
+        */
 	endif
 	
+	/*
 	kTrig			metro	1/kPeriod	;metro for event generating
 	if kTrig == 1 then
 		if kFinal[kIndex] != 0 then
 		
-			/*
-				=======================================
-				=========	next note start		=======
-				=======================================
-			*/
+			;	=======================================
+			;	=========	next note start		=======
+			;	=======================================
 			kIndex = kIndex + 1;
 			if kFinal[kIndex] != 0 then
 				;kPeriod 	= -1 * gkMinPeriod * kFinal[kIndex]
@@ -178,32 +190,29 @@ instr 1
 				kIndex = 0
 			endif
 			
-			/*
-				=======================================
-				=========		duration 		=======
-				=======================================
-			*/
+			;	=======================================
+			;	=========		duration 		=======
+			;	=======================================
 			kDur = kPeriod * .8
 
-			/*
-				=======================================
-				=========		pitch			=======
-				=======================================
-			*/
+			;	=======================================
+			;	=========		pitch			=======
+			;	=======================================
+			
 			;kFrq = GetExp(kRawVal, 0.01, 1., kMinFrq, kMaxFrq)
 			kFrq = get_different_distrib_value_k(0, 7, 15., 1500., 2)
 			
-			/*
-				=======================================
-				=========		play 			=======
-				=======================================
-			*/
+			;	=======================================
+			;	=========		play 			=======
+			;	=======================================
+			
 			kPan = get_different_distrib_value_k(0, 7, 0., 1., 1)
 			event  	"i", "simple_sin", kStart, kDur, kFrq, kAmp, kPan
 			
 			
 		endif		
 	endif
+	*/
 endin
 
 instr simple_sin
@@ -212,7 +221,8 @@ instr simple_sin
 	kPan = p6
 	kenv      linen     1, p3/4, p3, p3/4
 	aOsc1     poscil    iAmp, iFrq, giSine
-	outs      aOsc1*kenv*kPan, aOsc1*kenv*(1-kPan)
+	;outs      aOsc1*kenv*kPan, aOsc1*kenv*(1-kPan)
+	out      aOsc1*kenv
 endin
 </CsInstruments>
 <CsScore>

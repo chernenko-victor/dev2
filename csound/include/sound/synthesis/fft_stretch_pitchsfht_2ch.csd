@@ -13,10 +13,10 @@ instr fft_stretch_pitchsfht_2ch
 
 	kTrigLog		metro	1
 	
-	iRnd1	 		random 	0.5, 24.5 ;from 1 to 25
+	iRnd1	 		random 	0.5, 29.5 ;from 1 to 30
 	iFileNum		=		ceil(iRnd1);
 	
-	iRnd2	 		random 	0.5, 24.5 ;from 1 to 25
+	iRnd2	 		random 	0.5, 29.5 ;from 1 to 30
 	iFileNum2		=		ceil(iRnd2);
 	
 	

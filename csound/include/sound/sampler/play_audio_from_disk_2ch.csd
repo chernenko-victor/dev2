@@ -51,7 +51,7 @@ instr	play_audio_from_disk
 	;printk 			1, kSpeed
 	
 	;iRnd1	 		random 	0.5, 4.5 //from 1 to 5
-	iRnd1	 		random 	0.5, 24.5 //from 1 to 25
+	iRnd1	 		random 	0.5, 29.5 //from 1 to 30
 	iFileNum		=		ceil(iRnd1);
 	
 	

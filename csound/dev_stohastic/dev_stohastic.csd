@@ -299,7 +299,7 @@ instr part
 			
 			kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			
-			kInstrNum	=	10 ;test individual instr
+			;kInstrNum	=	9 ;test individual instr
 			
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern

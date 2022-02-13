@@ -121,6 +121,7 @@ giWFn   ftgen 7,0,16384,20,2,1
 
 
 gkBtnstop init 1
+gkAlgoNum init 0
 
 /*
 		=====================================================================
@@ -387,6 +388,21 @@ instr part
 		*/
 		;kFrq		=		kFrq * kFrqMult
 		
+		if gkAlgoNum == 0 then ;auto
+			gkAlgoNum = 1
+		endif
+		
+		if gkAlgoNum == 1 then ;1 = discrete
+			kFrqIndx		IntRndDistrK 	kFrqDistrType, kFrqMin, kFrqMax, kFrqDepth
+			;fprintks 	$DUMP_FILE_NAME, "IntRndDistrK :: kiDistrType = %f | kiMin = %f | kiMax = %f | kDepth = %f | kiIndx = %f \\n", kiDistrType, kiMin, kiMax, kDepth, kiIndx
+		
+			kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
+			;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
+		elseif gkAlgoNum == 2 then ;2 markov
+		    kFrqIndx Markov2orderK iFrqIndxSeedType, kFrqIndxTypeOfDistrib, kFrqIndxMin, kFrqIndxMax, kFrqIndxDistribDepth, kFrqIndxPrevEl, gkFrqIndxMarkovTable
+		endif
+		
+		/*
 		if gkBtnstop==1 then
 			kFrqIndx Markov2orderK iFrqIndxSeedType, kFrqIndxTypeOfDistrib, kFrqIndxMin, kFrqIndxMax, kFrqIndxDistribDepth, kFrqIndxPrevEl, gkFrqIndxMarkovTable
 		else
@@ -396,6 +412,7 @@ instr part
 			kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
 			;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded
 		endif
+		*/
 		
 		kFrqIndxFolded	TableFolding kFoldingType, kFrqIndx, kTblLen
 		;fprintks 	$DUMP_FILE_NAME, "TableFolding :: kFoldingType = %f | kiIndx = %f | kTblLen = %f | kIndxFolded = %f \\n", kFoldingType, kiIndx, kTblLen, kIndxFolded

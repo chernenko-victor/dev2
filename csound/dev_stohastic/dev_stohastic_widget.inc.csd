@@ -199,6 +199,42 @@ FLpanel "Dev2", 900, 700, 10, 10
 		iQ2y = 150
 		gkQ2, iHdlQ2 FLslider "Quality factor2", iQ2min, iQ2max, iQ2exp, iQ2type, iQ2disp, iQ2width, iQ2height, iQ2x, iQ2y
 		
+		;selector for algo
+		; Minimum value output by counter
+		iAlgoNumMin = 0
+		; Maximum value output by counter
+		iAlgoNumMax = 2
+		; Single arrow step size (semitones)
+		iAlgoNumStep1 = 1
+		; Double arrow step size (octave)
+		iAlgoNumStep2 = 1 
+		; Counter type (1=double arrow counter)
+		iAlgoNumType = 1
+		; Width of the counter in pixels
+		iAlgoNumWidth = 150
+		; Height of the counter in pixels
+		iAlgoNumHeight = 30
+		; Distance of the left edge of the counter
+		; from the left edge of the panel
+		iAlgoNumX = 20
+		; Distance of the top edge of the counter
+		; from the top edge of the panel
+		iAlgoNumY = iQ2y + 100
+		; Score event type (-1=ignored)
+		iAlgoNumOpcode = -1
+		gkAlgoNum, iHdlAlgoNum FLcount "Algo Number", iAlgoNumMin, iAlgoNumMax, iAlgoNumStep1, iAlgoNumStep2, iAlgoNumType, iAlgoNumWidth, \
+		iAlgoNumHeight, iAlgoNumX, iAlgoNumY, iAlgoNumOpcode
+		
+		iAlgoTexttype = 1
+		iAlgoTextfont = 1
+		iAlgoTextsize = 12
+		iAlgoTextwidth = 300
+		iAlgoTextheight = 100
+		iAlgoTextx =  iAlgoNumX + 150
+		iAlgoTexty = iAlgoNumY - 30
+		
+		iAlgoTexthandle FLbox "Algo Number : 0 = auto, 1 = discrete, 2 = markov", iAlgoTexttype, iAlgoTextfont, iAlgoTextsize, iAlgoTextwidth, iAlgoTextheight, iAlgoTextx, iAlgoTexty
+		
 		
 		iBtnon = 1
 		iBtnoff = 0
@@ -206,7 +242,8 @@ FLpanel "Dev2", 900, 700, 10, 10
 		iBtnwidth = 50
 		iBtnheight = 50
 		iBtnx = 10
-		iBtny = iQ2y + iQ2height + 50
+		;iBtny = iQ2y + iQ2height + 50
+		iBtny = iQ2y + iQ2height + 200
 		iBtnopcode = 0
 		iBtnstarttim = 0
 		iBtndur = -1  ;Turn instruments on idefinitely

@@ -175,21 +175,10 @@ gkAlgoNum init 0
 ;instr 9 ;fft_stretch_pitchsfht_2ch
 #include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
-				 
-instr 10  ; simple PM-Synth
-kCarFreq = p4
-;kModFreq = kCarFreq*12/7
-iModFreqB random p4*12/7, p4*12/7+50
-iModFreqE random p4*12/7, p4*12/7+50
-kModFreq line iModFreqB, p3, iModFreqE
-kModFactor = kCarFreq/kModFreq
-kIndex = 12/6.28   ;  12/2pi to convert from radians to norm. table index
-aEnv expseg .001, 0.001, 1, 0.3, 0.5, 8.5, .001
-aModulator poscil kIndex*aEnv, kModFreq, 1
-aPhase phasor kCarFreq
-aCarrier tablei aPhase+aModulator, 1, 1, 0, 1
-outs (aCarrier*aEnv), (aCarrier*aEnv)
-endin
+;instr 10 ;simple_phasemod_2ch.csd
+#include "..\include\sound\synthesis\simple_phasemod_2ch.csd"
+
+
 /*
 	===============================================
 	=========	regular start other insts 	=======
@@ -310,7 +299,7 @@ instr part
 			
 			kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			
-			;kInstrNum	=	10 ;test individual instr
+			kInstrNum	=	10 ;test individual instr
 			
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern

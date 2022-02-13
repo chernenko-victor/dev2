@@ -148,35 +148,35 @@ gkAlgoNum init 0
 ;instr 3 
 ;#include "..\include\sound\synthesis\impulse_2ch.csd"
 
-;instr 4
+;instr 3
 #include "..\include\sound\sampler\play_audio_from_disk_2ch.csd"
 
-;instr 5 ;substractive_wov
+;instr 4 ;substractive_wov
 #include "..\include\sound\synthesis\substractive.csd"
 
-;instr 6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
+;instr 5 ;instr wgbow_instr + inst wgbow_reverb_instr
 #include "..\include\sound\synthesis\wgbow.csd"
 
-;instr 8 ;instr white_noise_my
+;instr 7 ;instr white_noise_my
 ;#include "..\include\sound\synthesis\white_noise.inc.csd"
 
-;instr 8 ;feedback_modulation
+;instr 7 ;feedback_modulation
 #include "..\include\sound\synthesis\feedback_modulation_2ch.csd"
 
-;instr 9 ;instr shepard_tone
+;instr 8 ;instr shepard_tone
 ;#include "..\include\sound\synthesis\shepard_tone.inc.csd"
 
-;instr 9 ;granulator
+;instr 8 ;granulator
 #include "..\include\sound\synthesis\grain_2ch.csd"
 
-;instr 10 ;instr filtered_noise
+;instr 9 ;instr filtered_noise
 ;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
 
-;instr 11 ;fft_stretch_pitchsfht_2ch
+;instr 9 ;fft_stretch_pitchsfht_2ch
 #include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
 				 
-instr 12  ; simple PM-Synth
+instr 10  ; simple PM-Synth
 kCarFreq = p4
 ;kModFreq = kCarFreq*12/7
 iModFreqB random p4*12/7, p4*12/7+50
@@ -307,20 +307,10 @@ instr part
 				==================		define inst num 			==============
 				==================================================================
 			*/
-			;iRnd1	 		random 	0.5, 6.5
-			;iInstrNum		=		ceil(iRnd1);			
 			
-			kInstrNum		IntRndDistrK 	1, 1, 10, 1
-			;kInstrNum		IntRndDistrK 	1, 1, 11, 1
-			;kInstrNum		IntRndDistrK 	1, 1, 9, 1
+			kInstrNum		IntRndDistrK 	1, 1, 11, 1
 			
-						
-			;kUnifDistrA[]    array      4.66, .66, .68
-			;									iSeedType, kTypeOfDistrib, kMin, kMax, kDistribDepth, kLine[]	
-			;kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
-			
-			
-			;kInstrNum	=	1
+			;kInstrNum	=	10 ;test individual instr
 			
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern

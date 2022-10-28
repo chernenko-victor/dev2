@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
-;-Q2 --midioutfile=dev_stoh_v29.mid
+-Q0 --midioutfile=dev_stoh281022b.mid
 ;-odac
 ;-o w192-5a.wav
 ;-B 16384
@@ -12,7 +12,17 @@ ksmps = 32
 nchnls = 2
 0dbfs = 1
 
-#define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#
+#define DUMP_FILE_NAME #"dev_stohastic.v32.txt"#]
+
+/*
+algo
+1. random distribution
+2. markov chain
+3. formal grammar
+4. cellular automata
+5. genetic
+6. ai
+*/
 
 /*
 	=======================================================
@@ -127,10 +137,22 @@ gkAlgoNum init 0
 		=====================================================================
 		====================		widget		 		=====================
 		=====================================================================
-*/	
+	
 
 #include "dev_stohastic_widget.inc.csd"
 
+error: syntax error, unexpected STRING_TOKEN  (token """)
+ from file dev_stohastic_widget.inc.csd (5), from file dev_stohastic.csd (1), line 32:
+ >>>   <<<
+Unexpected untyped word FLpanel when expecting a variable
+Parsing failed due to invalid input!
+Stopping on parser failure
+cannot compile orchestra
+end of score.              overall amps:      0.0
+           overall samples out of range:        0
+1 errors in performance
+Elapsed time at end of performance: real: 0.042s, CPU: 0.042s
+*/
 
 /*
 		=====================================================================
@@ -433,7 +455,7 @@ instr part
 		;log2(x) = loge(x)/loge(2)
 		;m  =  12*log2(fm/440 Hz) + 69
 		kMidiNum = 12 * ( log( kFrq / 440. ) / log(2) ) + 69
-		;moscil		kInstrNum+1, kMidiNum, 80, kDur, .1 ; send a stream of midi notes
+		moscil		kInstrNum+1, kMidiNum, 80, kDur, .1 ; send a stream of midi notes
 		
 		
 		/*
@@ -544,7 +566,7 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		1200
+i 		"rythm_disp" 		0 		60*5
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>

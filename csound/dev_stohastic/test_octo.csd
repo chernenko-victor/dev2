@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--Q2 --midioutfile=hack_o_tone.mid
+;-Q2 --midioutfile=hack_o_tone.mid
 </CsOptions>
 <CsInstruments>
 sr = 44100

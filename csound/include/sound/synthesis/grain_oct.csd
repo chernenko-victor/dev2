@@ -1,4 +1,7 @@
+giWFn ftgen 0, 0, 1024, 20, 1
+
 instr grain_oct
+  iMixRatio = .01
   ;random spline generates formant values in oct format
   kOct    rspline 4,8,0.1,0.5
   ;oct format values converted to cps format
@@ -54,5 +57,6 @@ instr grain_oct
 	; decode B format for 8 channel circle loudspeaker setup
 	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
 	
-	outo a1, a2, a3, a4, a5, a6, a7, a8
+	;outo a1, a2, a3, a4, a5, a6, a7, a8
+	outo a1*iMixRatio, a2*iMixRatio, a3*iMixRatio, a4*iMixRatio, a5*iMixRatio, a6*iMixRatio, a7*iMixRatio, a8*iMixRatio
 endin

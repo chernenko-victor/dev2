@@ -1,6 +1,7 @@
 instr fft_stretch_pitchsfht_oct
 
-
+	;iMixRatio = .01
+	iMixRatio = 2
 	gifftsize =         1024
 	gioverlap =         gifftsize / 4
 	giwinsize =         gifftsize
@@ -13,10 +14,10 @@ instr fft_stretch_pitchsfht_oct
 
 	kTrigLog		metro	1
 	
-	iRnd1	 		random 	0.5, 24.5 ;from 1 to 25
+	iRnd1	 		random 	0.5, 29.5 ;from 1 to 30
 	iFileNum		=		ceil(iRnd1);
 	
-	iRnd2	 		random 	0.5, 24.5 ;from 1 to 25
+	iRnd2	 		random 	0.5, 29.5 ;from 1 to 30
 	iFileNum2		=		ceil(iRnd2);
 	
 	
@@ -118,6 +119,16 @@ instr fft_stretch_pitchsfht_oct
 	; decode B format for 8 channel circle loudspeaker setup
 	a1, a2, a3, a4, a5, a6, a7, a8 bformdec1 4, aw, ax, ay, az, ar, as, at, au, av        
 	
-	outo a1, a2, a3, a4, a5, a6, a7, a8
+	outo a1*iMixRatio, a2*iMixRatio, a3*iMixRatio, a4*iMixRatio, a5*iMixRatio, a6*iMixRatio, a7*iMixRatio, a8*iMixRatio
+	;fout "liquid030922_7.wav", 18, a1*iMixRatio, a2*iMixRatio, a3*iMixRatio, a4*iMixRatio, a5*iMixRatio, a6*iMixRatio, a7*iMixRatio, a8*iMixRatio
+	
+	gaSend1 = gaSend1 + a1*iMixRatio
+	gaSend2 = gaSend2 + a2*iMixRatio
+	gaSend3 =  gaSend3 + a3*iMixRatio
+	gaSend4 =  gaSend4 + a4*iMixRatio
+	gaSend5 =  gaSend5 + a5*iMixRatio
+	gaSend6 =  gaSend6 + a6*iMixRatio	
+	gaSend7 =  gaSend7 + a7*iMixRatio
+	gaSend8 =  gaSend8 + a8*iMixRatio
 				
 endin

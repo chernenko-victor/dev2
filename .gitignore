@@ -36,3 +36,5 @@ csound/dev_stohastic/soundin.8
 csound/dev_stohastic/soundin.9
 *.wav
 *.reapeaks
+*.bak
+*.csd.back

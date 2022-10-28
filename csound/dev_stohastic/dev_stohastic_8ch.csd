@@ -1,6 +1,8 @@
 <CsoundSynthesizer>
 <CsOptions>
 ;-Q2 --midioutfile=dev_stoh_v29.mid
+;-o dac18
+;-o liquid030922.wav -W -3
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -96,13 +98,23 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 						0.,		0.,		0.,		0.,		0.,		0.05,	0.9,	0.05,
 						0.,		0.,		0.,		0.,		0.,		0.,		0.1,	0.9	
 	
+
+gaSend1 init 0	
+gaSend2 init 0	
+gaSend3 init 0	
+gaSend4 init 0	
+gaSend5 init 0	
+gaSend6 init 0	
+gaSend7 init 0	
+gaSend8 init 0	
+
 /*
 		=====================================================================
 		====================		widget		 		=====================
 		=====================================================================
 */	
 
-#include "dev_stohastic_widget.inc.csd"
+;#include "dev_stohastic_widget.inc.csd"
 
 
 /*
@@ -112,41 +124,46 @@ gkLineRythm fillarray	0.9,	0.1,	0.,		0.,		0.,		0.,		0.,		0.,
 */
 
 
-;instr 1 
+;instr 1  
 #include "..\include\sound\synthesis\harmonic_additive_synthesis_oct.csd"
 
-;instr 2 
+;instr 2
 #include "..\include\sound\synthesis\inharmonic_additive_synthesis_oct.csd"
 
-;instr 3 
-#include "..\include\sound\synthesis\impulse_oct.csd"
-
-;instr 4
+;instr 3
 #include "..\include\sound\sampler\play_audio_from_disk_oct.csd"
 
-;instr 5 ;substractive_wov
+;instr 4 ;substractive_wov
 #include "..\include\sound\synthesis\substractive_oct.csd"
 
-;instr 6 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
+;instr 5 ;instr wgbow_instr + inst 7 wgbow_reverb_instr
 #include "..\include\sound\synthesis\wgbow_oct.csd"
 
-;instr 8 ;instr white_noise_my
+;instr 6 ;feedback_modulation
+#include "..\include\sound\synthesis\feedback_modulation_oct.csd" 
+
+;instr 7 ;fft_stretch_pitchsfht_2ch
+#include "..\include\sound\synthesis\fft_stretch_pitchsfht_oct.csd"
+
+
+
+;instr 
+;#include "..\include\sound\synthesis\impulse_oct.csd" ;off
+
+
+;instr  ;instr white_noise_my
 ;#include "..\include\sound\synthesis\white_noise.inc.csd"
 
-;instr 8 ;feedback_modulation
-#include "..\include\sound\synthesis\feedback_modulation_oct.csd"
 
-;instr 9 ;instr shepard_tone
+;instr  ;instr shepard_tone
 ;#include "..\include\sound\synthesis\shepard_tone.inc.csd"
 
-;instr 9 ;granulator
-#include "..\include\sound\synthesis\grain_oct.csd"
+;instr  ;granulator
+;#include "..\include\sound\synthesis\grain_oct.csd" ;invalid table off
 
-;instr 10 ;instr filtered_noise
+;instr  ;instr filtered_noise
 ;#include "..\include\sound\synthesis\filtered_noise.inc.csd"
 
-;instr 10 ;fft_stretch_pitchsfht_2ch
-#include "..\include\sound\synthesis\fft_stretch_pitchsfht_2ch.csd"
 				 
 /*
 	===============================================
@@ -182,6 +199,16 @@ instr rythm_disp
 	endif
 	
 	gkTotalLen	linseg .0, p3, 1.
+	
+	fout "liquid030922a.wav", 18, gaSend1, gaSend2, gaSend3, gaSend4, gaSend5, gaSend6, gaSend7, gaSend8
+    clear gaSend1
+    clear gaSend2
+    clear gaSend3
+    clear gaSend4
+    clear gaSend5
+    clear gaSend6
+    clear gaSend7
+    clear gaSend8
 endin
 
 /*
@@ -257,10 +284,10 @@ instr part
 				==================		define inst num 			==============
 				==================================================================
 			*/
-			;iRnd1	 		random 	0.5, 6.5
+			;iRnd1	 		random 	0.5, 8.5
 			;iInstrNum		=		ceil(iRnd1);			
 			;kInstrNum		IntRndDistrK 	1, 1, 11, 1
-			kInstrNum		IntRndDistrK 	1, 1, 8, 1
+			kInstrNum		IntRndDistrK 	1, 1, 9, 1
 			
 						
 			;kUnifDistrA[]    array      4.66, .66, .68
@@ -268,12 +295,13 @@ instr part
 			;kInstrNum		get_discr_distr_k  0, 1, 4, 6, 1, kUnifDistrA
 			
 			
-			;kInstrNum	=	9
+			;kInstrNum	=	10
 			
+			/*
 			if iInstrNumExtern > 0 then
 				kInstrNum	=	iInstrNumExtern
 			endif
-			
+			*/
 			
 			
 			/*
@@ -487,7 +515,7 @@ endin
 ;type	instr				start	len		
 ;i 		"part" 				0 		60		1				.5
 ;i 		"test_env_instr" 	0 		30
-i 		"rythm_disp" 		0 		400
+i 		"rythm_disp" 		0 		500
 ;i 		"simple_sin" 		0 		100		440.			.5
 </CsScore>
 </CsoundSynthesizer>

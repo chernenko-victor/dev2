@@ -167,3 +167,18 @@ opcode ReplaceArrElWithArr, k[], k[]kk[]
 
 	xout kOutArray
 endop
+
+opcode init_arr_with_num, k[], ki
+    kNumberToInit, iArrLen xin
+
+    kArr[] init iArrLen
+    kIndx init 0
+
+    while kIndx < iArrLen do
+        kArr[kIndx] = kNumberToInit
+        kIndx = kIndx + 1
+    od
+
+    xout kArr
+endop
+

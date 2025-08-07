@@ -2,6 +2,31 @@
 
 ;require #define DUMP_FILE_NAME #"cffg.txt"#
 
+/*
+================================================================================================
+table based countinuous movement: table consists of steps amount, obligate parameter 
+transpositionAmount is number that determines step amount with which table repeats
+e.g.
+arr1 = [1, 2, 4, 5],  transpositionAmount = 7
+arr1[3] = 5
+"arr1[4]" = 1 * transpositionAmount + arr1[4%len(arr1)] = 8
+"arr1[5]" = 1 * transpositionAmount + arr1[5%len(arr1)] = 9
+"arr1[6]" = 1 * transpositionAmount + arr1[6%len(arr1)] = 11
+"arr1[8]" = 1 * transpositionAmount + arr1[6%len(arr1)] = 12
+("2nd round")
+"arr1[8]" = 2 * transpositionAmount + arr1[8%len(arr1)] = 15
+...
+(steps down)
+arr1[0] = 1
+"arr1[-1]" = arr1[len(arr1) - index] - 1 * transpositionAmount = -2
+"arr1[-2]" = arr1[len(arr1) - index] - 1 * transpositionAmount = -3
+etc
+
+2DO
+1. last element of the table = transpositionAmount
+2. Relative steps values instead of absolute 
+*/
+
 ;kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
 opcode TableFolding, k, kkk
   kFoldingType, kiIndx, kTblLen xin
@@ -82,6 +107,29 @@ opcode GetTransposedTabVal, k, kkk[]k
 
     xout kValue
 endop
+
+opcode GetTransposedTabValExt, k, kkk[]
+    kFoldingType, kiIndx, kTblExt[] xin
+
+	kTranpositionAmount = kTblExt[lenarray(kTblExt)-1]
+	
+	kTbl[] init lenarray(kTblExt)-1
+    kTbl = slicearray(kTblExt, 0, lenarray(kTblExt)-2)
+	//printarray(kTbl)
+
+    kTblFoldRes[] init 2
+    kTblLen = lenarray(kTbl)
+
+    kTblFoldRes = TableFoldingAdv(kFoldingType, kiIndx, kTblLen)
+
+    kValue = kTbl[kTblFoldRes[0]] + kTblFoldRes[1] * kTranpositionAmount
+
+	//printks("kTranpositionAmount = %d, kTblLen = %d, kIndxFolded = %d, kTransposeCnt = %d, kValue = %d\n", 0, kTranpositionAmount, kTblLen, kTblFoldRes[0], kTblFoldRes[1], kValue)
+
+    xout kValue
+endop
+
+// ==============================
 
 ;kValue = TableExtrapolate(kArray[][], kIndxRow, kIndx, kTblLen)
 opcode TableExtrapolate, k, k[][]kkk

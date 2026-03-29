@@ -51,6 +51,40 @@ opcode TableFolding, k, kkk
 endop
 
 ;kIndxFolded	TableFolding kFoldingType, kiIndx, kTblLen
+
+
+// 2DO
+// kFoldType
+
+//                          <-- | -->
+// 1 - mirror, i.e. ... 4, 3, 2, 2, 3, 4 ...
+// PROBLEM: 
+// must be like this ... 4, 3, 2,   2, 3, 4, 5, 6,      6, 5, 4, 3, 2, 2, 3, 4, ...
+// now ... 4, 3, 2,     2, 3, 4, 5, 6,      2, 3, 4, 5, 6, ...
+//                                      /\ NB!!
+// 
+
+//                                   <-- | -->
+// 2 - sequental, i.e. ... 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, ...
+/*
+opcode table_folding, k, kkk
+    kIndexToFold, kLenStepArr, kFoldType xin
+
+    kFoldedIndex init 0
+
+    if kFoldType == 1 then 
+        kFoldedIndex = abs(kIndexToFold)%kLenStepArr
+    elseif kFoldType == 2 then
+
+    else 
+
+    endif
+
+    xout kFoldedIndex
+endop
+*/
+
+
 opcode TableFoldingAdv, k[], kkk
   kFoldingType, kiIndx, kTblLen xin
   
@@ -230,3 +264,36 @@ opcode init_arr_with_num, k[], ki
     xout kArr
 endop
 
+opcode circular_index, k, kk
+    kIndexToFold, kLenArr xin
+
+    kFoldedIndex init 0
+
+    kFoldedIndex = ((kIndexToFold % kLenArr) + kLenArr) % kLenArr
+
+    /*
+    if kIndexToFold >= 0 then
+        kFoldedIndex = kIndexToFold%kLenStepArr
+    else
+        kFoldedIndex = kLenStepArr - (abs(kIndexToFold)%kLenStepArr)
+    endif
+    */
+    
+    xout kFoldedIndex
+endop
+
+opcode fill_arr_via_equal_val, k[], k[]k
+    kArr[], kVal xin 
+
+    kIndx init 0
+
+    kVal = kVal + 0 // interesting bug: comment this string and only 1st element of array will be modified
+    //printf("lenarray(kArr) = %f\n", kIndx + 1, lenarray(kArr))
+
+    while kIndx < lenarray(kArr) do
+        printf("kIndx = %f\n", kIndx + 1, kIndx)
+        kArr[kIndx] = kVal
+        kIndx += 1
+    od
+    xout kArr
+endop
